@@ -45,15 +45,15 @@ license: MIT
 | **S1** | User said "analyze/look/check" but did NOT ask for a file | 用户说"分析/看看"但没说要文件 | ⛔ Downgrade to text. / 降级为文字摘要 |
 | **S2** | User said "do it" but AI asks "shall I?" | 用户说"执行"但AI反问"可以吗？" | ⛔ Just execute. / 直接执行 |
 | **S3** | Scripts/batch writes about to execute | 脚本/批量写入即将执行 | ⛔ Verify model matches task. / 检查模型匹配 |
-| **S4** | Modified a global rule file | 修改了全局规则文件 | ⛔ Complete association scan first. / 先做关联扫描。🆕 详见 同类模式 原则5 + 同类模式·步骤1 |
+| **S4** | Modified a global rule file | 修改了全局规则文件 | ⛔ Complete association scan first. / 先做关联检查。🆕 Scan the codebase for every place that uses or depends on the file you changed, and update them together. |
 | **S5** | Generating HTML with JavaScript/Chart.js | 生成含JS的HTML文件 | ⛔ Validate no template placeholder leaks. / 校验占位符 |
-| **S6** | Fixed one issue, about to say "done" | 修了一个问题就说"完成了" | ⛔ Sweep for similar issues first. / 先扫同类问题。🆕 对应最佳实践「只改一个关联扫描」+  反身性扫描 |
+| **S6** | Fixed one issue, about to say "done" | 修了一个问题就说"完成了" | ⛔ Sweep for similar issues first. / 先扫同类问题。🆕 Search the codebase for other occurrences of the same bug pattern and fix them together before declaring done. |
 | **S7** | User confirmed briefly ("yes"/"ok") | 用户简短确认("对""嗯") | ⚠️ Confirm intent, then act. / 确认意图后再动 |
 | **S8** | Multi-step task, skipping intermediate steps | 多步骤中途跳过中间步骤 | ⛔ Return to first incomplete step. / 回到未完成步骤 |
 | **S9** | User said "stop" / "停" mid-reply | 用户喊"停"，AI正在长篇回复 | ⛔ **HARD STOP. Zero output.** End your response with NO characters — not even punctuation, not an emoji, not "OK stopping", not "已停止", not "got it". The next assistant turn after user says "stop"/"停" must be an empty response. / **硬截断。零输出。** 你的回复以 0 字符结束——没有标点，没有 emoji，没有"好的""已停""got it"。用户说"停"之后，下一轮 assistant 的回复必须是空的。 |
 | **S9-INPUT** | User's FIRST message of a turn is "stop" / "停" / "shut up" | 用户本轮第一条消息就是"停" | ⛔ **Do NOT start generating.** Output nothing. Do not analyze, do not apologize, do not explain. The user said stop before you even started — respect that. / **不要开始生成。** 不输出任何内容。不要分析，不要道歉，不要解释。用户在你说任何话之前就说了停——尊重这一点。 |
-| **S10** | Plan ≥3 phases OR ≥2 new files OR ≥5 steps | 方案≥3阶段/≥2文件/≥5步骤 | ⚠️ Output lightweight version first. / 先出轻量版。🆕 对应 同类模式「不跨会话·先轻量验证再全量」 |
-| **S11** | Fixed/patched a system file but NOT run `your project's sync-validation routine` within 5min | 修复了系统文件但5分钟内未跑闭环验证 | ⛔ Abort. Run `your project's sync-validation routine` first. / 先跑闭环验证再继续 |
+| **S10** | Plan ≥3 phases OR ≥2 new files OR ≥5 steps | 方案≥3阶段/≥2文件/≥5步骤 | ⚠️ Output lightweight version first. / 先出轻量版。🆕 Deliver a minimal viable slice in this turn; iterate only after the user confirms. |
+| **S11** | Fixed/patched a system file but NOT run `your project's sync-validation routine` within 5min | 修复了系统文件但5分钟内未运行同步校验 | ⛔ Abort. Run `your project's sync-validation routine` first. / 先运行同步校验再继续 |
 
 ## Engineering vs. Gradualism / 工程化 vs 渐进式
 
@@ -114,8 +114,8 @@ The `--build` command enforces a minimum 1-hour cooldown since last push. If you
 |:--|:--|:--|
 | v1.0 | 2026-06 | 初始发布：10 条偏航信号 + 工程化 vs 渐进式 |
 | v1.1 | 2026-06 | 前端元数据修正 |
-| v1.2 | 2026-07-04 | S4/S6/S10 信号增强；新增 S11 闭环验证信号；新增关联项目清单 |
-| 🆕 v1.3 | 2026-07-12 | **S9 修复**：硬截断零输出 + 新增 S9-INPUT（输入层停信号，AI 还没开始生成时即拦截）；**新增 Limitations 节**：明确能力边界；**新增 Release Governance 节**：batched release + 1h 冷却门禁；**Export Audit**：5 项出口审计脚本化 + 元数据自洽审计；**描述修正**：删除不准确承诺；**自反身性扫描**：用技能审视自身（7/7 信号检查） |
+| v1.2 | 2026-07-04 | S4/S6/S10 信号增强；新增 S11 sync-validation signal；新增 related-project checklist |
+| 🆕 v1.3 | 2026-07-12 | **S9 修复**：硬截断零输出 + 新增 S9-INPUT（输入层停信号，AI 还没开始生成时即拦截）；**新增 Limitations 节**：明确能力边界；**新增 Release Governance 节**：batched release + 1h 冷却门禁；**Export Audit**：5 项出口审计脚本化 + 元数据自洽审计；**描述修正**：删除不准确承诺；**自我审视**：用技能审视自身（7/7 信号检查） |
 
 ---
 
