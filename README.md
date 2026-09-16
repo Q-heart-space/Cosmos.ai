@@ -1,7 +1,51 @@
-# AI-Drift-Guard
+# Cosmos.ai — Q博士 对外公开库
 
-A portable, self-check protocol for AI agents to detect drift before acting.
-- [SKILL.md](SKILL.md) — the full signal protocol
-- [CONTRIBUTING.md](CONTRIBUTING.md) — how to file issues or suggest improvements
-- [CHANGELOG.md](CHANGELOG.md) — version history
-License: MIT
+> Q博士（信息↔决策第三空间治理系统）对外的能力公开入口。本库只放**脱敏后的派生知识**，不含内部治理原文。
+
+## 这是什么
+
+Cosmos.ai 是 Q博士 的对外公开库（Distribute-External 通道出口）。它把 Q博士 的能力与已验证的方法论资产，以**未来使用者可直接取用**的形态对外发布。
+
+一句话：**不是发布「一个现成的智能体」，而是发布「能长出它的治理系统」+「已验证的方法论资产」。**
+
+## 目录导航（按对外能力分类）
+
+| 目录 | 你能拿到什么 | 适合谁 |
+|:--|:--|:--|
+| [`skill/`](skill/) | 可安装使用的**技能**（每技能一个子目录） | 想让 AI 立刻具备某能力的人 |
+| [`expert/`](expert/) | **专家角色**包（含多角色协作协议） | 需要专业角色视角的人 |
+| [`methodology/`](methodology/) | 可迁移的**方法论** | 想学这套治理方法的人 |
+| [`whitepaper/`](whitepaper/) | **白皮书**与理论 | 想读懂原理的人 |
+| [`case/`](case/) | 实战**案例** | 想看怎么落地的人 |
+| [`resource/`](resource/) | 可复用**资源**（模板·数据集·规范） | 想找现成素材的人 |
+
+## 快速开始
+
+| 我想… | 去哪 |
+|:--|:--|
+| 直接用某个能力 | [`skill/`](skill/) → 选技能子目录 → 按其 README 安装 |
+| 了解这套系统 | [`whitepaper/`](whitepaper/) |
+| 学方法论 | [`methodology/`](methodology/) |
+| 参与贡献 | [CONTRIBUTING.md](CONTRIBUTING.md) |
+
+## 回传（外部 → Q博士）
+
+本库**不另设回传目录**——回传是动态事务，不是静态文件，走仓库原生协作面：
+
+| 回传类型 | 通道 |
+|:--|:--|
+| 问题 / 建议 | [Issues](../../issues) |
+| 贡献技能 / 代码 | Pull Request（评审后并入对应能力域） |
+| 开放讨论 | [Discussions](../../discussions) |
+
+Q博士 对回传的**内部蒸馏**（采纳记录、吸收结果）存于治理侧，**不进入本库**；库内仅保留脱敏致谢 [CONTRIBUTORS.md](CONTRIBUTORS.md)。
+
+## 边界
+
+- 只含**脱敏派生知识**——内部宪法 / 治理原文不外泄
+- 每技能独立子目录 `skill/<skill-name>/`，互不污染
+- 发布走标准化流程：脱敏 → 自闭环四件 → 出口审计 5 项
+
+## License
+
+MIT — 见 [LICENSE](LICENSE)
