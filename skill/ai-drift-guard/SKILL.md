@@ -71,7 +71,7 @@ license: MIT
 
 ## Installation / 安装
 
-1. Download `ai-drift-guard.zip` from [Releases] / 下载压缩包
+1. Download `ai-drift-guard.zip`（本目录内 / in this folder：`skill/ai-drift-guard/ai-drift-guard.zip`）·或直接取该子目录全部文件 / or take all files in this subfolder
 2. WorkBuddy → Experts → Skills → Import / 专家 → 技能 → 导入
 3. Done. AI auto-loads the protocol / 完成，AI自动加载
 

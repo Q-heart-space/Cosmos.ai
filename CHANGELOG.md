@@ -2,6 +2,14 @@
 
 本文件记录 **Cosmos.ai 公开库结构**的变更。各技能的版本历史见 `skill/<skill-name>/CHANGELOG.md`。
 
+## 2026-09-17 — 域集收敛五域 + 修复死链
+
+- 顶层收敛为**五域**：`decision/` · `skill/` · `expert/` · `methodology/` · `whitepaper/`
+- 删除 `resource/`（无宪法依据）· `case/` 归入 `methodology/case/`
+- 新增 `decision/` **决策资产**域（五元组 + 五项不变量 + 行业维度：`common/` 共性 + `<行业>/` 专属）
+- 根 README 改为**中英文双名映射**导航
+- 修复 `skill/ai-drift-guard/SKILL.md` 安装段**死链**：原指向不存在的 `[Releases]` → 改指本目录 `ai-drift-guard.zip`
+
 ## 2026-09-16 — 结构重组
 
 - 新增按**对外能力**分类的顶层目录：`skill/` · `expert/` · `methodology/` · `whitepaper/` · `case/` · `resource/`
