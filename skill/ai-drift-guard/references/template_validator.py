@@ -6,12 +6,14 @@ Usage:
     python template_validator.py <path/to/generated.html>
 
 Returns exit code 0 on clean, 1 on leaked placeholders.
+
+Keep this file in sync with references/drift-guard-core.mjs (the portable reference
+implementation). Divergence between the two is a bug.
 """
-# > **版本**：v1.0 | **类型**：🧪 | **日期**：2026-07-01 | **状态**：活跃
+# > **版本**：v1.1 | **类型**：🧪 | **日期**：2026-09-17 | **状态**：活跃
 # > **依赖**：—
-# > **被依赖**：ai-drift-guard SKILL.md S5
-# > **变更**：v1.0 新建
-# > **用途**：AI-Drift-Guard S5 信号——模板占位符泄漏检测
+# > **被依赖**：ai-drift-guard SKILL.md A.4 (S5)
+# > **变更**：v1.1 修复 URL 盲区——注释判定前先中和 `://`，否则任何含 https:// 的行被整行跳过
 import re
 import sys
 
@@ -31,22 +33,55 @@ IGNORE_KEYWORDS = [
 IGNORE_PATTERNS = [
     r'^\s*\{(\d+)\}\s*$',           # CSS: {3} = bold weight
     r'^[^:]*:\s*\{[^}]+\}$',        # CSS property: "font: {weight} {size} font"
-    r'//.*$',                         # JS comments
-    r'/\*.*\*/',                     # Block comments
 ]
+
+# Comment markers, applied AFTER neutralizing URL schemes.
+COMMENT_PATTERNS = [
+    r'//',                            # JS line comment
+    r'/\*.*\*/',                      # Block comment
+]
+
+# Control characters standing in for the `//` of a URL scheme separator.
+URL_SCHEME_GUARD = ':\x01\x01'
+
+# Unicode-aware placeholder pattern. `\w` in Python is already Unicode-aware,
+# which is required so that `{标题}` is detected.
+PLACEHOLDER_PATTERN = re.compile(r'\{\w+\}')
+
+
+def neutralize_url_schemes(line):
+    """Replace `://` so a URL is never mistaken for the start of a JS comment.
+
+    v1.0 matched r'//.*$' directly, which meant every line containing `https://`
+    was skipped entirely — including lines that also carried a leaked placeholder.
+    """
+    return line.replace('://', URL_SCHEME_GUARD)
+
+
+def is_ignorable_line(trimmed):
+    for pattern in IGNORE_PATTERNS:
+        if re.search(pattern, trimmed):
+            return True
+    neutral = neutralize_url_schemes(trimmed)
+    for pattern in COMMENT_PATTERNS:
+        if re.search(pattern, neutral):
+            return True
+    return False
+
 
 def has_leaked_placeholders(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Find all {identifier} patterns
-    pattern = re.compile(r'\{\w+\}')
     issues = []
     seen_lines = set()
 
     for i, line in enumerate(content.split('\n'), 1):
-        matches = pattern.findall(line)
-        for m in matches:
+        trimmed = line.strip()
+        if is_ignorable_line(trimmed):
+            continue
+
+        for m in PLACEHOLDER_PATTERN.findall(line):
             key = m.strip('{}')
 
             # Skip known JS/CSS keywords
@@ -57,19 +92,9 @@ def has_leaked_placeholders(filepath):
             if key.isdigit():
                 continue
 
-            # Skip CSS-like patterns
-            skip = False
-            for ip in IGNORE_PATTERNS:
-                if re.search(ip, line.strip()):
-                    skip = True
-                    break
-            if skip:
-                continue
-
-            # Potential leaked placeholder
+            # Potential leaked placeholder — report at most one per line
             if i not in seen_lines:
-                stripped = line.strip()[:100]
-                issues.append(f"Line {i}: '{m}' in: {stripped}")
+                issues.append(f"Line {i}: '{m}' in: {trimmed[:100]}")
                 seen_lines.add(i)
 
     return issues
@@ -80,13 +105,15 @@ if __name__ == '__main__':
         print("Usage: python template_validator.py <file.html>")
         sys.exit(1)
 
-    issues = has_leaked_placeholders(sys.argv[1])
+    failed = False
+    for path in sys.argv[1:]:
+        issues = has_leaked_placeholders(path)
+        if issues:
+            failed = True
+            print(f"[FAIL] {path} — {len(issues)} leaked placeholder(s):")
+            for issue in issues:
+                print(f"  {issue}")
+        else:
+            print(f"[PASS] {path}")
 
-    if issues:
-        print(f"[FAIL] Found {len(issues)} leaked placeholder(s):")
-        for issue in issues:
-            print(f"  {issue}")
-        sys.exit(1)
-    else:
-        print("[PASS] No leaked placeholders detected.")
-        sys.exit(0)
+    sys.exit(1 if failed else 0)

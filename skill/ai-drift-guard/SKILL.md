@@ -1,17 +1,38 @@
 ---
 name: ai-drift-guard
-description: "AI-Drift-Guard / AI跑偏守卫：10-signal self-check protocol that catches AI drift before execution. Prevents over-engineering, format-creep, scope-bloat, and unverified fixes. 安装后AI每次动手前先自检。\n⚠️ 能力边界：本技能约束AI输出文本，不干预模型推理/客户端UI/系统进程层。详见 Limitations 节。"
-version: 1.3.0-ext
+description: "AI-Drift-Guard / AI跑偏守卫：分层自检协议。Tier A 信号（S5/S4）给出可被宿主强制执行的规范契约；Tier B 信号（S1/S2/S3/S6/S7/S8/S9/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。"
+version: 1.4.0
 agent_created: true
 creator: Q博士
-tags: [guard, anti-drift, over-engineering, quality, self-check, bilingual]
-triggers: 
+tags: [guard, anti-drift, over-engineering, quality, self-check, bilingual, platform-neutral]
+triggers:
+  - AI跑偏守卫
+  - drift guard
+  - 检查是否跑偏
+  - 别过度设计
+platform: any
 space_scope: universal
 cross_space_compatible: yes
 distribute_external: yes
 trust_level: auto
 license: MIT
 ---
+
+# AI-Drift-Guard / AI 跑偏守卫
+
+> **平台中立。** 本协议不预设任何 AI 平台、目录结构或钩子名称。
+> 宿主能力由适配器提供，见 [`references/adapters.md`](references/adapters.md)。
+
+## 设计原则：可执行性分层
+
+协议里每一条信号都标了 **Tier**。这不是修辞，而是「谁负责执行」的区分：
+
+| Tier | 含义 | 需要什么 | 本协议信号 |
+|:--|:--|:--|:--|
+| **A** | **可机械判定**，能由宿主在动作发生前**真的拦下** | 宿主提供 dispatch 前钩子（或 pre-commit / CI） | S5、S4 |
+| **B** | 只能作为**提示词**约束模型，无强制力 | 无——写进上下文即可 | S1 S2 S3 S6 S7 S8 S9 S10 |
+
+**不要声称 Tier B 信号被"保证"了。** 它们是提醒，不是中断。把 Tier B 说成机制，是这套协议最容易犯的自我欺骗。
 
 ## Pain Points You Know Too Well / 你一定遇到过的痛点
 
@@ -22,38 +43,127 @@ license: MIT
 | "Do it" → AI asks "Shall I?" | "执行" → 它反问"可以吗？" |
 | "Stop" → AI keeps writing | "停" → 它还在继续输出 |
 
-**EN: Root cause: AI's default tendency is "go maximal". This skill self-checks BEFORE acting.**
-**中：根因：AI的默认倾向是"做重做全"。这个技能在AI动手之前先自检。**
+**EN: Root cause: AI's default tendency is "go maximal". Tier A stops it at the host; Tier B asks the model to stop itself.**
+**中：根因：AI 的默认倾向是"做重做全"。Tier A 由宿主拦下，Tier B 靠模型自觉。**
 
 ## When It Triggers / 触发时机
 
-| EN | 中 |
-|:--|:--|
-| Outputting a multi-step plan or design | 输出多步骤计划或设计方案 |
-| Generating files (HTML, PDF, scripts) | 生成文件（HTML/PDF/脚本） |
-| Batch writes or bulk modifications | 批量写入或大规模修改 |
-| Modifying global config or rule files | 修改全局配置或规则 |
-| Saying "done" after fixing one thing | 修一个问题就说"完成了" |
+| EN | 中 | Tier |
+|:--|:--|:--|
+| Writing a file that may contain unreplaced placeholders | 写出可能含未替换占位符的文件 | A（S5） |
+| About to modify a global rule/composition file | 即将修改全局规则/编排文件 | A（S4） |
+| Outputting a multi-step plan or design | 输出多步骤计划或设计方案 | B |
+| Generating files (HTML, PDF, scripts) | 生成文件（HTML/PDF/脚本） | B |
+| Batch writes or bulk modifications | 批量写入或大规模修改 | B |
+| Saying "done" after fixing one thing | 修一个问题就说"完成了" | B |
 
-## The 10 Signals / 10条偏航信号
+## Tier A — 规范契约（Normative）
 
-> EN: Scan before any write/output action. Hit → Block → Correct → Retry.
-> 中：每次写操作/输出前扫描。命中 → 阻断 → 修正 → 重试。
+以下内容是**规范**，不是建议。任何语言的实现都应当能逐条对上，从而在不同宿主间得到相同判定。
 
-| # | Trigger Pattern (EN) | 触发模式（中） | Response / 命中后果 |
-|:--|:--|:--|:--|
-| **S1** | User said "analyze/look/check" but did NOT ask for a file | 用户说"分析/看看"但没说要文件 | ⛔ Downgrade to text. / 降级为文字摘要 |
-| **S2** | User said "do it" but AI asks "shall I?" | 用户说"执行"但AI反问"可以吗？" | ⛔ Just execute. / 直接执行 |
-| **S3** | Scripts/batch writes about to execute | 脚本/批量写入即将执行 | ⛔ Verify model matches task. / 检查模型匹配 |
-| **S4** | Modified a global rule file | 修改了全局规则文件 | ⛔ Complete association scan first. / 先做关联检查。🆕 Scan the codebase for every place that uses or depends on the file you changed, and update them together. |
-| **S5** | Generating HTML with JavaScript/Chart.js | 生成含JS的HTML文件 | ⛔ Validate no template placeholder leaks. / 校验占位符 |
-| **S6** | Fixed one issue, about to say "done" | 修了一个问题就说"完成了" | ⛔ Sweep for similar issues first. / 先扫同类问题。🆕 Search the codebase for other occurrences of the same bug pattern and fix them together before declaring done. |
-| **S7** | User confirmed briefly ("yes"/"ok") | 用户简短确认("对""嗯") | ⚠️ Confirm intent, then act. / 确认意图后再动 |
-| **S8** | Multi-step task, skipping intermediate steps | 多步骤中途跳过中间步骤 | ⛔ Return to first incomplete step. / 回到未完成步骤 |
-| **S9** | User said "stop" / "停" mid-reply | 用户喊"停"，AI正在长篇回复 | ⛔ **HARD STOP. Zero output.** End your response with NO characters — not even punctuation, not an emoji, not "OK stopping", not "已停止", not "got it". The next assistant turn after user says "stop"/"停" must be an empty response. / **硬截断。零输出。** 你的回复以 0 字符结束——没有标点，没有 emoji，没有"好的""已停""got it"。用户说"停"之后，下一轮 assistant 的回复必须是空的。 |
-| **S9-INPUT** | User's FIRST message of a turn is "stop" / "停" / "shut up" | 用户本轮第一条消息就是"停" | ⛔ **Do NOT start generating.** Output nothing. Do not analyze, do not apologize, do not explain. The user said stop before you even started — respect that. / **不要开始生成。** 不输出任何内容。不要分析，不要道歉，不要解释。用户在你说任何话之前就说了停——尊重这一点。 |
-| **S10** | Plan ≥3 phases OR ≥2 new files OR ≥5 steps | 方案≥3阶段/≥2文件/≥5步骤 | ⚠️ Output lightweight version first. / 先出轻量版。🆕 Deliver a minimal viable slice in this turn; iterate only after the user confirms. |
-| **S11** | Fixed/patched a system file but NOT run `your project's sync-validation routine` within 5min | 修复了系统文件但5分钟内未运行同步校验 | ⛔ Abort. Run `your project's sync-validation routine` first. / 先运行同步校验再继续 |
+### A.1 决策语义
+
+宿主必须在"工具调用 dispatch 之前"提供拦截点：
+
+```
+hook(input) -> decision
+
+input  := { tool: string, arguments: object }
+decision := { kind: 'allow' }
+          | { kind: 'deny', reason: string }
+          | { kind: 'ask',  reason?: string }
+```
+
+- 不支持交互审批的宿主，应当把 `ask` 视为 `deny`（fail closed）。
+- 判定必须是**纯函数**，除下述 ledger 外不依赖外部状态。
+
+### A.2 会话扫描台账（scan ledger）
+
+- 每个会话维护一个集合：**已记录过关联扫描的 basename**。
+- **不跨会话持久化**——它是"这一轮有没有先看过依赖"的记录，不是长期知识。
+- 记录动作发生在 A.3 第 1 步。
+
+### A.3 判定顺序
+
+对每次 `write` / `edit` / 搜索类调用：
+
+1. 若 `tool` 是搜索类（如 grep / glob / search）：
+   用 `arguments.pattern` 与 `arguments.path` 拼出**探测串**，
+   使得转义正则与原生路径都能命中——实现应当**先去掉反斜杠**再匹配
+   （否则 `cordis\.patch\.yml` 这类规范写法的转义正则将无法命中，这是本协议 v1.3 的真实缺陷）。
+   探测串中出现 `globalRuleMatchers` 任一条目的 basename → 记入 ledger；返回 `allow`。
+2. 若 `tool` 不属于 `write` / `edit`：返回 `allow`。
+3. **S5**：路径扩展名为 `.html` / `.htm` 时执行 A.4；有发现 → `deny`。
+4. **S4**：路径匹配 `globalRuleMatchers` 且其 basename 不在 ledger → `deny`。
+5. 否则 `allow`。
+
+### A.4 S5 检测（规范性算法）
+
+1. 仅对扩展名（小写）为 `.html` / `.htm` 的路径生效。
+2. 逐行扫描内容。占位符模式：`{` + Unicode 字母/数字/下划线 + `}`，即 `/\{[\p{L}\p{N}_]+\}/gu`。
+   **必须 Unicode 感知**，否则 `{标题}` 这类中文占位符会漏检。
+3. 整行跳过，当且仅当该行 `trim()` 后满足以下任一条：
+   - 匹配 `^\s*\{\d+\}\s*$` —— CSS 字重简写，如 `{3}`
+   - 匹配 `^[^:]*:\s*\{[^}]+\}$` —— CSS 属性值
+   - 含 JS 注释标记。**检测注释前必须先把 URL 的 `://` 中和掉**
+     （例如替换为 `:\u002F\u002F`），否则任何含 `https://` 的行都会被整行跳过——
+     这是原实现（v1.3 及以前）的真实盲区：`<script src="https://…">{placeholder}</script>` 不会被发现。
+4. 逐个出现处跳过，当且仅当：标识符在 `IGNORE_KEYWORDS` 中，或全为数字。
+5. 每行**最多报告一处**，格式固定为：
+   `line <行号>: <token> in: <trimmed 行内容，截断到 100 字符>`
+6. 发现列表非空 → `deny`，`reason` 中列出最多 5 条发现，并说明"修好内容后才能重试"。
+
+`IGNORE_KEYWORDS` 与 `IGNORE_PATTERNS` 的权威副本见
+[`references/drift-guard-core.mjs`](references/drift-guard-core.mjs)（与
+`references/template_validator.py` 必须保持一致）。
+
+> 为什么用"忽略关键字"而不是更聪明的解析：**门禁的误报比漏报更贵**。
+> 一份会拦住正常 Chart.js 配置的守卫，会在第二天被关掉。
+
+### A.5 宿主必须提供（适配器接口）
+
+| 名称 | 含义 | 本协议是否预设 |
+|:--|:--|:--|
+| `hookPoint` | dispatch 前的拦截能力 | ❌ 不预设。宿主自定 |
+| `globalRuleMatchers` | **该平台自己的**"全局规则/编排文件"清单 | ❌ 不预设。**协议不含任何平台路径** |
+| `logSink` | 每条决策的落点 | ❌ 不预设。可为文件 / stdout / CI 日志 |
+
+参考实现把这三项收敛成一个 `createGuard(config)`，见 `drift-guard-core.mjs`。
+
+### A.6 记录格式
+
+每次 `deny` 追加一行 JSON（JSONL）：
+
+```json
+{"seq":1,"at":1789621858955,"signal":"S5","tool":"write",
+ "target":"…/report.html","reason":"leaked template placeholders",
+ "detail":["line 5: {page_title} in: <title>{page_title}</title>"]}
+```
+
+**这条记录是"每次自阻断都记日志"从声明变成事实的唯一方式。**
+没有落点的宿主，应当在 `deny` 的 reason 里显式回报"日志不可用"，而不是静默吞掉。
+
+## Tier B — 提示清单（无强制力）
+
+| # | 触发 | 正确反应 |
+|:--|:--|:--|
+| **S1** | 用户说"分析/看看"但没说要文件 | 降级为文字摘要 |
+| **S2** | 用户说"执行"但 AI 反问"可以吗？" | 直接执行 |
+| **S3** | 脚本/批量写入即将执行 | 先检查模型与任务是否匹配 |
+| **S6** | 修了一个问题就要说"完成了" | 先搜同类问题，一并修 |
+| **S7** | 用户简短确认（"对"/"嗯"） | 确认意图后再动 |
+| **S8** | 多步骤任务中途跳过中间步骤 | 回到第一个未完成步骤 |
+| **S9** | 用户说"停" / "stop" | **硬截断**：下一轮回复以 0 字符结束——没有标点、没有 emoji、没有"好的" |
+| **S9-INPUT** | 用户本轮第一条消息就是"停" | 不要开始生成。不分析、不道歉、不解释 |
+| **S10** | 方案 ≥3 阶段 / ≥2 个新文件 / ≥5 步 | 本回合先交付最小可用切片 |
+
+**S9 的诚实说明**：它要求的是"模型在你说话的瞬间停住"。这**属于模型推理层或客户端层**，
+提示词做不到。把它列为 Tier B 而不是假装它是机制，是本协议 v1.4 的修正。
+
+**S11（已移除）**：旧版有一条 S11 引用 `your project's sync-validation routine`——
+这是一个未绑定的占位符，在公开库中对任何读者都是死文本。它属于某个具体项目的私有流程，
+不符合本库"只放可公开迁移资产"的边界，故移除。若你需要等价能力，请把它实现为
+你自己宿主的 `globalRuleMatchers` 条目（Tier A 机制，配置在宿主侧）。
 
 ## Engineering vs. Gradualism / 工程化 vs 渐进式
 
@@ -69,58 +179,67 @@ license: MIT
 | User said "build a system" | 用户说"建一个系统" | ✅ Full design / 全量设计 |
 | User said "optimize/fix/clean" | 用户说"优化/修复/清理" | ⚠️ Start minimal / 先最小可行 |
 
-## Installation / 安装
+## 安装 / Installation
 
-1. Download `ai-drift-guard.zip`（本目录内 / in this folder：`skill/ai-drift-guard/ai-drift-guard.zip`）·或直接取该子目录全部文件 / or take all files in this subfolder
-2. WorkBuddy → Experts → Skills → Import / 专家 → 技能 → 导入
-3. Done. AI auto-loads the protocol / 完成，AI自动加载
+本技能**不依赖任何特定平台**。三条路径按宿主能力递增：
 
-**Reference script** / 参考脚本：`references/template_validator.py` — S5 implementation for catching leaked Python `{}` placeholders in generated HTML.
+**1）只有"技能目录"的宿主** —— 把本目录整体拷进去即可，此时只有 Tier B 生效。
+不要因为技能装上了就以为 Tier A 也在运行。
+
+**2）支持工具钩子的宿主** —— 额外启用 Tier A。契约见
+[`references/adapters.md`](references/adapters.md)。该文件同时给出一个 DSH 适配器实例
+（**只是一个实例，不是要求**）以及为自己的宿主写适配器的检查清单。
+
+**3）不需要任何 AI 平台** —— S5 可以直接当作**提交前检查 / CI 步骤**运行：
+
+```bash
+node references/drift-guard-core.mjs check path/to/page.html
+# 退出码 0 = 干净；1 = 有泄漏占位符
+```
+
+这是最中立的强制方式：它约束的是**产物**，而不是模型。
+
+## 可验证性 / Verifiability
+
+旧版写着"过度工程化方案：趋近零"。那是一个**不可证伪**的声明——没有度量、没有基线、没有记录。
+
+v1.4 起，把效果声明换成可核对的量：
+
+| 声明 | 怎么核对 |
+|:--|:--|
+| S5/S4 拦截生效 | 造一个应交由 A.4 判定的文件，看宿主是否 `deny`，且**该文件未落盘** |
+| 无误报 | 造一个含 `{data}` / `{labels: [...]}` 的合法 HTML，确认被放行 |
+| 每次自阻断有记录 | 打开 `logSink`，逐条比对 |
+
+没做过这三项核对的宿主，不应声称已启用 Tier A。
 
 ## What This Skill CAN and CANNOT Control / 能力边界
 
-The user's test of S9 ("stop" / "停") revealed an important boundary. This section documents it explicitly.
-
-| Layer | What ai-drift-guard CAN do | What ai-drift-guard CANNOT do |
+| Layer | Tier A CAN | 本协议 CANNOT |
 |:--|:--|:--|
-| Output text | ✅ Constrain what text the AI generates after inference completes | ❌ Cancel thinking/reasoning phase (deep thinking) — that's a model-level interrupt |
-| Tool calls | ✅ Define rules for tool selection and execution | ❌ Stop a tool call that already started executing — that's a client-level cancel |
-| Client UI | ✅ Document expected behavior | ❌ Override WorkBuddy / client's "stop" button — that's a platform-level feature |
-| Version policy | ✅ Batch fixes before release | ❌ Push every intermediate edit — that's a governance choice |
+| 工具调用 | ✅ 在 dispatch 前拒绝 | ❌ 中断已经开始执行的调用（客户端层） |
+| 输出文本 | ✅ — | ❌ 取消模型推理/深度思考（模型层） |
+| 客户端 UI | ✅ — | ❌ 覆盖宿主的"停止"按钮（平台层） |
+| 落盘产物 | ✅ 经 pre-commit / CI 拦截 | ❌ 阻止绕过钩子的写入 |
 
-**Key boundary**: this skill operates at the **prompt-instruction layer**. It defines rules the AI should follow. It does NOT operate at the model-inference layer, the client-UI layer, or the system-process layer. Skills are instructions, not system hooks.
+**关键边界**：Tier A 只在宿主**提供了钩子**时才成立；Tier B 永远只是提示词。
+没有任何一层能"保证"模型不发散——能保证的只有"发散产物进不了主干"。
 
-**关键边界**：本技能运行在 **提示指令层**。它定义 AI 应当遵循的规则，但不干预模型推理层、客户端界面层、或系统进程层的操作。技能是指令，不是系统钩子。
-
-## Release Governance / 发版治理
-
-This skill follows a **batched release** model:
-
-- **Internal version** (source of truth / 真相源): updated at any time — this is the working copy
-- **Portable build** (public GitHub / 公开版): updated **at most weekly**, typically on Monday via the automated pipeline
-- **Emergency fixes**: allowed only for P0 security issues (token leaks, credential exposure)
-
-The `--build` command enforces a minimum 1-hour cooldown since last push. If you need to override, use `--force`.
-
-## Expected Impact / 预期效果
-
-- Over-engineered plans: near zero / 过度工程化方案：趋近零
-- Scope-creep and format-creep caught before execution / 范围蔓延和格式蔓延在动手前被阻断
-- Every self-block logged for retrospective / 每次自阻断记录到日志
-
-## 🆕 迭代记录
+## 迭代记录
 
 | 版本 | 日期 | 变更 |
 |:--|:--|:--|
 | v1.0 | 2026-06 | 初始发布：10 条偏航信号 + 工程化 vs 渐进式 |
 | v1.1 | 2026-06 | 前端元数据修正 |
-| v1.2 | 2026-07-04 | S4/S6/S10 信号增强；新增 S11 sync-validation signal；新增 related-project checklist |
-| 🆕 v1.3 | 2026-07-12 | **S9 修复**：硬截断零输出 + 新增 S9-INPUT（输入层停信号，AI 还没开始生成时即拦截）；**新增 Limitations 节**：明确能力边界；**新增 Release Governance 节**：batched release + 1h 冷却门禁；**Export Audit**：5 项出口审计脚本化 + 元数据自洽审计；**描述修正**：删除不准确承诺；**自我审视**：用技能审视自身（7/7 信号检查） |
-
----
+| v1.2 | 2026-07-04 | S4/S6/S10 增强；新增 S11；新增 related-project checklist |
+| v1.3 | 2026-07-12 | S9 硬截断 + S9-INPUT；新增 Limitations；新增 Release Governance；Export Audit 脚本化 |
+| **v1.4** | **2026-09-17** | **平台中立化重构**：信号按可执行性分 Tier A/B；新增 Tier A 规范契约（决策语义/scan ledger/判定顺序/S5 算法/适配器接口/记录格式）；**修复 S5 的 `://` 注释盲区**；**修复转义正则无法解除 S4 的缺陷**；移除未绑定的 S11；把不可证伪的效果声明换成可核对项；`triggers` 补全；安装说明去平台绑定 |
 
 ## Credits / 致谢
 
-Created by **Q博士** / **Q博士**创作。
-基于40+天高频AI协作中观察和系统化的真实跑偏模式。
+Created by **Q博士** / **Q博士创作**。
+基于 40+ 天高频 AI 协作中观察和系统化的真实跑偏模式。
+v1.4 的分层契约与 S5 盲区修复，来自一次真实的跨平台移植
+（把本协议接入一个基于 Cordis 的宿主时的实测结果）。
+
 Companion to [Andrej Karpathy's Four Rules](https://github.com/forrestchang/andrej-karpathy-skills).
