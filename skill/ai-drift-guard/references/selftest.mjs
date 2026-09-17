@@ -8,7 +8,7 @@
  *     退出码 0 = 全绿
  */
 
-import { detectS5, evaluate, createLedger, CORE_VERSION } from './drift-guard-core.mjs'
+import { detectS5, evaluate, createLedger, evaluateUserTurn, isStopMessage, CORE_VERSION } from './drift-guard-core.mjs'
 
 let failed = 0
 
@@ -89,6 +89,22 @@ check('S4 用 pathIncludes 限定 package.json', evaluate({ name: 'write', argum
 check('S4 抓到 /profiles/ 下的 package.json', evaluate({ name: 'write', arguments: { file_path: 'C:/home/.dsh/profiles/desktop/package.json', content: 'x' } }, ledger, { globalRuleMatchers: matchers }).kind === 'deny')
 
 check('非 write/edit/搜索类调用一律放行', evaluate({ name: 'pwsh', arguments: {} }, ledger, { globalRuleMatchers: matchers }).kind === 'allow')
+
+/* ---- S9: 说停就停（缝2 pre-step）-------------------------------- *
+ * 精度是这条规则的全部：精确匹配 → 误报率≈0 → 才敢做硬拦截。      */
+check('S9 命中「停」', isStopMessage('停') === true)
+check('S9 命中「stop」（忽略尾标点与大小写）', isStopMessage('Stop!') === true)
+check('S9 命中带空白的「 停止 」', isStopMessage('  停止  ') === true)
+
+check('S9 不误伤「停车位怎么规划」', isStopMessage('停车位怎么规划') === false)
+check('S9 不误伤「这个方案先别停」', isStopMessage('这个方案先别停') === false)
+check('S9 不误伤「stopping the loop early」', isStopMessage('stopping the loop early') === false)
+check('S9 不误伤空输入', isStopMessage('') === false && isStopMessage(undefined) === false)
+
+check('S9 判定为 reject', evaluateUserTurn({ text: '停' }).kind === 'reject')
+check('S9 reject 带 signal', evaluateUserTurn({ text: 'stop' }).signal === 'S9')
+check('S9 非停止词判为 allow', evaluateUserTurn({ text: '继续' }).kind === 'allow')
+check('S9 缺字段不抛异常', evaluateUserTurn({}).kind === 'allow' && evaluateUserTurn(null).kind === 'allow')
 
 console.log('')
 if (failed === 0) {

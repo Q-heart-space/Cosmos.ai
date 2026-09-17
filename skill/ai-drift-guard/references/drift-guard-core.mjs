@@ -127,6 +127,53 @@ export function scanProbe(pattern, path) {
   return (left + ' ' + right).replace(/\\/g, '')
 }
 
+/* ------------------------------------------------------------------ *
+ * S9 —— 说停就停（缝2 pre-step 里唯一可判定的部分）
+ * ------------------------------------------------------------------ */
+
+/**
+ * 停止词表。**精确匹配**是这条规则误报率≈0 的全部原因。
+ * 不要往里加模糊匹配或语义判断：宁可漏，不可误伤——
+ * 一个会拦住正常说话的守卫，第二天就会被关掉。
+ */
+export const STOP_TOKENS = Object.freeze([
+  '停', '停止', '打住', '别说了', '停下',
+  'stop', 'stop it', 'shut up', 'halt',
+])
+
+/** 归一化：去首尾空白、折小写、去尾部标点。不改动正文。 */
+export function normalizeStopCandidate(text) {
+  if (typeof text !== 'string') return ''
+  return text.trim().toLowerCase().replace(/[.!?。！？~\s]+$/u, '')
+}
+
+/** 用户是否在喊停。只做精确匹配。 */
+export function isStopMessage(text) {
+  return STOP_TOKENS.includes(normalizeStopCandidate(text))
+}
+
+/**
+ * 缝2（pre-step）判定：这一步该不该被拒绝。
+ * 宿主负责把最后一条用户消息的**纯文本**取出来传进来——核心不认识任何
+ * 平台的 Message 结构，这是平台中立的一部分。
+ *
+ * @param {{ text?: string }} input
+ * @returns {{ kind: 'allow' } | { kind: 'reject', signal: 'S9', reason: string }}
+ */
+export function evaluateUserTurn(input) {
+  const text = input !== null && typeof input === 'object' && typeof input.text === 'string'
+    ? input.text
+    : ''
+  if (isStopMessage(text)) {
+    return {
+      kind: 'reject',
+      signal: 'S9',
+      reason: 'AI-Drift-Guard S9: the user asked to stop. Reject this step so the model generates nothing — not a summary, not an acknowledgement, not an emoji.',
+    }
+  }
+  return { kind: 'allow' }
+}
+
 /** 新建一个会话级扫描台账（SKILL.md A.2）。 */
 export function createLedger() {
   return new Set()

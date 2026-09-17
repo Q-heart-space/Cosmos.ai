@@ -6,6 +6,35 @@ All notable changes to AI-Drift-Guard will be documented in this file.
 
 ---
 
+## [1.5.0] — 2026-09-17
+
+分层模型修正 + S9 升级。触发原因：把 v1.4 的 S9 真正接到某个宿主的 **pre-step** 上跑通了。
+
+### Changed
+- **分层由两层改为三层**：A 硬拦截 / **B 确定性注入** / C 纯提示。
+  旧版把「能不能强制」和「能不能保证模型看见」混为一谈——它们是两件事。
+- 新增判据：**触发谓词必须是该接缝可观测量的全函数**。这既是 A 的准入门槛，
+  也解释了为什么某些信号无论怎么写都到不了 A。
+
+### Added
+- `references/first-principles.md` —— 从 agent loop 的接缝推导分层，
+  含每个信号的可达上限表、成本模型（误报的代价高于漏报）、以及守卫的比较优势
+  （**脚本化该做机器算得准、模型记不住的事**）。
+- `references/prior-art.md` —— 先例调查。坦白列出同类项目
+  （Claude Code hooks、ai-coding-rules-scaffold、taskmaster 等），避免重复发明，并给出选型建议。
+- `references/adoption.md` —— 采用指南。开门就说「你可能不需要本技能」：
+  平台原生的五件事覆盖约 80% 的意图。并给出「什么时候才值得上」的三条判据。
+- `selftest.mjs` 新增 11 项 S9 断言（共 24 项），含**误报回归**：
+  `停车位怎么规划`、`stopping the loop early` 都必须**不**被命中。
+
+### Fixed
+- **S9 升级为 Tier A**（规格见 A.7）。旧版写「提示词做不到」——**只对了一半**：
+  写在提示词里确实做不到，但缝2 的 `reject` 做得到。核心新增
+  `STOP_TOKENS` / `isStopMessage` / `evaluateUserTurn`。
+- 移除 S9-INPUT 条目：它与 S9 在缝2 上是同一个判定，拆成两条只是历史包袱。
+
+---
+
 ## [1.4.0] — 2026-09-17
 
 平台中立化重构。驱动它的是**一次真实的跨平台移植**：把本协议接入一个基于 Cordis 的宿主
