@@ -1,0 +1,13 @@
+# 跨平台库：文本文件在仓库内一律 LF。
+#
+# 不加这条时，Windows 检出会把文本写成 CRLF，于是：
+#   - references/adapters.md 里那个 #!/bin/sh 的 pre-commit 钩子会因 \r 报错
+#   - 源码与发行 zip 之间出现无意义的行尾差异
+* text=auto eol=lf
+
+# 归档与图片是二进制，禁止任何行尾转换
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
