@@ -1,0 +1,3043 @@
+{
+  "industry": "ipc",
+  "industry_zh": "IPC（工业计算机·Industrial PC）",
+  "version": "1.2.0",
+  "last_updated": "2026-07-02-upstream-downstream-expansion",
+  "source_pyramid": {
+    "L1": {
+      "weight": 3,
+      "description": "一手源：厂商官方/行业标准组织/政府机构",
+      "entries": [
+        {
+          "id": "advantech",
+          "name_zh": "研华",
+          "name_en": "Advantech",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "advantech.com",
+          "homepage": "https://www.advantech.com",
+          "core_expos": [
+            "embedded-world",
+            "computex"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "advantech.com",
+            "advantech.com.cn",
+            "advantech.com.tw"
+          ],
+          "social_media": {
+            "wechat": "研华智能地球",
+            "bilibili": "研华Advantech",
+            "douyin": "研华Advantech",
+            "zhihu": "研华智能地球"
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Advantech",
+          "content_type": "official_announcement",
+          "aliases": [
+            "研华",
+            "Advantech Co., Ltd.",
+            "研华科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "beckhoff",
+          "name_zh": "倍福",
+          "name_en": "Beckhoff",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "beckhoff.com",
+          "homepage": "https://www.beckhoff.com",
+          "core_expos": [
+            "embedded-world",
+            "hannover-messe"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "beckhoff.com",
+            "beckhoff.com.cn"
+          ],
+          "social_media": {
+            "wechat": "德国倍福自动化",
+            "bilibili": "倍福Beckhoff",
+            "douyin": "",
+            "zhihu": "倍福Beckhoff"
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Beckhoff",
+          "content_type": "official_announcement",
+          "aliases": [
+            "倍福",
+            "Beckhoff Automation",
+            "倍福自动化"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "siemens",
+          "name_zh": "西门子",
+          "name_en": "Siemens",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "siemens.com",
+          "homepage": "https://www.siemens.com",
+          "core_expos": [
+            "hannover-messe",
+            "sps"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "siemens.com",
+            "siemens.com.cn"
+          ],
+          "social_media": {
+            "wechat": "西门子中国",
+            "douyin": "西门子",
+            "zhihu": ""
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Siemens",
+          "content_type": "official_announcement",
+          "aliases": [
+            "西门子",
+            "Siemens AG",
+            "西门子工业"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "adlink",
+          "name_zh": "凌华",
+          "name_en": "ADLINK",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "adlinktech.com",
+          "homepage": "https://www.adlinktech.com",
+          "core_expos": [
+            "embedded-world",
+            "computex"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "adlinktech.com",
+            "adlinktech.com.cn"
+          ],
+          "social_media": {
+            "wechat": "凌华科技",
+            "zhihu": ""
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "ADLINK",
+          "content_type": "official_announcement",
+          "aliases": [
+            "凌华",
+            "ADLINK Technology",
+            "凌华科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "dfi",
+          "name_zh": "友通",
+          "name_en": "DFI",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "dfi.com",
+          "homepage": "https://www.dfi.com",
+          "core_expos": [
+            "embedded-world",
+            "automate"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "dfi.com"
+          ],
+          "social_media": {
+            "wechat": "友通资讯DFI"
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "DFI",
+          "content_type": "official_announcement",
+          "aliases": [
+            "友通",
+            "DFI Inc.",
+            "友通资讯"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "aaeon",
+          "name_zh": "研扬",
+          "name_en": "AAEON",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "aaeon.com",
+          "homepage": "https://www.aaeon.com",
+          "core_expos": [
+            "embedded-world",
+            "computex"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "aaeon.com"
+          ],
+          "social_media": {
+            "wechat": "研扬科技AAEON"
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "ASUSTeK Computer",
+          "content_type": "official_announcement",
+          "aliases": [
+            "研扬",
+            "AAEON Technology",
+            "研扬科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "kontron",
+          "name_zh": "控创",
+          "name_en": "Kontron",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "kontron.com",
+          "homepage": "https://www.kontron.com",
+          "core_expos": [
+            "embedded-world"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "kontron.com"
+          ],
+          "social_media": {
+            "wechat": ""
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Kontron",
+          "content_type": "official_announcement",
+          "aliases": [
+            "控创",
+            "Kontron AG",
+            "控创科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "congatec",
+          "name_zh": "康佳特",
+          "name_en": "congatec",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "congatec.com",
+          "homepage": "https://www.congatec.com",
+          "core_expos": [
+            "embedded-world"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "congatec.com"
+          ],
+          "social_media": {
+            "wechat": "康佳特科技"
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "congatec",
+          "content_type": "official_announcement",
+          "aliases": [
+            "康佳特",
+            "congatec GmbH",
+            "康佳特科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "vecow",
+          "name_zh": "超恩",
+          "name_en": "Vecow",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "vecow.com",
+          "homepage": "https://www.vecow.com",
+          "core_expos": [
+            "embedded-world"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "vecow.com"
+          ],
+          "social_media": {
+            "wechat": ""
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Vecow",
+          "content_type": "official_announcement",
+          "aliases": [
+            "超恩",
+            "Vecow Co., Ltd.",
+            "超恩科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "neousys",
+          "name_zh": "宸曜",
+          "name_en": "Neousys",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "neousys-tech.com",
+          "homepage": "https://www.neousys-tech.com",
+          "core_expos": [
+            "embedded-world"
+          ],
+          "cross_verify_required": false,
+          "domains": [
+            "neousys-tech.com"
+          ],
+          "social_media": {
+            "wechat": ""
+          },
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Neousys",
+          "content_type": "official_announcement",
+          "aliases": [
+            "宸曜",
+            "Neousys Technology",
+            "宸曜科技"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "isa",
+          "name_zh": "国际自动化学会",
+          "name_en": "ISA",
+          "type": "standards_org",
+          "domain": "isa.org",
+          "homepage": "https://www.isa.org",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "ISA",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际自动化学会",
+            "International Society of Automation"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "opcf",
+          "name_zh": "OPC基金会",
+          "name_en": "OPC Foundation",
+          "type": "standards_org",
+          "domain": "opcfoundation.org",
+          "homepage": "https://opcfoundation.org",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "OPC Foundation",
+          "content_type": "standards_document",
+          "aliases": [
+            "OPC基金会",
+            "OPC Foundation",
+            "OPC UA Foundation"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "picmg",
+          "name_zh": "PICMG",
+          "name_en": "PICMG",
+          "type": "standards_org",
+          "domain": "picmg.org",
+          "homepage": "https://www.picmg.org",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "PICMG",
+          "content_type": "standards_document",
+          "aliases": [
+            "PICMG",
+            "PCI Industrial Computer Manufacturers Group"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "ethercat",
+          "name_zh": "EtherCAT技术协会",
+          "name_en": "EtherCAT Technology Group",
+          "type": "standards_org",
+          "domain": "ethercat.org",
+          "homepage": "https://www.ethercat.org",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Beckhoff Automation",
+          "content_type": "standards_document",
+          "aliases": [
+            "EtherCAT技术协会",
+            "ETG",
+            "EtherCAT Technology Group"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "miit",
+          "name_zh": "工业和信息化部",
+          "name_en": "MIIT",
+          "type": "government",
+          "domain": "miit.gov.cn",
+          "homepage": "https://www.miit.gov.cn",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "MIIT",
+          "content_type": "policy_document",
+          "aliases": [
+            "工业和信息化部",
+            "工信部"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": false,
+            "api_available": false,
+            "rate_limit": "unknown",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "semi",
+          "name_zh": "国际半导体产业协会",
+          "name_en": "SEMI",
+          "type": "standards_org",
+          "domain": "semi.org",
+          "homepage": "https://www.semi.org",
+          "cross_verify_required": false,
+          "note": "全球半导体设备市场数据+认证标准",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "SEMI",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际半导体产业协会",
+            "SEMI"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        }
+      ]
+    },
+    "L2": {
+      "weight": 2.5,
+      "description": "准官方：行业协会/权威展会/技术联盟",
+      "entries": [
+        {
+          "id": "embedded-world",
+          "name_zh": "德国嵌入式工业展",
+          "name_en": "embedded world",
+          "type": "exhibition",
+          "domain": "embedded-world.de",
+          "homepage": "https://www.embedded-world.de",
+          "priority": "P0",
+          "month": 3,
+          "region": "DE",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "embedded world",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "德国嵌入式工业展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "hannover-messe",
+          "name_zh": "汉诺威工业展",
+          "name_en": "Hannover Messe",
+          "type": "exhibition",
+          "domain": "hannovermesse.de",
+          "homepage": "https://www.hannovermesse.de",
+          "priority": "P1",
+          "month": 4,
+          "region": "DE",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Hannover Messe",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "汉诺威工业展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "ciif",
+          "name_zh": "上海工博会",
+          "name_en": "CIIF",
+          "type": "exhibition",
+          "domain": "ciif-expo.com",
+          "homepage": "https://www.ciif-expo.com",
+          "priority": "P0",
+          "month": 9,
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "CIIF",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "上海工博会"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "automate",
+          "name_zh": "北美工控展",
+          "name_en": "Automate",
+          "type": "exhibition",
+          "domain": "automate.org",
+          "homepage": "https://www.automate.org",
+          "priority": "P1",
+          "month": 5,
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Automate",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "北美工控展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "sps",
+          "name_zh": "纽伦堡自动化展",
+          "name_en": "SPS",
+          "type": "exhibition",
+          "domain": "sps-exhibition.com",
+          "homepage": "https://www.sps-exhibition.com",
+          "priority": "P1",
+          "month": 11,
+          "region": "DE",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "SPS",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "纽伦堡自动化展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "gongkong",
+          "name_zh": "中国工控网",
+          "name_en": "Gongkong",
+          "type": "association",
+          "domain": "gongkong.com",
+          "homepage": "https://www.gongkong.com",
+          "priority": "P0",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Gongkong",
+          "content_type": "independent_reporting",
+          "aliases": [
+            "中国工控网"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "zvei",
+          "name_zh": "德国电气电子工业协会",
+          "name_en": "ZVEI",
+          "type": "association",
+          "domain": "zvei.org",
+          "homepage": "https://www.zvei.org",
+          "priority": "P1",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "ZVEI",
+          "content_type": "independent_reporting",
+          "aliases": [
+            "德国电气电子工业协会"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "5g-acia",
+          "name_zh": "5G工业互联联盟",
+          "name_en": "5G-ACIA",
+          "type": "alliance",
+          "domain": "5g-acia.org",
+          "homepage": "https://5g-acia.org",
+          "priority": "P1",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "5G-ACIA",
+          "content_type": "independent_reporting",
+          "aliases": [
+            "5G工业互联联盟"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "intel",
+          "name_zh": "英特尔",
+          "name_en": "Intel",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "intel.com",
+          "domains": [
+            "intel.com",
+            "intel.cn"
+          ],
+          "homepage": "https://www.intel.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：x86嵌入式处理器/Atom/Core/Xeon·IPC核心平台·仅跟踪industrial/embedded/edge产品线",
+          "category": "upstream_chip",
+          "parent_entity": "Intel Corporation",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Intel Corporation",
+            "英特尔"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "NASDAQ:INTC",
+              "全球最大x86处理器厂商"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "nvidia",
+          "name_zh": "英伟达",
+          "name_en": "NVIDIA",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "nvidia.com",
+          "domains": [
+            "nvidia.com",
+            "nvidia.cn"
+          ],
+          "homepage": "https://www.nvidia.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：Jetson边缘AI平台·直接影响AI IPC产品形态·仅跟踪Jetson/embedded/industrial",
+          "category": "upstream_chip",
+          "parent_entity": "NVIDIA Corporation",
+          "content_type": "official_announcement",
+          "aliases": [
+            "NVIDIA Corporation",
+            "英伟达"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "NASDAQ:NVDA",
+              "全球GPU/AI计算龙头"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "amd",
+          "name_zh": "AMD",
+          "name_en": "AMD",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "amd.com",
+          "domains": [
+            "amd.com",
+            "amd.com.cn"
+          ],
+          "homepage": "https://www.amd.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：嵌入式Ryzen/EPYC·IPC第二x86选择·仅跟踪embedded/industrial",
+          "category": "upstream_chip",
+          "parent_entity": "Advanced Micro Devices",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Advanced Micro Devices",
+            "AMD"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "NASDAQ:AMD",
+              "全球第二大x86处理器厂商"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "hygon",
+          "name_zh": "海光信息",
+          "name_en": "Hygon",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "hygon.cn",
+          "domains": [
+            "hygon.cn"
+          ],
+          "homepage": "https://www.hygon.cn",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：国产x86处理器(AMD Zen授权)·信创IPC重要选择",
+          "category": "upstream_chip",
+          "parent_entity": "海光信息技术股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Hygon",
+            "海光信息"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "上交所:688041",
+              "国产x86芯片主力"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "loongson",
+          "name_zh": "龙芯中科",
+          "name_en": "Loongson",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "loongson.cn",
+          "domains": [
+            "loongson.cn"
+          ],
+          "homepage": "https://www.loongson.cn",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：自主架构LoongArch·信创IPC备选路径",
+          "category": "upstream_chip",
+          "parent_entity": "龙芯中科技术股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Loongson Technology",
+            "龙芯中科"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "上交所:688047",
+              "国产自主CPU架构"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "phytium",
+          "name_zh": "飞腾",
+          "name_en": "Phytium",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "phytium.com.cn",
+          "domains": [
+            "phytium.com.cn"
+          ],
+          "homepage": "https://www.phytium.com.cn",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：国产ARM处理器(CEC旗下)·信创IPC主流选择",
+          "category": "upstream_chip",
+          "parent_entity": "中国电子信息产业集团(CEC)",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Phytium",
+            "飞腾处理器"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "CEC旗下",
+              "信创ARM芯片主力"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "zhaoxin",
+          "name_zh": "兆芯",
+          "name_en": "Zhaoxin",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "zhaoxin.com",
+          "domains": [
+            "zhaoxin.com"
+          ],
+          "homepage": "https://www.zhaoxin.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：国产x86处理器(VIA技术授权)·信创IPC备选",
+          "category": "upstream_chip",
+          "parent_entity": "上海兆芯集成电路有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Zhaoxin",
+            "兆芯处理器"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "VIA技术授权",
+              "上海国资背景"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "hisilicon",
+          "name_zh": "华为海思",
+          "name_en": "HiSilicon",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "hisilicon.com",
+          "domains": [
+            "hisilicon.com"
+          ],
+          "homepage": "https://www.hisilicon.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：鲲鹏/昇腾芯片·信创AI IPC生态关键·仅跟踪工业/嵌入式产品线",
+          "category": "upstream_chip",
+          "parent_entity": "华为技术有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "HiSilicon",
+            "海思半导体"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "华为旗下半导体公司",
+              "信创国产芯片核心力量"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "qualcomm",
+          "name_zh": "高通",
+          "name_en": "Qualcomm",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "qualcomm.com",
+          "domains": [
+            "qualcomm.com"
+          ],
+          "homepage": "https://www.qualcomm.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：Snapdragon工业/IoT·ARM架构IPC趋势·信号低频",
+          "category": "upstream_chip",
+          "parent_entity": "Qualcomm Incorporated",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Qualcomm Incorporated",
+            "高通"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "NASDAQ:QCOM",
+              "全球移动芯片龙头"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "horizon",
+          "name_zh": "地平线",
+          "name_en": "Horizon Robotics",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "horizon.ai",
+          "domains": [
+            "horizon.ai"
+          ],
+          "homepage": "https://www.horizon.ai",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "上游：边缘AI芯片(征程/旭日)·AI IPC控制器赛道·信号低频",
+          "category": "upstream_chip",
+          "parent_entity": "地平线机器人",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Horizon Robotics",
+            "地平线机器人"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "港交所上市公司",
+              "边缘AI芯片"
+            ],
+            "notes": "IPC v1.2 upstream chip 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "inovance",
+          "name_zh": "汇川技术",
+          "name_en": "Inovance",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "inovance.com",
+          "domains": [
+            "inovance.com"
+          ],
+          "homepage": "https://www.inovance.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：国产运动控制龙头·IPC+伺服配套·仅跟踪IPC/工控机/控制器关联动态",
+          "category": "downstream_app",
+          "parent_entity": "汇川技术股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Inovance Technology",
+            "汇川技术"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "深交所:300124",
+              "国产工控自动化龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "keyence",
+          "name_zh": "基恩士",
+          "name_en": "Keyence",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "keyence.com",
+          "domains": [
+            "keyence.com",
+            "keyence.com.cn"
+          ],
+          "homepage": "https://www.keyence.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：机器视觉/检测全球龙头·视觉系统需IPC/嵌入式控制器·仅跟踪IPC/工控机/控制器关联动态",
+          "category": "downstream_app",
+          "parent_entity": "Keyence Corporation",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Keyence Corporation",
+            "基恩士"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "东证:6861",
+              "全球传感器/视觉检测龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "JP"
+          }
+        },
+        {
+          "id": "cognex",
+          "name_zh": "康耐视",
+          "name_en": "Cognex",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "cognex.com",
+          "domains": [
+            "cognex.com"
+          ],
+          "homepage": "https://www.cognex.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：机器视觉/智能相机龙头·视觉控制器直接关联IPC边缘市场·仅跟踪vision controller/IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "Cognex Corporation",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Cognex Corporation",
+            "康耐视"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "NASDAQ:CGNX",
+              "全球机器视觉龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "hikrobotics",
+          "name_zh": "海康机器人",
+          "name_en": "Hikrobot",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "hikrobotics.com",
+          "domains": [
+            "hikrobotics.com"
+          ],
+          "homepage": "https://www.hikrobotics.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：国产机器视觉/AGV控制器龙头·IPC用量大·仅跟踪IPC/工控机/控制器关联动态",
+          "category": "downstream_app",
+          "parent_entity": "海康威视",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Hikrobot",
+            "海康机器人"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "海康威视子公司",
+              "国产机器视觉标杆"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "omron",
+          "name_zh": "欧姆龙",
+          "name_en": "Omron",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "omron.com",
+          "domains": [
+            "omron.com",
+            "omron.com.cn"
+          ],
+          "homepage": "https://www.omron.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：PLC/IPC/传感器一体化·工业自动化平台·仅跟踪PLC+IPC控制器关联动态",
+          "category": "downstream_app",
+          "parent_entity": "Omron Corporation",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Omron Corporation",
+            "欧姆龙自动化"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "东证:6645",
+              "全球工业自动化龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "JP"
+          }
+        },
+        {
+          "id": "schneider",
+          "name_zh": "施耐德电气",
+          "name_en": "Schneider Electric",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "se.com",
+          "domains": [
+            "se.com",
+            "schneider-electric.cn"
+          ],
+          "homepage": "https://www.se.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：EcoStruxure工业边缘·需IPC算力·仅跟踪industrial edge/IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "Schneider Electric SE",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Schneider Electric",
+            "施耐德电气"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "Euronext:SU",
+              "全球能源管理/自动化龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "FR"
+          }
+        },
+        {
+          "id": "abb",
+          "name_zh": "ABB",
+          "name_en": "ABB",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "abb.com",
+          "domains": [
+            "abb.com",
+            "abb.com.cn"
+          ],
+          "homepage": "https://www.abb.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：工业机器人控制器=嵌入式IPC·仅跟踪robot controller/IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "ABB Ltd",
+          "content_type": "official_announcement",
+          "aliases": [
+            "ABB Ltd",
+            "ABB机器人"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "SIX:ABBN",
+              "全球工业机器人四大之一"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CH"
+          }
+        },
+        {
+          "id": "kuka",
+          "name_zh": "库卡",
+          "name_en": "KUKA",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "kuka.com",
+          "domains": [
+            "kuka.com"
+          ],
+          "homepage": "https://www.kuka.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：机器人控制器(美的旗下)·仅跟踪robot controller/IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "美的集团",
+          "content_type": "official_announcement",
+          "aliases": [
+            "KUKA AG",
+            "库卡机器人"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "美的集团子公司",
+              "全球工业机器人四大之一"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "estun",
+          "name_zh": "埃斯顿",
+          "name_en": "Estun",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "estun.com",
+          "domains": [
+            "estun.com"
+          ],
+          "homepage": "https://www.estun.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：国产工业机器人龙头·IPC需求大·仅跟踪robot controller/IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "南京埃斯顿自动化股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Estun Automation",
+            "埃斯顿自动化"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "深交所:002747",
+              "国产工业机器人龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "daheng-imaging",
+          "name_zh": "大恒图像",
+          "name_en": "Daheng Imaging",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "daheng-imaging.com",
+          "domains": [
+            "daheng-imaging.com"
+          ],
+          "homepage": "https://www.daheng-imaging.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：视觉组件+嵌入式视觉控制器·仅跟踪嵌入式视觉控制器关联动态",
+          "category": "downstream_app",
+          "parent_entity": "大恒新纪元科技股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Daheng Imaging",
+            "大恒图像"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "大恒科技子公司",
+              "国产工业相机龙头"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "lusterinc",
+          "name_zh": "凌云光",
+          "name_en": "Lusterinc",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "lusterinc.com",
+          "domains": [
+            "lusterinc.com"
+          ],
+          "homepage": "https://www.lusterinc.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "下游：视觉检测系统·需高性能IPC·仅跟踪视觉检测+IPC关联动态",
+          "category": "downstream_app",
+          "parent_entity": "凌云光技术股份有限公司",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Lusterinc",
+            "凌云光技术"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [
+              "深交所:688400",
+              "机器视觉头部企业"
+            ],
+            "notes": "IPC v1.2 downstream app 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        }
+      ]
+    },
+    "L3": {
+      "weight": 2,
+      "description": "可信二手源：行业垂直媒体",
+      "entries": [
+        {
+          "id": "automationworld",
+          "name_zh": "工业自动化世界",
+          "name_en": "Automation World",
+          "type": "media",
+          "domain": "automationworld.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "controleng",
+          "name_zh": "Control Engineering",
+          "name_en": "Control Engineering",
+          "type": "media",
+          "domain": "controleng.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "electronicsweekly",
+          "name_zh": "Electronics Weekly",
+          "name_en": "Electronics Weekly",
+          "type": "media",
+          "domain": "electronicsweekly.com",
+          "region": "UK",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "eetimes",
+          "name_zh": "EE Times",
+          "name_en": "EE Times",
+          "type": "media",
+          "domain": "eetimes.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "embedded-computing",
+          "name_zh": "Embedded Computing Design",
+          "name_en": "Embedded Computing Design",
+          "type": "media",
+          "domain": "embedded-computing.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "eeworld",
+          "name_zh": "电子工程世界",
+          "name_en": "EEWorld",
+          "type": "media",
+          "domain": "eeworld.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "ee-china",
+          "name_zh": "电子工程专辑",
+          "name_en": "EE Times China",
+          "type": "media",
+          "domain": "ee-china.com",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "pconline",
+          "name_zh": "太平洋科技",
+          "name_en": "PConline",
+          "type": "media",
+          "domain": "pconline.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "elecfans",
+          "name_zh": "电子发烧友",
+          "name_en": "Elecfans",
+          "type": "media",
+          "domain": "elecfans.com",
+          "region": "CN",
+          "note": "嵌入式/工控/电子行业深度技术媒体",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "gminsights",
+          "name_zh": "GM Insights",
+          "name_en": "GM Insights",
+          "type": "media",
+          "domain": "gminsights.com",
+          "region": "US",
+          "note": "全球边缘计算/嵌入式市场规模数据",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "huaon",
+          "name_zh": "华经产业研究院",
+          "name_en": "Huaon Research",
+          "type": "media",
+          "domain": "huaon.com",
+          "region": "CN",
+          "note": "中国智能制造/船舶产业研究报告",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        }
+      ]
+    },
+    "L4": {
+      "weight": 1,
+      "description": "补充参考：泛科技媒体/新闻稿聚合",
+      "entries": [
+        {
+          "id": "xinhuanet",
+          "name_zh": "新华社",
+          "name_en": "Xinhua",
+          "type": "media",
+          "domain": "xinhuanet.com",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "cctv",
+          "name_zh": "央视",
+          "name_en": "CCTV",
+          "type": "media",
+          "domain": "cctv.com",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "people",
+          "name_zh": "人民网",
+          "name_en": "People.cn",
+          "type": "media",
+          "domain": "people.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "thepaper",
+          "name_zh": "澎湃新闻",
+          "name_en": "The Paper",
+          "type": "media",
+          "domain": "thepaper.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "prnewswire",
+          "name_zh": "PR Newswire",
+          "name_en": "PR Newswire",
+          "type": "media",
+          "domain": "prnewswire.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "chinadev",
+          "name_zh": "中国发展网",
+          "name_en": "China Development",
+          "type": "media",
+          "domain": "chinadevelopment.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "xinmin",
+          "name_zh": "新民周刊",
+          "name_en": "Xinmin Weekly",
+          "type": "media",
+          "domain": "xinminweekly.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "sekorm",
+          "name_zh": "世强代理",
+          "name_en": "Sekorm",
+          "type": "media",
+          "domain": "sekorm.com",
+          "region": "CN",
+          "note": "电子元器件代理商·产品方案资料",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "zhihu",
+          "name_zh": "知乎",
+          "name_en": "Zhihu",
+          "type": "media",
+          "domain": "zhihu.com",
+          "region": "CN",
+          "note": "行业竞品技术讨论/厂商官方号",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "bilibili",
+          "name_zh": "B站",
+          "name_en": "Bilibili",
+          "type": "media",
+          "domain": "bilibili.com",
+          "region": "CN",
+          "note": "厂商产品演示/技术发布会视频",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "douyin",
+          "name_zh": "抖音",
+          "name_en": "Douyin",
+          "type": "media",
+          "domain": "douyin.com",
+          "region": "CN",
+          "note": "厂商短视频发布(部分可网页搜索)",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "primary": [
+      "advantech",
+      "nodka",
+      "jwi"
+    ],
+    "secondary": [
+      "beckhoff",
+      "siemens",
+      "adlink",
+      "dfi",
+      "aaeon"
+    ],
+    "watch": [
+      "kontron",
+      "congatec",
+      "vecow",
+      "neousys"
+    ],
+    "local_domestic": [
+      {
+        "id": "nodka",
+        "name_zh": "诺达佳",
+        "name_en": "NODKA",
+        "tier": "primary",
+        "domain": "nodka.com",
+        "core_expos": [
+          "embedded-world",
+          "ciif"
+        ],
+        "domains": [
+          "nodka.com",
+          "nodka.com.cn"
+        ],
+        "social_media": {
+          "wechat": "诺达佳工控",
+          "douyin": "诺达佳工控"
+        },
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "NODKA",
+        "content_type": "general_media",
+        "aliases": [
+          "诺达佳",
+          "NODKA Automation",
+          "诺达佳工控"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        }
+      },
+      {
+        "id": "jwi",
+        "name_zh": "智微智能",
+        "name_en": "JWIPC",
+        "tier": "primary",
+        "domain": "jwi.cc",
+        "core_expos": [
+          "embedded-world",
+          "ciif",
+          "computex"
+        ],
+        "domains": [
+          "jwi.cc",
+          "jwicc.com"
+        ],
+        "social_media": {
+          "wechat": "智微智能JWIPC",
+          "bilibili": "智微智能"
+        },
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "JWIPC",
+        "content_type": "general_media",
+        "aliases": [
+          "智微智能",
+          "JWIPC Technology",
+          "智微智能科技"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        }
+      },
+      {
+        "id": "evoc",
+        "name_zh": "研祥",
+        "name_en": "EVOC",
+        "tier": "secondary",
+        "domain": "evoc.com",
+        "core_expos": [
+          "ciif"
+        ],
+        "domains": [
+          "evoc.com",
+          "evoc.cn"
+        ],
+        "social_media": {
+          "wechat": "研祥智能",
+          "douyin": "研祥"
+        },
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "EVOC",
+        "content_type": "general_media",
+        "aliases": [
+          "研祥",
+          "EVOC Intelligent Technology",
+          "研祥智能"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        }
+      },
+      {
+        "id": "spes",
+        "name_zh": "源控",
+        "name_en": "SPES TECH",
+        "tier": "secondary",
+        "domain": "spes-tech.com",
+        "core_expos": [
+          "ciif"
+        ],
+        "domains": [
+          "spes-tech.com"
+        ],
+        "social_media": {
+          "wechat": ""
+        },
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "SPES TECH",
+        "content_type": "general_media",
+        "aliases": [
+          "源控",
+          "SPES TECH",
+          "源控科技"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        }
+      },
+      {
+        "id": "norco",
+        "name_zh": "华北工控",
+        "name_en": "NORCO",
+        "tier": "secondary",
+        "domain": "norco-group.com",
+        "core_expos": [
+          "ciif"
+        ],
+        "domains": [
+          "norco-group.com",
+          "norco.com.cn"
+        ],
+        "social_media": {
+          "wechat": "华北工控",
+          "bilibili": "华北工控NORCO"
+        },
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "NORCO",
+        "content_type": "general_media",
+        "aliases": [
+          "华北工控",
+          "NORCO Technology"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        }
+      }
+    ],
+    "expo_trackers": {
+      "advantech": {
+        "verified_expos": [
+          "embedded-world",
+          "computex"
+        ],
+        "excluded_expos": {
+          "hannover-messe": "偏工厂自动化整线方案，IPC硬件新品少",
+          "automate": "北美定位，新品与embedded-world/COMPUTEX重复"
+        }
+      },
+      "nodka": {
+        "verified_expos": [
+          "embedded-world",
+          "ciif"
+        ],
+        "excluded_expos": {}
+      },
+      "jwi": {
+        "verified_expos": [
+          "embedded-world",
+          "ciif",
+          "computex"
+        ],
+        "excluded_expos": {
+          "ces": "偏消费电子和通用AIoT，IPC信息密度低"
+        }
+      }
+    }
+  },
+  "exhibition_calendar": [
+    {
+      "id": "embedded-world",
+      "name": "embedded world",
+      "name_zh": "德国嵌入式工业展",
+      "month": 3,
+      "priority": "P0",
+      "region": "DE",
+      "domain": "embedded-world.de",
+      "competitor_participation": [
+        "advantech",
+        "nodka",
+        "jwi",
+        "beckhoff",
+        "dfi",
+        "aaeon",
+        "adlink",
+        "kontron",
+        "congatec",
+        "vecow",
+        "neousys"
+      ],
+      "reverse_scan_value": "🔴 年度最大IPC展会。参展商列表=竞品追踪清单；论坛议程=标准组织/协会名录；厂商新闻稿=年度新品验证锚点"
+    },
+    {
+      "id": "hannover-messe",
+      "name": "Hannover Messe",
+      "name_zh": "汉诺威工业展",
+      "month": 4,
+      "priority": "P1",
+      "region": "DE",
+      "domain": "hannovermesse.de",
+      "competitor_participation": [
+        "beckhoff",
+        "siemens"
+      ],
+      "reverse_scan_value": "工业自动化全貌，IPC厂商多在embedded world已发布，此处做补充验证"
+    },
+    {
+      "id": "ciif",
+      "name": "CIIF",
+      "name_zh": "上海工博会",
+      "month": 9,
+      "priority": "P0",
+      "region": "CN",
+      "domain": "ciif-expo.com",
+      "competitor_participation": [
+        "advantech",
+        "nodka",
+        "jwi",
+        "evoc",
+        "spes",
+        "norco"
+      ],
+      "reverse_scan_value": "🔴 国内年度最大工业展。研华/诺达佳/智微/华北工控等全线参展，国内IPC厂商年度最重要信息窗口"
+    },
+    {
+      "id": "automate",
+      "name": "Automate",
+      "name_zh": "北美工控展",
+      "month": 5,
+      "priority": "P1",
+      "region": "US",
+      "domain": "automate.org",
+      "competitor_participation": [
+        "dfi"
+      ],
+      "reverse_scan_value": "北美首发窗口，DFI等厂商新品首发"
+    },
+    {
+      "id": "sps",
+      "name": "SPS",
+      "name_zh": "纽伦堡自动化展",
+      "month": 11,
+      "priority": "P1",
+      "region": "DE",
+      "domain": "sps-exhibition.com",
+      "competitor_participation": [
+        "siemens"
+      ],
+      "reverse_scan_value": "智能生产/自动化组件展，下半年新品发布窗口"
+    }
+  ],
+  "search_whitelist": {
+    "news_domestic": [
+      "gongkong.com",
+      "miit.gov.cn",
+      "eeworld.com.cn",
+      "pconline.com.cn",
+      "ee-china.com",
+      "xinhuanet.com",
+      "cctv.com",
+      "people.com.cn",
+      "thepaper.cn",
+      "elecfans.com",
+      "zhihu.com",
+      "bilibili.com",
+      "douyin.com",
+      "hygon.cn",
+      "loongson.cn",
+      "phytium.com.cn"
+    ],
+    "news_international": [
+      "automationworld.com",
+      "controleng.com",
+      "electronicsweekly.com",
+      "eetimes.com",
+      "embedded-computing.com",
+      "embedded-world.de",
+      "hannovermesse.de",
+      "automate.org",
+      "ciif-expo.com",
+      "sps-exhibition.com",
+      "prnewswire.com",
+      "isa.org",
+      "opcfoundation.org",
+      "picmg.org",
+      "ethercat.org",
+      "gminsights.com",
+      "semi.org"
+    ],
+    "competitor": [
+      "aaeon.com",
+      "adlinktech.com",
+      "adlinktech.com.cn",
+      "advantech.com",
+      "advantech.com.cn",
+      "advantech.com.tw",
+      "automate.org",
+      "automationworld.com",
+      "beckhoff.com",
+      "beckhoff.com.cn",
+      "ciif-expo.com",
+      "congatec.com",
+      "controleng.com",
+      "dfi.com",
+      "embedded-world.de",
+      "evoc.cn",
+      "evoc.com",
+      "gongkong.com",
+      "hannovermesse.de",
+      "jwi.cc",
+      "jwicc.com",
+      "kontron.com",
+      "neousys-tech.com",
+      "nodka.com",
+      "nodka.com.cn",
+      "norco-group.com",
+      "norco.com.cn",
+      "semi.org",
+      "siemens.com",
+      "siemens.com.cn",
+      "spes-tech.com",
+      "vecow.com",
+      "intel.com",
+      "intel.cn",
+      "nvidia.com",
+      "nvidia.cn",
+      "amd.com",
+      "amd.com.cn",
+      "hygon.cn",
+      "loongson.cn",
+      "phytium.com.cn",
+      "zhaoxin.com",
+      "hisilicon.com",
+      "qualcomm.com",
+      "horizon.ai",
+      "inovance.com",
+      "keyence.com",
+      "keyence.com.cn",
+      "cognex.com",
+      "hikrobotics.com",
+      "omron.com",
+      "omron.com.cn",
+      "se.com",
+      "schneider-electric.cn",
+      "abb.com",
+      "abb.com.cn",
+      "kuka.com",
+      "estun.com",
+      "daheng-imaging.com",
+      "lusterinc.com"
+    ]
+  },
+  "query_templates": {
+    "news_cn": {
+      "query": "工控机 OR 工业自动化 OR 智能制造 OR 边缘计算 OR AI+ {month}",
+      "keyword_groups": [
+        "工控机 IPC 边缘计算 AI 半导体 最新进展 {month}",
+        "工业自动化 智能制造 政策 展会 机器人 {month}"
+      ]
+    },
+    "news_intl": {
+      "query": "industrial PC OR embedded computer OR IPC OR factory automation OR edge AI OR Industry 4.0 {year}",
+      "keyword_groups": [
+        "embedded computing edge AI industrial PC new products {year}",
+        "factory automation Industry 4.0 smart manufacturing IPC {year}"
+      ]
+    },
+    "competitor_scan": {
+      "query": "工控机厂商 新品 展会 动态 {month}",
+      "keyword_groups": [
+        "倍福 Beckhoff 研华 Advantech 西门子 Siemens 工控机 {year}",
+        "诺达佳 智微 凌华 研祥 研扬 源控 控汇 工控机 IPC {year}"
+      ]
+    },
+    "expo_season": {
+      "embedded-world": "\"embedded world {year}\" \"embedded computing\" \"COM Express\" \"SMARC\" IPC Advantech Beckhoff",
+      "hannover-messe": "Hannover Messe {year} industrial automation IPC",
+      "ciif": "\"上海工博会\" OR \"CIIF\" 工控机 工业自动化 {year} 诺达佳 研华 智微",
+      "automate": "Automate {year} industrial automation robotics IPC",
+      "sps": "SPS {year} Nuremberg industrial automation smart production"
+    },
+    "exhibition_verification": {
+      "description": "临近展会前，通过竞品官方渠道验证是否参展。若官方渠道无结果 → 直接报告'截至搜索日，XX厂商官方未发布参展信息'，而不是要求用户手动核实。",
+      "pre_expo_window_days": 14,
+      "queries": {
+        "domestic": "\"{厂商中文名}\" \"{展会中文名}\" {year} 参展",
+        "international": "\"{厂商英文名}\" \"{展会英文名}\" {year} exhibitor",
+        "official_site": "site:{厂商域名} {展会关键词} {year}"
+      },
+      "output_rules": {
+        "found": "✅ {厂商名}已确认参展{展会名}（来源：{URL}）——写入竞品动态",
+        "not_found": "截至搜索日（{date}），{厂商名}官方渠道（{域名}/官方媒体）未发布{展会名}参展信息。将在{下次扫描日期}重新确认。",
+        "partial": "🔍 {厂商名}在第三方源提及{展会名}（来源：{URL}），官方渠道待确认——标注'待交叉验证'"
+      }
+    },
+    "social_media": {
+      "description": "竞品社交媒体补充搜索（L4补充源·信息密度较低·每周最多1次）",
+      "wechat_sogou": "site:mp.weixin.qq.com {厂商名} {关键词} {year}",
+      "bilibili": "site:bilibili.com {厂商名} 新品 发布 {year}",
+      "zhihu": "site:zhihu.com {厂商名} 工控 IPC 动态 {year}",
+      "douyin_web": "site:douyin.com {厂商名}",
+      "usage_rule": "仅当主渠道(L1-L2)搜索0命中时启用，作为补充信号源。微信公众号内容需通过搜狗微信搜索接口(indirect)。标记为L4参考消息。"
+    },
+    "upstream_chip": {
+      "query": "({vendors}) embedded OR industrial OR edge OR IPC OR 工控机 OR 嵌入式工业计算机 {year}",
+      "keyword_groups": [
+        "Intel NVIDIA AMD 嵌入式 工业 edge IPC 工控机 {year}",
+        "海光 龙芯 飞腾 兆芯 华为海思 信创 工控机 嵌入式 {year}",
+        "Qualcomm Horizon 工业 IoT edge computing IPC embedded {year}",
+        "Intel Atom Core embedded industrial IPC fanless {year}",
+        "NVIDIA Jetson edge AI industrial IPC embedded {year}"
+      ],
+      "exclude_terms": "数据中心 datacenter 游戏 gaming 手机 smartphone 消费 consumer 自动驾驶 autonomous vehicle 挖矿 mining",
+      "relevance_upper_limit": 6,
+      "note": "上游芯片·仅搜索嵌入式/工业/边缘计算产品线·IPC相关性上限6分"
+    },
+    "downstream_application": {
+      "query": "({vendors}) IPC OR 工控机 OR 嵌入式计算 OR 工业计算机 OR 控制器 {year}",
+      "keyword_groups": [
+        "汇川技术 基恩士 康耐视 海康机器人 IPC 工控机 控制器 {year}",
+        "欧姆龙 施耐德 ABB KUKA 埃斯顿 IPC 工控机 嵌入式计算 {year}",
+        "视觉控制器 机器视觉 工控机 IPC 嵌入式计算 {year}",
+        "工业机器人 控制器 IPC 工控机 嵌入式计算 {year}"
+      ],
+      "exclude_terms": "消费 家电 手机 consumer appliance smartphone",
+      "relevance_upper_limit": 6,
+      "note": "下游应用·仅搜索IPC/工控机/控制器关联动态·IPC相关性上限6分"
+    }
+  },
+  "cross_validation": {
+    "min_independent_sources": 2,
+    "verification_levels": {
+      "confirmed": {
+        "icon": "✅",
+        "label": "已交叉验证",
+        "description": "同一事件出现 ≥2 个独立域名的信源"
+      },
+      "single_l1": {
+        "icon": "⚠️",
+        "label": "待行业媒体跟进",
+        "description": "仅厂商官网/政府发布，无行业媒体独立覆盖"
+      },
+      "single_l2_l3": {
+        "icon": "🔍",
+        "label": "待交叉验证",
+        "description": "仅1家行业媒体报道，无厂商/第三方确认"
+      },
+      "unverifiable": {
+        "icon": "❌",
+        "label": "无法验证",
+        "description": "来源为L4且无其他信源确认→降级为参考消息或淘汰"
+      }
+    },
+    "cn_to_intl_mapping": {
+      "研华": "Advantech",
+      "倍福": "Beckhoff",
+      "西门子": "Siemens",
+      "凌华": "ADLINK ADLINK Technology",
+      "友通": "DFI",
+      "研扬": "AAEON",
+      "诺达佳": "NODKA",
+      "智微智能": "JWIPC",
+      "研祥": "EVOC",
+      "源控": "SPES TECH",
+      "华北工控": "NORCO industrial PC",
+      "控创": "Kontron",
+      "康佳特": "congatec",
+      "超恩": "Vecow",
+      "宸曜": "Neousys",
+      "工控机": "industrial PC OR embedded computer",
+      "边缘计算": "edge computing",
+      "边缘AI": "edge AI",
+      "智能制造": "smart manufacturing OR Industry 4.0",
+      "具身智能": "embodied intelligence OR physical AI",
+      "AOI检测": "AOI inspection OR automated optical inspection",
+      "机器视觉": "machine vision",
+      "嵌入式主板": "embedded motherboard OR COM Express OR SMARC",
+      "英特尔": "Intel embedded industrial processor",
+      "英伟达": "NVIDIA Jetson edge AI",
+      "海光": "Hygon x86 embedded processor",
+      "龙芯": "Loongson LoongArch embedded",
+      "飞腾": "Phytium ARM embedded processor",
+      "兆芯": "Zhaoxin x86 embedded",
+      "华为海思": "HiSilicon Kunpeng Ascend",
+      "汇川技术": "Inovance industrial automation",
+      "基恩士": "Keyence machine vision",
+      "康耐视": "Cognex machine vision",
+      "海康机器人": "Hikrobot machine vision AGV",
+      "欧姆龙": "Omron PLC IPC",
+      "施耐德": "Schneider industrial edge",
+      "埃斯顿": "Estun industrial robot",
+      "信创": "Xinchuang domestic IT substitution"
+    },
+    "intl_to_cn_mapping": {
+      "Advantech": "研华",
+      "Beckhoff": "倍福",
+      "Siemens": "西门子",
+      "ADLINK": "凌华",
+      "DFI": "友通",
+      "AAEON": "研扬",
+      "Kontron": "控创",
+      "congatec": "康佳特",
+      "Vecow": "超恩",
+      "Neousys": "宸曜",
+      "industrial PC": "工控机",
+      "embedded computer": "嵌入式计算机",
+      "edge computing": "边缘计算",
+      "edge AI": "边缘AI",
+      "Intel": "英特尔",
+      "NVIDIA": "英伟达",
+      "Jetson": "Jetson边缘AI平台",
+      "Hygon": "海光信息",
+      "Loongson": "龙芯中科",
+      "Phytium": "飞腾",
+      "Zhaoxin": "兆芯",
+      "HiSilicon": "华为海思",
+      "Qualcomm": "高通",
+      "Keyence": "基恩士",
+      "Cognex": "康耐视",
+      "Omron": "欧姆龙",
+      "KUKA": "库卡"
+    }
+  },
+  "scoring": {
+    "dimensions": [
+      {
+        "name": "timeliness",
+        "name_zh": "时效性",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "当天"
+          },
+          {
+            "score": 9,
+            "condition": "1天前"
+          },
+          {
+            "score": 7,
+            "condition": "3天前"
+          },
+          {
+            "score": 5,
+            "condition": "5天前"
+          },
+          {
+            "score": 3,
+            "condition": "≥7天"
+          }
+        ]
+      },
+      {
+        "name": "source_quality",
+        "name_zh": "一手源",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "L1 厂商/标准组织/政府"
+          },
+          {
+            "score": 8,
+            "condition": "L2 协会/展会/技术联盟"
+          },
+          {
+            "score": 5,
+            "condition": "L3 行业垂直媒体"
+          },
+          {
+            "score": 3,
+            "condition": "L4 泛科技/门户"
+          }
+        ]
+      },
+      {
+        "name": "relevance",
+        "name_zh": "工控相关性",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "IPC/嵌入式直接相关"
+          },
+          {
+            "score": 8,
+            "condition": "工业自动化"
+          },
+          {
+            "score": 6,
+            "condition": "半导体/机器人/工业AI"
+          },
+          {
+            "score": 3,
+            "condition": "通用科技"
+          }
+        ]
+      },
+      {
+        "name": "actionability",
+        "name_zh": "可执行性",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "可产生APQ行动建议"
+          },
+          {
+            "score": 5,
+            "condition": "了解即可"
+          },
+          {
+            "score": 3,
+            "condition": "纯资讯"
+          }
+        ]
+      },
+      {
+        "name": "vendor_mention",
+        "name_zh": "厂商提及",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "提及具体IPC厂商"
+          },
+          {
+            "score": 5,
+            "condition": "通用行业"
+          },
+          {
+            "score": 0,
+            "condition": "无厂商"
+          }
+        ]
+      },
+      {
+        "name": "policy_trend",
+        "name_zh": "政策/趋势",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "国家政策/行业协会白皮书"
+          },
+          {
+            "score": 7,
+            "condition": "行业趋势报告"
+          },
+          {
+            "score": 5,
+            "condition": "展会信息"
+          }
+        ]
+      }
+    ],
+    "max_score": 94,
+    "threshold": 45,
+    "cross_verify_bonus": 2,
+    "bonus_condition": "L1/L2源经≥1个独立L2/L3源交叉验证确认后 +2分加成（仅一手源维度）"
+  }
+}

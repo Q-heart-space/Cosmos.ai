@@ -1,0 +1,1025 @@
+{
+  "industry": "ai_agent",
+  "industry_zh": "AI 智能体 / 治理",
+  "version": "1.1.0",
+  "last_updated": "2026-09-04",
+  "source_pyramid": {
+    "L1": {
+      "weight": 3,
+      "description": "一手源：厂商官方/标准组织",
+      "entries": [
+        {
+          "id": "openai",
+          "name_zh": "OpenAI",
+          "name_en": "OpenAI",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "openai.com"
+          ],
+          "homepage": "https://openai.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "OpenAI",
+          "content_type": "official_announcement",
+          "aliases": [
+            "ChatGPT",
+            "GPT"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "anthropic",
+          "name_zh": "Anthropic",
+          "name_en": "Anthropic",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "anthropic.com",
+            "claude.ai"
+          ],
+          "homepage": "https://www.anthropic.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Anthropic",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Claude"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "google",
+          "name_zh": "Google",
+          "name_en": "Google",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "google.com",
+            "gemini.google.com"
+          ],
+          "homepage": "https://ai.google",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Alphabet",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Gemini",
+            "DeepMind"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "microsoft",
+          "name_zh": "微软",
+          "name_en": "Microsoft",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "microsoft.com",
+            "copilot.microsoft.com"
+          ],
+          "homepage": "https://www.microsoft.com/ai",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Microsoft",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Copilot Studio",
+            "Azure AI"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "coze",
+          "name_zh": "扣子",
+          "name_en": "Coze",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "coze.cn",
+            "coze.com"
+          ],
+          "homepage": "https://www.coze.cn",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "ByteDance",
+          "content_type": "product_page",
+          "aliases": [
+            "扣子",
+            "豆包",
+            "Coze"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": true,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "dify",
+          "name_zh": "Dify",
+          "name_en": "Dify",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domains": [
+            "dify.ai"
+          ],
+          "homepage": "https://dify.ai",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Dify.AI",
+          "content_type": "product_page",
+          "aliases": [
+            "Dify"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "SG"
+          }
+        },
+        {
+          "id": "langchain",
+          "name_zh": "LangChain",
+          "name_en": "LangChain",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domains": [
+            "langchain.com"
+          ],
+          "homepage": "https://www.langchain.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "LangChain",
+          "content_type": "official_announcement",
+          "aliases": [
+            "LangGraph",
+            "LangSmith"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "alibaba",
+          "name_zh": "阿里",
+          "name_en": "Alibaba",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "aliyun.com",
+            "bailian.aliyun.com"
+          ],
+          "homepage": "https://bailian.aliyun.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Alibaba",
+          "content_type": "product_page",
+          "aliases": [
+            "百炼",
+            "通义"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": true,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "baidu",
+          "name_zh": "百度",
+          "name_en": "Baidu",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": [
+            "qianfan.baidubce.com",
+            "baidu.com"
+          ],
+          "homepage": "https://qianfan.baidubce.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Baidu",
+          "content_type": "product_page",
+          "aliases": [
+            "千帆",
+            "文心"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": true,
+            "requires_auth": true,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "moonshot",
+          "name_zh": "月之暗面",
+          "name_en": "Moonshot",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domains": [
+            "kimi.com",
+            "moonshot.cn"
+          ],
+          "homepage": "https://www.kimi.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Moonshot AI",
+          "content_type": "product_page",
+          "aliases": [
+            "Kimi"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "kore-ai",
+          "name_zh": "Kore.ai",
+          "name_en": "Kore.ai",
+          "type": "competitor",
+          "tier": "niche",
+          "domains": [
+            "kore.ai"
+          ],
+          "homepage": "https://kore.ai",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Kore.ai",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Agent management"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "workbuddy",
+          "name_zh": "腾讯 WorkBuddy",
+          "name_en": "Tencent WorkBuddy",
+          "type": "competitor",
+          "tier": "global_top",
+          "domains": "open.workbuddy.cn workbuddy.cn",
+          "homepage": "https://open.workbuddy.cn",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-09-04",
+            "verified_by": "manual+local-evidence",
+            "status": "active"
+          },
+          "parent_entity": "Tencent",
+          "content_type": "official_announcement",
+          "aliases": "WorkBuddy Agent OS CodeBuddy",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "mhs",
+          "name_zh": "Anthropic 模型硬件标准",
+          "name_en": "Anthropic Model Hardware Standard",
+          "type": "standards_org",
+          "tier": "global_top",
+          "domains": "modelhardwarestandard.com anthropic.com",
+          "homepage": "https://www.modelhardwarestandard.com/",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-09-04",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Anthropic",
+          "content_type": "standards_document",
+          "aliases": "MHS 物理MCP",
+          "ttl": {
+            "valid_until": "2027-08-27",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        }
+      ]
+    },
+    "L2": {
+      "weight": 2,
+      "description": "准官方：标准组织/监管框架",
+      "entries": [
+        {
+          "id": "owasp-agent",
+          "name_zh": "OWASP Agent 安全",
+          "name_en": "OWASP Agentic Security",
+          "type": "standards_org",
+          "domains": [
+            "owasp.org"
+          ],
+          "homepage": "https://owasp.org",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "OWASP",
+          "content_type": "standards_document",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "monthly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "eu-ai-act",
+          "name_zh": "欧盟 AI 法案",
+          "name_en": "EU AI Act",
+          "type": "standards_org",
+          "domains": [
+            "digital-strategy.ec.europa.eu"
+          ],
+          "homepage": "https://digital-strategy.ec.europa.eu",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "European Commission",
+          "content_type": "policy_document",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "EU"
+          }
+        },
+        {
+          "id": "nist-ai-rmf",
+          "name_zh": "NIST AI 风险管理框架",
+          "name_en": "NIST AI RMF",
+          "type": "standards_org",
+          "domains": [
+            "nist.gov"
+          ],
+          "homepage": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "NIST",
+          "content_type": "standards_document",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        }
+      ]
+    },
+    "L3": {
+      "weight": 1,
+      "description": "可信二手源：行业垂直媒体/评测",
+      "entries": [
+        {
+          "id": "ciweek",
+          "name_zh": "CIWEEK",
+          "name_en": "CIWEEK",
+          "type": "media",
+          "domains": [
+            "ciweek.com"
+          ],
+          "homepage": "http://www.ciweek.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "CIWEEK",
+          "content_type": "independent_reporting",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "zol",
+          "name_zh": "中关村在线",
+          "name_en": "ZOL",
+          "type": "media",
+          "domains": [
+            "zol.com.cn"
+          ],
+          "homepage": "https://news.zol.com.cn",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "ZOL",
+          "content_type": "independent_reporting",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "glean",
+          "name_zh": "Glean",
+          "name_en": "Glean",
+          "type": "media",
+          "domains": [
+            "glean.com"
+          ],
+          "homepage": "https://www.glean.com/blog/agent-orchestration-platforms-compared",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Glean",
+          "content_type": "independent_reporting",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "monthly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "futurum",
+          "name_zh": "Futurum",
+          "name_en": "Futurum Group",
+          "type": "media",
+          "domains": [
+            "futurumgroup.com"
+          ],
+          "homepage": "https://futurumgroup.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Futurum",
+          "content_type": "consulting_report",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "monthly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "stdaily",
+          "name_zh": "科技日报",
+          "name_en": "Science and Technology Daily",
+          "type": "media",
+          "tier": "official_media",
+          "domains": "stdaily.com",
+          "homepage": "https://www.stdaily.com",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-09-04",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "科技日报社",
+          "content_type": "independent_reporting",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "qbitai",
+          "name_zh": "量子位",
+          "name_en": "QbitAI",
+          "type": "media",
+          "tier": "vertical_media",
+          "domains": "qbitai.com",
+          "homepage": "https://www.qbitai.com",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-09-04",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "量子位",
+          "content_type": "independent_reporting",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "geekpark",
+          "name_zh": "极客公园",
+          "name_en": "GeekPark",
+          "type": "media",
+          "tier": "vertical_media",
+          "domains": "geekpark.net",
+          "homepage": "https://www.geekpark.net",
+          "cross_verify_required": true,
+          "verification": {
+            "last_verified": "2026-09-04",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "极客公园",
+          "content_type": "analysis_opinion",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        }
+      ]
+    },
+    "L4": {
+      "weight": 0,
+      "description": "补充参考：泛科技媒体",
+      "entries": [
+        {
+          "id": "infoworld",
+          "name_zh": "InfoWorld",
+          "name_en": "InfoWorld",
+          "type": "media",
+          "domains": [
+            "infoworld.com"
+          ],
+          "homepage": "https://www.infoworld.com",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "IDG",
+          "content_type": "general_media",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "prnewswire",
+          "name_zh": "美通社",
+          "name_en": "PR Newswire",
+          "type": "media",
+          "domains": [
+            "prnewswire.com"
+          ],
+          "homepage": "https://www.prnewswire.com",
+          "cross_verify_required": false,
+          "verification": {
+            "last_verified": "2026-08-26",
+            "verified_by": "manual",
+            "status": "active"
+          },
+          "parent_entity": "Cision",
+          "content_type": "press_aggregation",
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "primary": [
+      "coze",
+      "dify",
+      "microsoft",
+      "openai",
+      "anthropic"
+    ],
+    "secondary": [
+      "google",
+      "alibaba",
+      "baidu",
+      "langchain",
+      "moonshot"
+    ],
+    "watch": [
+      "kore-ai"
+    ],
+    "expo_trackers": {}
+  },
+  "exhibition_calendar": [
+    {
+      "id": "ai-dev-world",
+      "name": "AI DevWorld",
+      "name_zh": "AI 开发者世界大会",
+      "location": "USA",
+      "month": 1,
+      "priority": "P1",
+      "region": "US",
+      "domain": "aidevworld.com",
+      "competitor_participation": [
+        "openai",
+        "anthropic",
+        "microsoft"
+      ],
+      "reverse_scan_value": "AI 平台年度新品发布主场"
+    },
+    {
+      "id": "embedded-world",
+      "name": "embedded world",
+      "name_zh": "德国嵌入式工业展（AI 板块）",
+      "location": "Nuremberg, Germany",
+      "month": 3,
+      "priority": "P1",
+      "region": "DE",
+      "domain": "embedded-world.de",
+      "competitor_participation": [],
+      "reverse_scan_value": "边缘 AI/工控 AI 代理趋势"
+    },
+    {
+      "id": "waic",
+      "name": "WAIC",
+      "name_zh": "世界人工智能大会",
+      "location": "Shanghai, China",
+      "month": 7,
+      "priority": "P1",
+      "region": "CN",
+      "domain": "waic.org.cn",
+      "competitor_participation": [
+        "alibaba",
+        "baidu",
+        "coze"
+      ],
+      "reverse_scan_value": "国内 AI 平台发布主场"
+    }
+  ],
+  "search_whitelist": {
+    "news_domestic": [
+      "ciweek.com",
+      "zol.com.cn",
+      "36kr.com",
+      "jiqizhixin.com",
+      "stdaily.com",
+      "qbitai.com",
+      "geekpark.net"
+    ],
+    "news_international": [
+      "infoworld.com",
+      "futurumgroup.com",
+      "glean.com",
+      "theinformation.com"
+    ],
+    "competitor": [
+      "openai.com",
+      "anthropic.com",
+      "google.com",
+      "microsoft.com",
+      "coze.cn",
+      "dify.ai",
+      "langchain.com",
+      "kore.ai",
+      "bailian.aliyun.com",
+      "qianfan.baidubce.com",
+      "open.workbuddy.cn",
+      "modelhardwarestandard.com"
+    ]
+  },
+  "query_templates": {
+    "news_cn": {
+      "query": "{year}年{month}月 AI 智能体 平台 发布 更新",
+      "keyword_groups": [
+        "智能体",
+        "Agent",
+        "编排",
+        "治理"
+      ]
+    },
+    "news_intl": {
+      "query": "AI agent platform {year} {month} launch update governance",
+      "keyword_groups": [
+        "agent orchestration",
+        "agent management",
+        "governance"
+      ]
+    },
+    "competitor_scan": {
+      "query": "{competitor} agent platform update {year}",
+      "keyword_groups": [
+        "platform",
+        "launch",
+        "enterprise"
+      ]
+    },
+    "expo_season": {
+      "ai-dev-world": "AI DevWorld {year} agent platform announcements",
+      "embedded-world": "embedded world {year} edge AI agent industrial",
+      "waic": "WAIC {year} 智能体 平台 发布"
+    }
+  },
+  "cross_validation": {
+    "min_independent_sources": 2,
+    "verification_levels": {
+      "confirmed": {
+        "icon": "✅",
+        "description": "≥2 independent domains"
+      },
+      "single_l1": {
+        "icon": "⚠️",
+        "description": "Only L1 source"
+      },
+      "single_l2_l3": {
+        "icon": "🔍",
+        "description": "Single L2/L3 source"
+      },
+      "unverifiable": {
+        "icon": "❌",
+        "description": "L4 only, no other source"
+      }
+    },
+    "cn_to_intl_mapping": {
+      "扣子": "Coze",
+      "百炼": "Bailian (Alibaba Cloud)",
+      "千帆": "Qianfan (Baidu)",
+      "豆包": "Doubao (ByteDance)"
+    },
+    "intl_to_cn_mapping": {
+      "Coze": "扣子",
+      "Copilot Studio": "微软 Copilot 工作室",
+      "LangGraph": "LangGraph"
+    }
+  },
+  "scoring": {
+    "dimensions": [
+      {
+        "name": "timeliness",
+        "name_zh": "时效性",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "当天"
+          },
+          {
+            "score": 9,
+            "condition": "1天前"
+          },
+          {
+            "score": 7,
+            "condition": "3天前"
+          },
+          {
+            "score": 5,
+            "condition": "5天前"
+          },
+          {
+            "score": 3,
+            "condition": "≥7天"
+          }
+        ]
+      },
+      {
+        "name": "relevance",
+        "name_zh": "相关性（智能体/治理）",
+        "weight": 3,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "直接命中治理/编排/智能体平台"
+          },
+          {
+            "score": 7,
+            "condition": "AI 平台一般动态"
+          },
+          {
+            "score": 3,
+            "condition": "泛 AI 新闻"
+          }
+        ]
+      },
+      {
+        "name": "source_quality",
+        "name_zh": "信源质量",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "L1 官方"
+          },
+          {
+            "score": 7,
+            "condition": "L2 标准组织"
+          },
+          {
+            "score": 4,
+            "condition": "L3 垂直媒体"
+          },
+          {
+            "score": 2,
+            "condition": "L4 泛媒体"
+          }
+        ]
+      }
+    ],
+    "max_score": 100,
+    "threshold": 50,
+    "cross_verify_bonus": 2
+  }
+}

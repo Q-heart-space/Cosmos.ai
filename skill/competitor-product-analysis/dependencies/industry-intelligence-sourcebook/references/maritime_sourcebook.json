@@ -1,0 +1,1363 @@
+{
+  "industry": "maritime",
+  "industry_zh": "海事工控机",
+  "version": "1.1.0",
+  "last_updated": "2026-07-02-p0-review",
+  "source": "提取自：海事工控机研究报告_海兰信_20260525.md",
+  "source_pyramid": {
+    "L1": {
+      "weight": 3,
+      "description": "一手源：海事IPC厂商官方/国际标准组织/船级社",
+      "entries": [
+        {
+          "id": "winmate",
+          "name_zh": "Winmate",
+          "name_en": "Winmate",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "winmate.com",
+          "homepage": "https://www.winmate.com",
+          "core_expos": [],
+          "note": "海事IPC市场份额第一(~15%)",
+          "domains": [
+            "winmate.com",
+            "winmate.com.tw"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Winmate",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Winmate"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "axiomtek",
+          "name_zh": "Axiomtek",
+          "name_en": "Axiomtek",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "axiomtek.com",
+          "homepage": "https://www.axiomtek.com",
+          "core_expos": [],
+          "note": "军民两用海事IPC，与Winmate合计28%份额",
+          "domains": [
+            "axiomtek.com",
+            "axiomtek.com.tw"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Axiomtek",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Axiomtek"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "nexcom",
+          "name_zh": "NEXCOM",
+          "name_en": "NEXCOM",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "nexcom.com",
+          "homepage": "https://www.nexcom.com",
+          "core_expos": [],
+          "note": "nTUF系列专业海事Box PC",
+          "domains": [
+            "nexcom.com",
+            "nexcom.com.tw"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "NEXCOM",
+          "content_type": "official_announcement",
+          "aliases": [
+            "NEXCOM"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "iei",
+          "name_zh": "IEI Integration",
+          "name_en": "IEI Integration",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "iei.com",
+          "homepage": "https://www.ieiworld.com",
+          "core_expos": [],
+          "note": "SBOX船用系列，DNV认证(EOL)",
+          "domains": [
+            "ieiworld.com",
+            "iei.com"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "IEI Integration",
+          "content_type": "official_announcement",
+          "aliases": [
+            "IEI Integration"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "cincoze",
+          "name_zh": "Cincoze",
+          "name_en": "Cincoze",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "cincoze.com",
+          "homepage": "https://www.cincoze.com",
+          "core_expos": [],
+          "note": "德国品牌/台湾制造，15年产品生命周期",
+          "domains": [
+            "cincoze.com"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Cincoze",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Cincoze"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "captec",
+          "name_zh": "Captec",
+          "name_en": "Captec",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "captec.co.uk",
+          "homepage": "https://www.captec.co.uk",
+          "core_expos": [],
+          "note": "英国海事AI边缘计算，DNV认证",
+          "domains": [
+            "captec.co.uk"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Captec",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Captec"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "UK"
+          }
+        },
+        {
+          "id": "imo",
+          "name_zh": "国际海事组织",
+          "name_en": "IMO",
+          "type": "standards_org",
+          "domain": "imo.org",
+          "homepage": "https://www.imo.org",
+          "note": "海事行业最高标准制定机构",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "IMO",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际海事组织"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "iec",
+          "name_zh": "国际电工委员会",
+          "name_en": "IEC",
+          "type": "standards_org",
+          "domain": "iec.ch",
+          "homepage": "https://www.iec.ch",
+          "note": "IEC 60945海事设备强制性认证标准",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "IEC",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际电工委员会"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "iho",
+          "name_zh": "国际海道测量组织",
+          "name_en": "IHO",
+          "type": "standards_org",
+          "domain": "iho.int",
+          "homepage": "https://iho.int",
+          "note": "电子海图数据标准(S-52/S-57/S-63)",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "IHO",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际海道测量组织"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "ccs",
+          "name_zh": "中国船级社",
+          "name_en": "CCS",
+          "type": "government",
+          "domain": "ccs.org.cn",
+          "homepage": "https://www.ccs.org.cn",
+          "note": "国内航线船舶型式认可必须",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "CCS",
+          "content_type": "policy_document",
+          "aliases": [
+            "中国船级社"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": false,
+            "api_available": false,
+            "rate_limit": "unknown",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        },
+        {
+          "id": "dnv",
+          "name_zh": "挪威船级社",
+          "name_en": "DNV",
+          "type": "standards_org",
+          "domain": "dnv.com",
+          "homepage": "https://www.dnv.com",
+          "note": "国际商船市场准入核心认证",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "DNV",
+          "content_type": "standards_document",
+          "aliases": [
+            "挪威船级社"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "iacs",
+          "name_zh": "国际船级社协会",
+          "name_en": "IACS",
+          "type": "standards_org",
+          "domain": "iacs.org.uk",
+          "homepage": "https://iacs.org.uk",
+          "note": "IACS-E10电气设备统一要求",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "IACS",
+          "content_type": "standards_document",
+          "aliases": [
+            "国际船级社协会"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "UK"
+          }
+        },
+        {
+          "id": "hatteland",
+          "name_zh": "Hatteland Technology",
+          "name_en": "Hatteland",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "hattelandtechnology.com",
+          "homepage": "https://www.hattelandtechnology.com",
+          "core_expos": [
+            "smm-hamburg"
+          ],
+          "note": "海事计算机/显示器龙头·DNV/ABS/LR/BV/CCS全系认证",
+          "domains": [
+            "hattelandtechnology.com"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Hatteland",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Hatteland Technology"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "moxa",
+          "name_zh": "Moxa",
+          "name_en": "Moxa",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "moxa.com",
+          "homepage": "https://www.moxa.com",
+          "core_expos": [],
+          "note": "海事计算机网络/串口服务器·DNV全系认证",
+          "domains": [
+            "moxa.com",
+            "moxa.com.cn"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Moxa",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Moxa"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "beijer",
+          "name_zh": "Beijer Electronics",
+          "name_en": "Beijer",
+          "type": "competitor",
+          "tier": "regional_top",
+          "domain": "beijerelectronics.com",
+          "homepage": "https://www.beijerelectronics.com",
+          "core_expos": [],
+          "note": "X2系列海事HMI",
+          "domains": [
+            "beijerelectronics.com",
+            "beijerelectronics.se"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Beijer",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Beijer Electronics"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "semi",
+          "name_zh": "SEMI",
+          "name_en": "SEMI",
+          "type": "standards_org",
+          "domain": "semi.org",
+          "homepage": "https://www.semi.org",
+          "note": "半导体认证(海事IPC高端芯片供应链)",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "SEMI",
+          "content_type": "standards_document",
+          "aliases": [
+            "SEMI"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "US"
+          }
+        },
+        {
+          "id": "advantech",
+          "name_zh": "研华",
+          "name_en": "Advantech",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "advantech.com",
+          "homepage": "https://www.advantech.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "海事面板PC/船舶显示器(从IPC源引入)",
+          "domains": [
+            "advantech.com",
+            "advantech.com.cn",
+            "advantech.com.tw"
+          ],
+          "parent_entity": "Advantech",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Advantech Co., Ltd.",
+            "研华科技"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "TW"
+          }
+        },
+        {
+          "id": "siemens",
+          "name_zh": "西门子",
+          "name_en": "Siemens",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "siemens.com",
+          "homepage": "https://www.siemens.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "船舶自动化/海事数字孪生(从IPC源引入)",
+          "domains": [
+            "siemens.com",
+            "siemens.com.cn"
+          ],
+          "parent_entity": "Siemens AG",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Siemens AG",
+            "西门子工业"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "kontron",
+          "name_zh": "控创",
+          "name_en": "Kontron",
+          "type": "competitor",
+          "tier": "global_top",
+          "domain": "kontron.com",
+          "homepage": "https://www.kontron.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "防务/海事嵌入式计算(从IPC源引入)",
+          "domains": [
+            "kontron.com"
+          ],
+          "parent_entity": "Kontron AG",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Kontron AG",
+            "控创科技"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "daily"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "neousys",
+          "name_zh": "宸曜",
+          "name_en": "Neousys",
+          "type": "competitor",
+          "tier": "niche",
+          "domain": "neousys-tech.com",
+          "homepage": "https://www.neousys-tech.com",
+          "core_expos": [],
+          "cross_verify_required": false,
+          "note": "强固型边缘AI/海事应用(从IPC源引入)",
+          "domains": [
+            "neousys-tech.com"
+          ],
+          "parent_entity": "Neousys Technology",
+          "content_type": "official_announcement",
+          "aliases": [
+            "Neousys Technology",
+            "宸曜科技"
+          ],
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "weekly"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "TW"
+          }
+        }
+      ]
+    },
+    "L2": {
+      "weight": 2.5,
+      "description": "准官方：海事展会/行业协会",
+      "entries": [
+        {
+          "id": "smm-hamburg",
+          "name_zh": "德国汉堡海事展",
+          "name_en": "SMM Hamburg",
+          "type": "exhibition",
+          "domain": "smm-hamburg.com",
+          "homepage": "https://www.smm-hamburg.com",
+          "priority": "P0",
+          "region": "DE",
+          "note": "全球最大海事展，每两年9月",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "SMM Hamburg",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "德国汉堡海事展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "DE"
+          }
+        },
+        {
+          "id": "europort",
+          "name_zh": "荷兰海事展",
+          "name_en": "Europort",
+          "type": "exhibition",
+          "domain": "europort.nl",
+          "homepage": "https://www.europort.nl",
+          "priority": "P1",
+          "region": "NL",
+          "note": "欧洲重要海事展",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Europort",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "荷兰海事展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "NL"
+          }
+        },
+        {
+          "id": "chinamarine",
+          "name_zh": "中国国际海事展",
+          "name_en": "Marintec China",
+          "type": "exhibition",
+          "domain": "marintecchina.com",
+          "homepage": "https://www.marintecchina.com",
+          "priority": "P0",
+          "region": "CN",
+          "note": "亚洲最大海事展，每两年12月(上海)",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "credentials": [],
+            "notes": "P0 upgrade 2026-07-02"
+          },
+          "parent_entity": "Marintec China",
+          "content_type": "exhibition_listing",
+          "aliases": [
+            "中国国际海事展"
+          ],
+          "ttl": {
+            "valid_until": "permanent",
+            "update_frequency": "event_driven"
+          },
+          "compliance": {
+            "allow_scrape": true,
+            "api_available": false,
+            "rate_limit": "10/min",
+            "robots_txt_compliant": true,
+            "data_retention_days": 90,
+            "requires_auth": false,
+            "jurisdiction": "CN"
+          }
+        }
+      ]
+    },
+    "L3": {
+      "weight": 2,
+      "description": "可信二手源：海事行业媒体/市场研究",
+      "entries": [
+        {
+          "id": "intelmarket",
+          "name_zh": "IntelMarketResearch",
+          "name_en": "IntelMarketResearch",
+          "type": "media",
+          "domain": "intelmarketresearch.com",
+          "region": "US",
+          "note": "海事嵌入式计算机市场数据",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "maritime-executive",
+          "name_zh": "Maritime Executive",
+          "name_en": "Maritime Executive",
+          "type": "media",
+          "domain": "maritime-executive.com",
+          "region": "US",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "seatrade-maritime",
+          "name_zh": "Seatrade Maritime",
+          "name_en": "Seatrade Maritime",
+          "type": "media",
+          "domain": "seatrade-maritime.com",
+          "region": "UK",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "rivieramm",
+          "name_zh": "Riviera Maritime",
+          "name_en": "Riviera Maritime Media",
+          "type": "media",
+          "domain": "rivieramm.com",
+          "region": "UK",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        }
+      ]
+    },
+    "L4": {
+      "weight": 1,
+      "description": "补充参考：国内海事/船舶行业媒体",
+      "entries": [
+        {
+          "id": "cssc",
+          "name_zh": "中国船舶集团",
+          "name_en": "CSSC",
+          "type": "media",
+          "domain": "cssc.net.cn",
+          "region": "CN",
+          "note": "国内船舶行业最大集成商官网",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        },
+        {
+          "id": "shipol",
+          "name_zh": "国际船舶网",
+          "name_en": "International Ship",
+          "type": "media",
+          "domain": "shipol.com.cn",
+          "region": "CN",
+          "verification": {
+            "last_verified": "2026-07-02",
+            "verified_by": "manual",
+            "status": "active",
+            "notes": "结构字段补登（2026-08-26·validate_sourcebooks v1.0 首跑）·源有效性以收录时为准"
+          }
+        }
+      ]
+    }
+  },
+  "competitors": {
+    "primary": [
+      "winmate",
+      "axiomtek",
+      "nexcom",
+      "hatteland"
+    ],
+    "secondary": [
+      "advantech",
+      "neousys",
+      "siemens",
+      "kontron",
+      "iei",
+      "cincoze",
+      "moxa",
+      "beijer"
+    ],
+    "watch": [
+      "captec",
+      "evoc",
+      "norco"
+    ],
+    "local_domestic": [
+      {
+        "id": "evoc",
+        "name_zh": "研祥",
+        "name_en": "EVOC",
+        "tier": "secondary",
+        "core_expos": [],
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "EVOC",
+        "content_type": "general_media",
+        "aliases": [
+          "研祥",
+          "EVOC Intelligent Technology",
+          "研祥智能"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        },
+        "type": "competitor"
+      },
+      {
+        "id": "norco",
+        "name_zh": "华北工控",
+        "name_en": "NORCO",
+        "tier": "watch",
+        "core_expos": [],
+        "verification": {
+          "last_verified": "2026-07-02",
+          "verified_by": "manual",
+          "status": "active",
+          "credentials": [],
+          "notes": "P0 upgrade 2026-07-02"
+        },
+        "parent_entity": "NORCO",
+        "content_type": "general_media",
+        "aliases": [
+          "华北工控",
+          "NORCO Technology"
+        ],
+        "ttl": {
+          "valid_until": "permanent",
+          "update_frequency": "monthly"
+        },
+        "compliance": {
+          "allow_scrape": true,
+          "api_available": false,
+          "rate_limit": "10/min",
+          "robots_txt_compliant": true,
+          "data_retention_days": 90,
+          "requires_auth": false,
+          "jurisdiction": "US"
+        },
+        "type": "competitor"
+      }
+    ]
+  },
+  "exhibition_calendar": [
+    {
+      "id": "smm-hamburg",
+      "name": "SMM Hamburg",
+      "name_zh": "德国汉堡海事展",
+      "month": 9,
+      "priority": "P0",
+      "region": "DE",
+      "domain": "smm-hamburg.com",
+      "note": "两年一届(偶数年9月)，全球最大海事展"
+    },
+    {
+      "id": "marintec-china",
+      "name": "Marintec China",
+      "name_zh": "中国国际海事展",
+      "month": 12,
+      "priority": "P0",
+      "region": "CN",
+      "domain": "marintecchina.com",
+      "note": "两年一届(奇数年12月)，亚洲最大海事展"
+    },
+    {
+      "id": "europort",
+      "name": "Europort",
+      "name_zh": "荷兰海事展",
+      "month": 11,
+      "priority": "P1",
+      "region": "NL",
+      "domain": "europort.nl",
+      "note": "奇数年11月"
+    }
+  ],
+  "search_whitelist": {
+    "news_domestic": [
+      "ccs.org.cn",
+      "cssc.net.cn",
+      "shipol.com.cn"
+    ],
+    "news_international": [
+      "winmate.com",
+      "axiomtek.com",
+      "nexcom.com",
+      "iei.com",
+      "cincoze.com",
+      "captec.co.uk",
+      "imo.org",
+      "iec.ch",
+      "iho.int",
+      "dnv.com",
+      "iacs.org.uk",
+      "smm-hamburg.com",
+      "europort.nl",
+      "marintecchina.com",
+      "maritime-executive.com",
+      "seatrade-maritime.com",
+      "rivieramm.com",
+      "intelmarketresearch.com",
+      "hattelandtechnology.com",
+      "moxa.com",
+      "beijerelectronics.com",
+      "semi.org"
+    ],
+    "competitor": [
+      "advantech.com",
+      "advantech.com.cn",
+      "axiomtek.com",
+      "axiomtek.com.tw",
+      "beijerelectronics.com",
+      "beijerelectronics.se",
+      "captec.co.uk",
+      "cincoze.com",
+      "hattelandtechnology.com",
+      "iei.com",
+      "ieiworld.com",
+      "kontron.com",
+      "moxa.com",
+      "moxa.com.cn",
+      "neousys-tech.com",
+      "nexcom.com",
+      "nexcom.com.tw",
+      "siemens.com",
+      "siemens.com.cn",
+      "winmate.com",
+      "winmate.com.tw",
+      "advantech.com.tw"
+    ]
+  },
+  "query_templates": {
+    "news_cn": {
+      "query": "海事工控机 OR 船用计算机 OR ECDIS OR 船舶导航 OR 海洋电子 {year}",
+      "keyword_groups": [
+        "海事工控机 船用嵌入式计算 ECDIS 航海导航 {year}",
+        "船舶自动化 智能航运 IMO CCS认证 海事 {year}"
+      ]
+    },
+    "news_intl": {
+      "query": "marine computer OR maritime IPC OR ECDIS hardware OR ship navigation OR bridge system {year}",
+      "keyword_groups": [
+        "marine embedded computer DNV IEC 60945 maritime certification {year}",
+        "ship automation ECDIS integrated bridge system maritime electronics {year}"
+      ]
+    },
+    "competitor_scan": {
+      "query": "Winmate OR Axiomtek OR NEXCOM OR IEI marine IPC ship computer {year}",
+      "keyword_groups": [
+        "Winmate Axiomtek NEXCOM maritime marine computer new product {year}",
+        "marine panel PC bridge console ECDIS hardware fanless {year}"
+      ]
+    },
+    "expo_season": {
+      "smm-hamburg": "SMM Hamburg {year} maritime marine electronics bridge navigation",
+      "marintec-china": "Marintec China {year} 海事 船舶 导航 工控机",
+      "europort": "Europort {year} maritime ship automation"
+    }
+  },
+  "cross_validation": {
+    "min_independent_sources": 2,
+    "cn_to_intl_mapping": {
+      "海兰信": "Highlander marine electronics ECDIS",
+      "研祥": "EVOC marine IPC",
+      "华北工控": "NORCO industrial PC marine",
+      "海事工控机": "marine computer OR maritime IPC",
+      "ECDIS": "ECDIS electronic chart display",
+      "船级社": "classification society CCS DNV",
+      "船舶导航": "ship navigation OR marine navigation",
+      "智能船舶": "smart ship OR autonomous vessel",
+      "电子海图显示系统": "ECDIS",
+      "新汉": "NEXCOM",
+      "艾讯科技": "Axiomtek",
+      "挪威船级社": "DNV",
+      "IEC 60945海事设备标准": "IEC 60945",
+      "Winmate(融程电讯)": "Winmate",
+      "国际海事组织": "IMO"
+    },
+    "intl_to_cn_mapping": {
+      "Winmate": "Winmate(融程电讯)",
+      "Axiomtek": "艾讯科技",
+      "NEXCOM": "新汉",
+      "maritime IPC": "海事工控机",
+      "ECDIS": "电子海图显示系统",
+      "DNV": "挪威船级社",
+      "IEC 60945": "IEC 60945海事设备标准",
+      "IMO": "国际海事组织"
+    }
+  },
+  "scoring": {
+    "dimensions": [
+      {
+        "name": "timeliness",
+        "name_zh": "时效性",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "30天内"
+          },
+          {
+            "score": 7,
+            "condition": "90天内"
+          },
+          {
+            "score": 5,
+            "condition": "半年内"
+          },
+          {
+            "score": 3,
+            "condition": "一年内"
+          }
+        ]
+      },
+      {
+        "name": "source_quality",
+        "name_zh": "一手源",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "L1 厂商/标准组织/船级社"
+          },
+          {
+            "score": 8,
+            "condition": "L2 展会/协会"
+          },
+          {
+            "score": 5,
+            "condition": "L3 行业媒体"
+          },
+          {
+            "score": 3,
+            "condition": "L4 泛科技"
+          }
+        ]
+      },
+      {
+        "name": "relevance",
+        "name_zh": "海事相关性",
+        "weight": 2,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "船舶认证/ECDIS/导航直接相关"
+          },
+          {
+            "score": 8,
+            "condition": "海洋电子/船舶自动化"
+          },
+          {
+            "score": 6,
+            "condition": "港口/海上能源"
+          },
+          {
+            "score": 3,
+            "condition": "通用船舶新闻"
+          }
+        ]
+      },
+      {
+        "name": "actionability",
+        "name_zh": "可执行性",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "可产生APQ海事行动建议"
+          },
+          {
+            "score": 5,
+            "condition": "了解即可"
+          },
+          {
+            "score": 3,
+            "condition": "纯资讯"
+          }
+        ]
+      },
+      {
+        "name": "vendor_mention",
+        "name_zh": "厂商提及",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "提及具体海事IPC厂商"
+          },
+          {
+            "score": 5,
+            "condition": "通用海事行业"
+          },
+          {
+            "score": 0,
+            "condition": "无厂商"
+          }
+        ]
+      },
+      {
+        "name": "policy_trend",
+        "name_zh": "政策/认证",
+        "weight": 1,
+        "rubric": [
+          {
+            "score": 10,
+            "condition": "IMO强制要求/船级社新规"
+          },
+          {
+            "score": 7,
+            "condition": "行业趋势/认证动态"
+          },
+          {
+            "score": 5,
+            "condition": "展会信息"
+          }
+        ]
+      }
+    ],
+    "max_score": 94,
+    "threshold": 45,
+    "cross_verify_bonus": 2
+  }
+}
