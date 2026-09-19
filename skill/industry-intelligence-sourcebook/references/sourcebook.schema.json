@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://workbuddy/skills/industry-intelligence-sourcebook/sourcebook.schema.json",
+  "title": "Industry Intelligence Sourcebook Schema",
+  "description": "Canonical schema for all industry sourcebook JSON files. Enforces P0 verification fields per 2026-07-02 review.",
+  "type": "object",
+  "required": ["industry", "industry_zh", "version", "last_updated", "source_pyramid", "competitors", "search_whitelist", "query_templates", "cross_validation", "scoring"],
+  "properties": {
+    "industry": { "type": "string", "description": "Industry identifier, lowercase (e.g. ipc, maritime)" },
+    "industry_zh": { "type": "string", "description": "Industry name in Chinese" },
+    "version": { "type": "string", "description": "Semantic version" },
+    "last_updated": { "type": "string", "description": "ISO date of last update" },
+    "source": { "type": "string", "description": "Optional: origin of data (e.g. extracted from report)" },
+
+    "source_pyramid": {
+      "type": "object",
+      "required": ["L1", "L2", "L3", "L4"],
+      "properties": {
+        "L1": { "$ref": "#/$defs/source_tier" },
+        "L2": { "$ref": "#/$defs/source_tier" },
+        "L3": { "$ref": "#/$defs/source_tier" },
+        "L4": { "$ref": "#/$defs/source_tier" }
+      }
+    },
+
+    "competitors": {
+      "type": "object",
+      "properties": {
+        "primary": { "type": "array", "items": { "type": "string" } },
+        "secondary": { "type": "array", "items": { "type": "string" } },
+        "watch": { "type": "array", "items": { "type": "string" } },
+        "local_domestic": { "$ref": "#/$defs/local_domestic_entries" },
+        "expo_trackers": { "$ref": "#/$defs/expo_trackers" }
+      }
+    },
+
+    "exhibition_calendar": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/exhibition_entry" }
+    },
+
+    "search_whitelist": {
+      "type": "object",
+      "required": ["news_domestic", "news_international", "competitor"],
+      "properties": {
+        "news_domestic": { "type": "array", "items": { "type": "string" } },
+        "news_international": { "type": "array", "items": { "type": "string" } },
+        "competitor": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "query_templates": {
+      "type": "object",
+      "properties": {
+        "news_cn": { "$ref": "#/$defs/query_template" },
+        "news_intl": { "$ref": "#/$defs/query_template" },
+        "competitor_scan": { "$ref": "#/$defs/query_template" },
+        "expo_season": { "type": "object" },
+        "exhibition_verification": { "type": "object" },
+        "social_media": { "type": "object" }
+      }
+    },
+
+    "cross_validation": {
+      "type": "object",
+      "required": ["min_independent_sources", "cn_to_intl_mapping", "intl_to_cn_mapping"],
+      "properties": {
+        "min_independent_sources": { "type": "integer" },
+        "verification_levels": { "type": "object" },
+        "cn_to_intl_mapping": { "type": "object" },
+        "intl_to_cn_mapping": { "type": "object" }
+      }
+    },
+
+    "scoring": {
+      "type": "object",
+      "required": ["dimensions", "max_score", "threshold"],
+      "properties": {
+        "dimensions": { "type": "array", "items": { "$ref": "#/$defs/scoring_dimension" } },
+        "max_score": { "type": "integer" },
+        "threshold": { "type": "integer" },
+        "cross_verify_bonus": { "type": "integer" },
+        "bonus_condition": { "type": "string" }
+      }
+    }
+  },
+
+  "$defs": {
+    "source_tier": {
+      "type": "object",
+      "required": ["weight", "description", "entries"],
+      "properties": {
+        "weight": { "type": "number" },
+        "description": { "type": "string" },
+        "entries": { "type": "array", "items": { "$ref": "#/$defs/source_entry" } }
+      }
+    },
+
+    "source_entry": {
+      "type": "object",
+      "required": ["id", "name_zh", "name_en"],
+      "properties": {
+        "id": { "type": "string" },
+        "name_zh": { "type": "string" },
+        "name_en": { "type": "string" },
+        "type": { "type": "string", "enum": ["competitor", "standards_org", "government", "exhibition", "association", "alliance", "media"] },
+        "tier": { "type": "string", "enum": ["global_top", "regional_top", "niche", "primary", "secondary", "watch"] },
+        "domain": { "type": "string" },
+        "domains": { "type": "array", "items": { "type": "string" } },
+        "homepage": { "type": "string" },
+        "core_expos": { "type": "array", "items": { "type": "string" } },
+        "cross_verify_required": { "type": "boolean" },
+        "note": { "type": "string" },
+        "priority": { "type": "string", "enum": ["P0", "P1"] },
+        "region": { "type": "string" },
+        "month": { "type": "integer" },
+        "social_media": {
+          "type": "object",
+          "properties": {
+            "wechat": { "type": "string" },
+            "bilibili": { "type": "string" },
+            "douyin": { "type": "string" },
+            "zhihu": { "type": "string" }
+          }
+        },
+        "parent_entity": { "type": "string", "description": "Actual controlling entity for independence check. E.g. EETimes+EEChina → AspenCore. null = independent." },
+        "content_type": {
+          "type": "string",
+          "enum": ["official_announcement", "product_page", "investor_relation", "standards_document", "policy_document", "independent_reporting", "consulting_report", "press_aggregation", "general_media", "exhibition_listing", "social_media"],
+          "description": "Primary content type this source publishes. Drives noise filtering."
+        },
+        "aliases": { "type": "array", "items": { "type": "string" }, "description": "Name variants for entity resolution" },
+        "verification": {
+          "type": "object",
+          "required": ["last_verified", "verified_by", "status"],
+          "properties": {
+            "last_verified": { "type": "string", "description": "ISO date" },
+            "verified_by": { "type": "string", "enum": ["manual", "auto"] },
+            "status": { "type": "string", "enum": ["active", "suspicious", "deprecated"] },
+            "credentials": { "type": "array", "items": { "type": "string" }, "description": "ICP备案号/官方认证账号/媒体牌照等" },
+            "notes": { "type": "string" }
+          }
+        },
+        "ttl": {
+          "type": "object",
+          "properties": {
+            "valid_until": { "type": "string", "description": "ISO date or 'permanent'" },
+            "update_frequency": { "type": "string", "enum": ["daily", "weekly", "biweekly", "monthly", "quarterly", "event_driven"], "description": "Recommended collection frequency by source tier" }
+          }
+        },
+        "compliance": {
+          "type": "object",
+          "properties": {
+            "allow_scrape": { "type": "boolean", "description": "Does ToS permit web scraping?" },
+            "api_available": { "type": "boolean", "description": "Is there a public API?" },
+            "rate_limit": { "type": "string", "description": "E.g. '10/min', '100/hour', 'unlimited'" },
+            "robots_txt_compliant": { "type": "boolean" },
+            "data_retention_days": { "type": "integer", "description": "How long to retain raw content cache" },
+            "requires_auth": { "type": "boolean", "description": "Does access require login/API key?" },
+            "jurisdiction": { "type": "string", "description": "CN/DE/US/TW/UK/NL/SE etc." }
+          }
+        }
+      }
+    },
+
+    "local_domestic_entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/source_entry" }
+    },
+
+    "expo_trackers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "verified_expos": { "type": "array", "items": { "type": "string" } },
+          "excluded_expos": { "type": "object" }
+        }
+      }
+    },
+
+    "exhibition_entry": {
+      "type": "object",
+      "required": ["id", "name", "name_zh", "month", "priority", "region", "domain"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "name_zh": { "type": "string" },
+        "month": { "type": "integer" },
+        "priority": { "type": "string", "enum": ["P0", "P1"] },
+        "region": { "type": "string" },
+        "domain": { "type": "string" },
+        "note": { "type": "string" },
+        "competitor_participation": { "type": "array", "items": { "type": "string" } },
+        "reverse_scan_value": { "type": "string" }
+      }
+    },
+
+    "query_template": {
+      "type": "object",
+      "properties": {
+        "query": { "type": "string" },
+        "keyword_groups": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+
+    "scoring_dimension": {
+      "type": "object",
+      "required": ["name", "name_zh", "weight", "rubric"],
+      "properties": {
+        "name": { "type": "string" },
+        "name_zh": { "type": "string" },
+        "weight": { "type": "integer" },
+        "rubric": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["score", "condition"],
+            "properties": {
+              "score": { "type": "integer" },
+              "condition": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+vendor: AAEON
+model: BOXER-8741AI
+snapshot_at: "2026-09-15"
+verified: false          # 待多源交叉验证后置 true
+sources:
+  - url: "<厂商官方产品页·待补>"
+    fetched_at: "2026-09-15"
+    tier: 1
+specs:
+  cpu: "Intel Core Ultra"
+  note: "边缘AI BOX·Core Ultra 平台"
+  compute:
+    int8_sparse_tops: null
+    note: "⚠️ 量纲待标注（rule-6）"
+  memory: null
+  tdp: null
+  network: null
+  serial: null
+  certifications: []
+  temp_range: null
+lifecycle:
+  status: "在售"
+  penalty: 1.0
+confidence: "中"

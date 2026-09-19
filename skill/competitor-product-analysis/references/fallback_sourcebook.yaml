@@ -1,0 +1,66 @@
+# fallback_sourcebook.yaml — 竞品信源兜底清单
+# 版本: v1.5.0 | 更新: 2026-09-15
+# 用途: 当 industry-intelligence-sourcebook 不可用/未安装时，本文件提供厂商清单 + 官方 URL 兜底
+#       使本技能可完全独立运行（解 A1 硬依赖死锁）
+
+version: "1.5.0"
+updated_at: "2026-09-15"
+purpose: "降级路径·独立运行兜底"
+
+# ── 一、厂商源（23 家 · IPC / 嵌入式硬件 / 加固计算）──
+vendors:
+  # 中国台湾
+  - {name: Advantech,   cn: 研华,     url: "https://www.advantech.com/",       region: 中国台湾, lang: [en, zh-tw, zh-cn], note: "工业电脑龙头·DLT/TPC/MIC 系列"}
+  - {name: AAEON,       cn: 研扬,     url: "https://www.aaeon.com/",           region: 中国台湾, lang: [en, zh-tw], note: "研华子公司·BOXER/OMNI 系列"}
+  - {name: Vecow,       cn: 宸曜,     url: "https://www.vecow.com/",           region: 中国台湾, lang: [en, zh-tw], note: "EAC/ECS 系列·车载/轨交"}
+  - {name: Neousys,     cn: 宸曜科技, url: "https://www.neousys-tech.com/",    region: 中国台湾, lang: [en, zh-tw], note: "NRU/Nuvo 系列·宽温加固"}
+  - {name: Aetina,      cn: 安提国际, url: "https://www.aetina.com/",          region: 中国台湾, lang: [en, zh-tw], note: "AIB 系列·边缘 AI"}
+  - {name: Axiomtek,    cn: 艾讯,     url: "https://www.axiomtek.com/",        region: 中国台湾, lang: [en, zh-tw], note: "eBOX/tBOX 系列"}
+  - {name: ADLINK,      cn: 凌华,     url: "https://www.adlinktech.com/",      region: 中国台湾, lang: [en, zh-tw], note: "MXE/ROS 系列·边缘计算"}
+  - {name: Winmate,     cn: 宸鸿,     url: "https://www.winmate.com/",         region: 中国台湾, lang: [en, zh-tw], note: "海事/军用加固显示器"}
+  - {name: Moxa,        cn: 四零四,   url: "https://www.moxa.com/",            region: 中国台湾, lang: [en, zh-tw], note: "工控网络·海事认证（Moxa 判例来源）"}
+  - {name: IEI,         cn: 威强,     url: "https://www.ieiworld.com/",        region: 中国台湾, lang: [en, zh-tw], note: "嵌入式主板/工控机"}
+  - {name: Portwell,    cn: 瑞传,     url: "https://www.portwell.com.tw/",     region: 中国台湾, lang: [en, zh-tw], note: "嵌入式计算"}
+  # 中国大陆
+  - {name: JWIPC,       cn: 杰微,     url: "https://www.jwipc.com/",           region: 中国大陆, lang: [en, zh-cn], note: "JEA/E618S 系列"}
+  - {name: NORCO,       cn: 华北工控, url: "https://www.norco.com.cn/",        region: 中国大陆, lang: [zh-cn],    note: "SOMB 系列·国产化"}
+  - {name: EVOC,        cn: 研祥,     url: "https://www.evoc.cn/",             region: 中国大陆, lang: [zh-cn, en], note: "工控机国产龙头"}
+  - {name: Yanhua,      cn: 研华中国, url: "https://www.advantech.cn/",        region: 中国大陆, lang: [zh-cn],    note: "研华中国站"}
+  - {name: Anrecson,    cn: 安睿信,   url: "https://www.anrecson.com/",        region: 中国大陆, lang: [zh-cn],    note: "加固笔记本/工控"}
+  - {name: Sinovo,      cn: 信步,     url: "https://www.seavo.com/",           region: 中国大陆, lang: [zh-cn],    note: "嵌入式主板"}
+  # 德国
+  - {name: Kontron,     cn: ~,        url: "https://www.kontron.com/",         region: 德国,     lang: [en, de],    note: "嵌入式/海事 COTS"}
+  - {name: Congatec,    cn: ~,        url: "https://www.congatec.com/",        region: 德国,     lang: [en, de],    note: "COM Express 模块"}
+  - {name: MEN Mikro,   cn: ~,        url: "https://www.men.de/",              region: 德国,     lang: [en, de],    note: "铁路/海事加固"}
+  # 美国
+  - {name: Crystal Group, cn: ~,      url: "https://www.crystalrugged.com/",   region: 美国,     lang: [en],        note: "军工/海事加固server"}
+  - {name: Mercury Systems, cn: ~,    url: "https://www.mrcy.com/",            region: 美国,     lang: [en],        note: "国防嵌入式计算"}
+  - {name: Dell Rugged, cn: ~,        url: "https://www.dell.com/en-us/dt/rugged/", region: 美国, lang: [en],       note: "加固笔记本/平板"}
+
+# ── 二、展会/标准源（8 个）──
+events_and_standards:
+  - {name: IEC 60945,      type: 海事标准, note: "船用导航设备·EMC 与环境"}
+  - {name: DNV,            type: 船级社,   url: "https://www.dnv.com/"}
+  - {name: Lloyd's Register, type: 船级社, url: "https://www.lr.org/"}
+  - {name: EN 60721-3-6,   type: 环境等级, note: "海事环境 6M 系列（非 5M3）"}
+  - {name: EN 60721-3-5,   type: 环境等级, note: "道路车辆 5M3（易误读为海事）"}
+  - {name: Embedded World, type: 展会,     url: "https://www.embedded-world.de/"}
+  - {name: SPS IPC Drives, type: 展会}
+  - {name: Marintec China, type: 展会,     note: "中国海事展"}
+
+# ── 三、补抓 backlog（6 项 · 待补官方页）──
+backlog:
+  - {target: "Aetina AIB-AT78/68",      priority: high,   note: "官方页未获取"}
+  - {target: "NORCO SOMB-6581A",        priority: high,   note: "官方页未获取"}
+  - {target: "Axiomtek 官方页",          priority: normal, verified: false}
+  - {target: "ADLINK 官方页",            priority: normal, verified: false}
+  - {target: "Winmate 官方页",           priority: normal, verified: false}
+  - {target: "MeiG 官方页",              priority: normal, verified: false}
+
+# ── 四、信源分级（对齐 SKILL.md §B2）──
+source_tiers:
+  tier1_primary:   "厂商官方产品页 / 官方 datasheet"
+  tier2_quasi:     "厂商官方公众号 / 官方新闻稿 / 经销商官方页"
+  tier3_secondary: "行业媒体 / 第三方评测 / 展会资料"
+  tier4_banned:    "论坛 / 未署名聚合站 / AI 生成内容"
+same_source_rule: "厂商官网与其公众号属同一主体，不得算作 2 个交叉验证源；内容逐字一致判同源计 1"
