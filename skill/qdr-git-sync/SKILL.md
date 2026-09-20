@@ -92,7 +92,7 @@ updated_at: 2026-09-14
 | 空间 | 分支 | 本地物理位置 | 本质 | 内容 |
 |:--|:--|:--|:--|:--|
 | **main** | `main` | `$QDR_ROOT`（`D:/Workbuddy/Q博士`） | 治理本体（平台中立） | 宪法/脚本/治理/drq |
-| **capabilities** | `capabilities` | `~/.workbuddy/skills`（宿主物理约束） | 能力载体 | 技能（跨空间方法论） |
+| **capabilities** | `capabilities` | 宿主技能目录（A 机 = `~/.workbuddy/skills`·经 `host_paths.host_skills_dir()` 解析） | 能力载体 | 技能（跨空间方法论） |
 | **dataset** | `dataset` | `Data-全局数据仓库` | 数据资产 | 数据/脚本/注册表 |
 | **host-adapters** | `host-adapters` | `.codex` + `.dsh`（宿主物理约束） | 宿主接入产物 | 各平台特有产物（`AGENTS.md`·宿主桥·MCP 配置） |
 | **外部公开面（Cosmos.ai）** | `-`（独立公开仓库 `Q-heart-space/Cosmos.ai`） | `github.com/Q-heart-space/Cosmos.ai` | 对外公开库·与四空间正交 | **Distribute-External 出口**：脱敏派生知识·按**对外能力六域**分类（`skill/`·`expert/`·`methodology/`·`whitepaper/`·`case/`·`resource/`）·技能归入 `skill/<技能名>/` |
@@ -110,7 +110,7 @@ updated_at: 2026-09-14
 **B 机（只装 DSH）配置示例**：
 ```cmd
 set QDR_SKILLS_DIR=C:\Users\you\.dsh\skills
-set QDR_DATA_DIR=D:\Workbuddy\Data-全局数据仓库
+set QDR_DATA_DIR=<该机的数据仓库目录>   REM 🛑 勿填 A 机路径·B 机应指向本机数据仓库
 set QDR_GIT_PROXY=        REM 空=直连
 python scripts/qdr_sync_all.py --mode pull   REM 使用者拉
 ```
@@ -122,7 +122,7 @@ python scripts/qdr_sync_all.py --mode pull   REM 使用者拉
 ## 执行方式（AI 在对话里收到触发词后）
 
 ```bash
-cd /d "D:\Workbuddy\Q博士"
+cd /d "%QDR_ROOT%"                     REM 或直接切到该机的 Q博士 仓库根
 python scripts/qdr_sync_all.py --list                          # dry-run
 python scripts/qdr_sync_all.py --mode push                    # 治理者推
 python scripts/qdr_sync_all.py --mode pull                    # 使用者拉
@@ -136,7 +136,7 @@ python scripts/qdr_sync_all.py --mode push --target capabilities   # 只推能�
 
 ## 安全门禁
 
-- PAT 存 `~/.workbuddy/qdoctor_pat`（已被 .gitignore 排除）
+- PAT 存宿主配置根下的 `qdoctor_pat`（A 机 = `~/.workbuddy/qdoctor_pat`·已被 .gitignore 排除）
 - 脚本内置忽略凭证：`.enc`/`.key`/`.master.key`/`.credentials.*.json`/`token`/`mcp.json`/`API-Credentials.md`
 - 忽略大目录：`Backups`/`versions`/`staging`/`workspace`
 - pull 模式用 `reset --hard`（强制同步·本地改动丢失·只用于「使用者拉」场景）
