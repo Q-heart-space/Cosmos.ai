@@ -1,2 +1,17 @@
 .sync_portable_fingerprint.json
 __pycache__/
+# 🆕 2026-09-20 A4②：构建残留/泄漏物防线（判例：本库曾入库 ai_agent_sourcebook.json.bak_20260904）
+*.pyc
+*.pyo
+*.bak
+*.bak_*
+*.orig
+*.rej
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
