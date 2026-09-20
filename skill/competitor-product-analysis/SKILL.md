@@ -403,6 +403,3 @@ Step 1~7（七步查询）：执行七步查询路径 + 输出三张表
 ## 盲区与自审
 - 本技能的已知盲区：本技能只提供查询方法论，不内置任何竞品数据——竞品清单与 URL 依赖 industry-intelligence-sourcebook，sourcebook 未收录的竞品本技能无从查起；无法覆盖需登录/付费墙/未公开的厂商资料；查询能力依赖 WebFetch/agent-browser 工具可达性，站点反爬或 PDF 无法解析时数据必然缺失。
 - 自审方式：P0 参数溯源出现"无来源 URL"或 P2 来源覆盖率 <100% 时，即说明存在未覆盖的信息源，应补抓而非强行输出结论；当竞品清单里找不到目标厂商时，检查 sourcebook 是否过时需更新。
-
-## 🛑 自同步约束（修改本技能后强制执行）
-本技能为 Q博士 技能生态资产，修改后须运行 `python scripts/sync_skill_registry.py` 同步注册表/路由/FILE_MANIFEST。
