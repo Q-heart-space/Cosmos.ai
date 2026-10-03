@@ -1,21 +1,23 @@
 ---
 name: ai-drift-guard
-description: "AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。"
-version: 1.5.0
+description: "AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。**能力边界**：仅 **Tier A 信号**（S5/S4/S9）可由宿主强制拒绝（缺该缝时动作不会发生）；**Tier C 信号**只写入上下文，**不保证被读或被采纳**；本协议**不识别**未枚举的跑偏形态，也**不替代**宿主原生守卫与人工裁决。"
+circuit: ⑦自审
+version: 1.5.0-ext
 agent_created: true
 creator: Q博士
 tags: [guard, anti-drift, over-engineering, quality, self-check, bilingual, platform-neutral]
-triggers:
-  - AI跑偏守卫
-  - drift guard
-  - 检查是否跑偏
-  - 别过度设计
+triggers: AI跑偏守卫, 偏航守卫, 自检协议, ai-drift-guard, 防过度工程化, 防范围蔓延, 动手前自检, 偏航, drift guard, 检查是否跑偏, 别过度设计
 platform: any
 space_scope: universal
 cross_space_compatible: yes
 distribute_external: yes
+publish_face: public
 trust_level: auto
 license: MIT
+layer: 叶·守卫
+usage_class: 治理类
+task_type: 质量守卫
+downstream: host-adapter
 ---
 
 # AI-Drift-Guard / AI 跑偏守卫
