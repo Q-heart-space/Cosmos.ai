@@ -4,7 +4,7 @@
 
 ## 安装
 
-复制到 `~/.workbuddy/skills/report-iteration-steward/` 即可。
+复制到 `<宿主技能目录>/report-iteration-steward/` 即可。
 
 ## 使用
 

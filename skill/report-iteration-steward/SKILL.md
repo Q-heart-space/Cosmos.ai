@@ -7,11 +7,11 @@ description: 通用内容迭代管家 v2.1（核心专注报告迭代·🆕 v2.1
 icon: 🔄
 disable-model-invocation: false
 circuit: ⑦自审
-version: 2.1.0-ext
+version: 2.1.0-ext
 distribute_external: yes
 depends: []
 suggests:
-  - task-retrospective   # 迭代后的复盘（可选·缺失不影响本技能运行）
+  - 复盘技能   # 迭代后的复盘（可选·缺失不影响本技能运行）
   - build-dashboard      # 看板类报告（可选·缺失走文本输出）
   - task-router          # 路由（可选·缺失手工触发）
 # 🆕 v2.1（2026-09-15·A1 同类缺陷根治）：原 depends 硬依赖 4 技能 + 误把 references 文件当依赖
@@ -32,20 +32,20 @@ deprecated: false
 updated_at: 2026-08-13
 ---
 
-## 🏛️ 宪法对齐（2026-07-09 补·铁律AQ 内容级同步）
+## 🏛️ 宪法对齐（2026-07-09 补·内容级同步）
 
-> 本技能须与 Q博士 宪法级文件（跨空间本体论 §15 / 战略宪章 P1-12·P1-13 / 系统架构 §2.7 M.A.R.L / 全局铁律 AN·AO·AB·AG）保持**内容同步**；宪法变更→本技能**事件驱动级联更新**（铁律AQ）。
+> 本技能须与 Q博士 宪法级文件（本项目治理基线：本体论 / 战略 / 架构 / 全局治理约束）保持**内容同步**；宪法变更→本技能**事件驱动级联更新**（内容级同步要求）。
 
-- **铁律AO 十维审核框架**（形式/内容/结构/关联/概念/版本/可验证/意图/同源/反身性）：报告迭代须过十维审核（格式/内容/结构…）。
-- **铁律AB 数据源权威性层级**（多源冲突选权威源·竞品L0优先）：内容 vs 格式路由依数据源权威分层。
+- **十维审核框架**（形式/内容/结构/关联/概念/版本/可验证/意图/同源/反身性）：报告迭代须过十维审核（格式/内容/结构…）。
+- **数据源权威性层级**（多源冲突选权威源·竞品L0优先）：内容 vs 格式路由依数据源权威分层。
 
 # 报告迭代管家（通用版）
 
 > **注意**：本技能是通用骨架。项目使用时，应创建项目级技能引用本技能并注入项目参数。
-> 项目级示例见 `.workbuddy/skills/apq-report-iteration-steward/SKILL.md`。
+> 项目级示例见 `<宿主技能目录>/apq-report-iteration-steward/SKILL.md`。
 - **AI空间（Q博士 治理空间概念）**：本技能运行于 Q博士 治理空间（第三空间）内，输出须遵循跨空间本体论五通道（Harvest-Internal/Harvest-External/Distribute-Internal/Distribute-External/Consistency）语义约束；跨空间输出须标注 space_scope。
-- **铁律AN 状态断言前置审查**：技能在输出"未找到""不存在""无变化"等否定/肯定断言前，须执行取证三问（查源→交叉验证→证据锚定）。
-- **铁律AG 数据+凭证双中枢**：本技能的输入数据须标注来源权威层级，优先使用 Data-全局数据仓库（双中枢）而非未经校验的外部 API 缓存。
+- **状态断言前置审查**：技能在输出"未找到""不存在""无变化"等否定/肯定断言前，须执行取证三问（查源→交叉验证→证据锚定）。
+- **数据与凭证双中枢**：本技能的输入数据须标注来源权威层级，优先使用 Data-全局数据仓库（双中枢）而非未经校验的外部 API 缓存。
 
 
 ## 适用报告类型
@@ -216,7 +216,7 @@ assert output_filename_version == report_title_version == html_title_version
 
 本技能执行完成后，按 **[task-router]** 当前任务类型为 **报告迭代**：
 
-- 若迭代过程中**出现计划偏差**（新增模块超计划、版式重构、结构大改）→ 建议 **[@task-retrospective]** 复盘
+- 若迭代过程中**出现计划偏差**（新增模块超计划、版式重构、结构大改）→ 建议 **[@复盘技能]** 复盘
 - 若迭代过程**按计划完成** → 建议 **[@build-dashboard]** 构建
 
 是否继续？
@@ -265,7 +265,7 @@ assert output_filename_version == report_title_version == html_title_version
 
 ## 如何创建项目级技能
 
-在项目 `.workbuddy/skills/` 下创建 `SKILL.md`，包含：
+在项目 `<宿主技能目录>/` 下创建 `SKILL.md`，包含：
 1. 引用本通用技能
 2. 注入项目参数：模块完整性底线表、断言阈值、脚本路径、文件名模板
 
@@ -273,7 +273,7 @@ assert output_filename_version == report_title_version == html_title_version
 
 ---
 
-## 🆕 关联项目（2026-07-04 新增·参考 PTN-39 原则5「消费者清单」）
+## 🆕 关联项目（2026-07-04 新增·参考「消费者清单」原则「消费者清单」）
 
 修改本技能后，需检查：
 
@@ -291,11 +291,11 @@ assert output_filename_version == report_title_version == html_title_version
 | 修改了什么 | 必须检查 | 检查方法 |
 |:--|:--|:--|
 | **内容/流程** | frontmatter `description` 是否仍准确？ | 重新读 description，对比当前实际功能（报告迭代+表格/手册扩展 via references/） |
-| **触发词** | 是否新增/删除触发词？是否与 write-report 的"写报告"产生歧义？ | `grep -rn "迭代报告\|升级报告\|版式审查\|补齐报告" ~/.workbuddy/skills/*/SKILL.md` |
+| **触发词** | 是否新增/删除触发词？是否与 write-report 的"写报告"产生歧义？ | `grep -rn "迭代报告\|升级报告\|版式审查\|补齐报告" <宿主技能目录>/*/SKILL.md` |
 | **版本号** | 内容/流程变更 → 必须 bump 版本号；🆕 description 中的版本号必须与 frontmatter `version` 一致（当前 v2.0） | 主版本+1=新增迭代介质类型，次版本+1=references/扩展 |
-| **@引用** | `@build-dashboard` `@task-retrospective` 的引用仍有效？ | 读被引用技能的触发词表 |
+| **@引用** | `@build-dashboard` `@复盘技能` 的引用仍有效？ | 读被引用技能的触发词表 |
 | **references/** | references/ 中的内容是否与 SKILL.md 无重复？ | 渐进披露原则：同一条信息只能出现在一处 |
-| **cross-ref 消费方** | 被 write-report/channel-analysis 等引用 | `grep -rn "report-iteration-steward\|迭代管家" ~/.workbuddy/skills/*/SKILL.md`
+| **cross-ref 消费方** | 被 write-report/channel-analysis 等引用 | `grep -rn "report-iteration-steward\|迭代管家" <宿主技能目录>/*/SKILL.md`
 
 ## 盲区与自审（反模式#45）
 

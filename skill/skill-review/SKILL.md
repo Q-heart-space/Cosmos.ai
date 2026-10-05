@@ -103,7 +103,7 @@ allowed-tools: null
 
 ## 🛑 自同步约束（修改本技能后强制执行）
 
-> 来源：PTN-50 技能自同步标准（P4-2·2026-07-06 叶层扩展）。
+> 来源：技能自同步标准（2026-07-06 叶层扩展）。
 > 本技能声明 `agent_created: true`（AI 自创建）→ 必须带本约束段，否则自动沉淀会污染技能。
 > 改了本技能 → 必须逐项自查，否则文本规则不可信。
 
@@ -114,5 +114,5 @@ allowed-tools: null
 | **版本号** | 内容/流程变更 → 必须 bump version；description 版本号须与 frontmatter `version` 一致 | 主版本+1=能力新增，次版本+1=描述/路由调整 |
 | **@引用** | depends 中引用的技能/脚本仍匹配？ | 读被引用技能的触发词表与脚本存在性 |
 | **references/** | 引用文件变更 → 本技能是否需同步？ | 检查 references/ 下被引内容是否已过时 |
-| **cross-ref 消费方** | 谁消费本技能？ | `grep -rn "<本技能名>" ~/.workbuddy/skills/*/SKILL.md` |
-| **跨宿主** | 若在 cross_host_skills.json 注册 → 改后须分发 | `python ~/.workbuddy/skills/skill-sync/references/skill_sync.py --execute` |
+| **cross-ref 消费方** | 谁消费本技能？ | `grep -rn "<本技能名>" <宿主技能目录>/*/SKILL.md` |
+| **跨宿主** | 若在 cross_host_skills.json 注册 → 改后须分发 | `python <宿主技能目录>/skill-sync/references/skill_sync.py --execute` |
