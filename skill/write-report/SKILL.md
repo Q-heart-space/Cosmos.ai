@@ -9,7 +9,8 @@ reuse_depth: org-parameterized
 scope_axis: business
 layer: 叶·写作
 trust_level: notification
-version: 1.0.0-ext
+version: 1.0.0-ext
+
 distribute_external: yes
 depends: apq-content-coherence, apq-format-verify, task-router,
   report-iteration-steward, references/check-dimensions.md
@@ -113,5 +114,3 @@ P3 逐章循环（每章独立）:
 ## 完成后下游建议
 
 本技能执行完成后，按 **[task-router]** 当前任务类型为 **报告撰写**，建议下一步：**[@report-iteration-steward]**（若已有具体数据）或 **[@apq-report-iteration-steward]**（渠道管理项目）。是否继续？
-## 🛑 自同步约束（修改本技能后强制执行）
-本技能为 Q博士 技能生态资产，修改后须运行 `python scripts/sync_skill_registry.py` 同步注册表/路由/FILE_MANIFEST。

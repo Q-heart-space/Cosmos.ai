@@ -286,17 +286,6 @@ assert output_filename_version == report_title_version == html_title_version
 
 ---
 
-## 🛑 自同步约束（修改本技能后强制执行）
-
-| 修改了什么 | 必须检查 | 检查方法 |
-|:--|:--|:--|
-| **内容/流程** | frontmatter `description` 是否仍准确？ | 重新读 description，对比当前实际功能（报告迭代+表格/手册扩展 via references/） |
-| **触发词** | 是否新增/删除触发词？是否与 write-report 的"写报告"产生歧义？ | `grep -rn "迭代报告\|升级报告\|版式审查\|补齐报告" <宿主技能目录>/*/SKILL.md` |
-| **版本号** | 内容/流程变更 → 必须 bump 版本号；🆕 description 中的版本号必须与 frontmatter `version` 一致（当前 v2.0） | 主版本+1=新增迭代介质类型，次版本+1=references/扩展 |
-| **@引用** | `@build-dashboard` `@复盘技能` 的引用仍有效？ | 读被引用技能的触发词表 |
-| **references/** | references/ 中的内容是否与 SKILL.md 无重复？ | 渐进披露原则：同一条信息只能出现在一处 |
-| **cross-ref 消费方** | 被 write-report/channel-analysis 等引用 | `grep -rn "report-iteration-steward\|迭代管家" <宿主技能目录>/*/SKILL.md`
-
 ## 盲区与自审（反模式#45）
 
 - 盲区声明：迭代判定依赖 LLM 对「计划/报告」的语义理解，迭代边界判断可能偏差；多版本管理依赖命名规范，不规范命名漏检
