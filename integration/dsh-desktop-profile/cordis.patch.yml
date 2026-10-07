@@ -1,7 +1,7 @@
-# ⚠️ 模板文件 —— 不可直接使用（本文件原为 `C:/Users/yiyou/…` 的 A 机绝对路径）
+# ⚠️ 模板文件 —— 不可直接使用（本文件原为**某台机器**上的绝对路径）
 # ============================================================================
 # 本文件是 DSH `profiles/desktop/cordis.patch.yml` 的**可分发模板**。原副本写死了
-# A 机路径（`C:/Users/yiyou/.dsh/skills/qdr-intent-route/plugin.js`）——属宿主绑定债：
+# 原副本写死的是**某台机器上该插件脚本的绝对路径**——属宿主绑定债：
 # 换机器即指向不存在的文件，且 Cordis 解析失败是**致命**的（`group.ts` L71-84
 # → `assertEntriesActivated` → exit 1，整个 profile 起不来）。
 #

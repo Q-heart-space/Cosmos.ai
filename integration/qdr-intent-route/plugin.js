@@ -12,13 +12,13 @@
 //   🔑 教训：**"事件落了" ≠ "数据对"**——接线验收必须做到字段级/哈希级，不能只看"有记录"。
 //   修法：`promptText()` 从 `{type:'text', text}` 块抽纯文本（块形状由上述哈希比对反证）。
 // 版本：v1.2 | 2026-09-19 | 宿主绑定债根治：仓库根改 env 解析（原写死 A 机盘符路径）
-//   判例（DSH 宿主执行窗口·递归闭环修复）：原实现把 `D:/Workbuddy/Q博士` 写死在 spawn 的脚本路径与
-//   cwd 上 ⇒ **本插件只在 A 机可用**；B 机（治理者根 = `E:\DSH\Q博士-治理者`）会 spawn 一个不存在的
+//   判例（DSH 宿主执行窗口·递归闭环修复）：原实现把 `<工作空间根>` 写死在 spawn 的脚本路径与
+//   cwd 上 ⇒ **本插件只在 A 机可用**；B 机（治理者根 = `<本库根>`）会 spawn 一个不存在的
 //   脚本（且因 detached + stdio ignore，失败只会在 error 回调里留一行 warn）。本分支（host-adapters）
 //   的存在意义正是消除此类宿主绑定，故改为 env 解析，解析顺序与 `scripts/host_paths.py` 同源：
 //       `QDR_ROOT`（canonical）→ `QDR_HOME`（旧名·向后兼容）→ 皆无则 **fail-visible 跳过**
 //   🛑 不猜路径：宁可留一条 warn 也不静默 spawn 错路径（与 host_paths v1.6「命中后校验存在性并
-//   fail-visible 告警」同构）。A 机行为不变（实测 QDR_ROOT=D:\Workbuddy\Q博士 已在进程 env 中）。
+//   fail-visible 告警」同构）。A 机行为不变（实测 QDR_ROOT=<工作空间根> 已在进程 env 中）。
 // 版本：v1.1 | 2026-09-13 | P0-1 修复：只路由人类提示词
 //   判据与 DSH 自带 isUserMessage 同构（app.asar 实证：event.type === "user/message" && event.data.source.kind === "user"）。
 //   旧版仅判 event.type，导致 harness 注入的 user-role 块也被路由入库：2026-09-13 实证一批 4 事件中
@@ -76,7 +76,7 @@ export function buildHookJson(event, session) {
 /**
  * 解析 Q博士 仓库根（宿主无关·**禁盘符绝对路径**）。
  *
- * 判例（2026-09-19 DSH 宿主执行窗口）：原实现写死 `D:/Workbuddy/Q博士` ⇒ 本插件只在 A 机可用。
+ * 判例（2026-09-19 DSH 宿主执行窗口）：原实现写死 `<工作空间根>` ⇒ 本插件只在 A 机可用。
  * 解析顺序与 `scripts/host_paths.py` / `dsh/qdr_wrapper.py` 同源：`QDR_ROOT` → `QDR_HOME`（旧名）。
  * 两者皆无 ⇒ 返回空串，由调用方 **fail-visible 跳过**（不猜路径·不静默 spawn 错路径）。
  */
