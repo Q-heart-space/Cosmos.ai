@@ -20,4 +20,8 @@ expert/<expert-name>/
 
 ## 状态
 
-⏳ 建设中——专家包对外发布流程就绪后，按 `expert/<expert-name>/` 逐个发布。
+🟢 **已首批发布**（2026-10-07）—— `governance-audit-team/`（**Expert Team 形态**）已按本目录结构约定落位。
+
+🅑 其余专家包按 `expert/<expert-name>/` 逐个发布。
+
+**🛑 归域说明**：`Expert Team` 归**本域**（**不另建 `team/`**）—— 域按**接收方的问题**切分，形态是**另一维**（两者正交）。
