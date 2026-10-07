@@ -1,0 +1,20 @@
+# ⚠️ 模板文件 —— 不可直接使用（本文件原为 `C:/Users/yiyou/…` 的 A 机绝对路径）
+# ============================================================================
+# 本文件是 DSH `profiles/desktop/cordis.patch.yml` 的**可分发模板**。原副本写死了
+# A 机路径（`C:/Users/yiyou/.dsh/skills/qdr-intent-route/plugin.js`）——属宿主绑定债：
+# 换机器即指向不存在的文件，且 Cordis 解析失败是**致命**的（`group.ts` L71-84
+# → `assertEntriesActivated` → exit 1，整个 profile 起不来）。
+#
+# 【解析语义与三态实测】见 `../../qdr-intent-route/cordis.patch.yml` 头部注释。要点：
+#     file:///…/plugin.js   两面皆通   ← 本模板要求渲染成这个形态
+#     C:/…/plugin.js        仅桌面面通（🔴 裸 Include 面 ERR_UNSUPPORTED_ESM_URL_SCHEME）
+#     qdr-intent-route      两面皆 🔴 ERR_MODULE_NOT_FOUND
+#
+# 【安装期渲染】把 __QDR_INTENT_ROUTE_PLUGIN_URL__ 换成本机 plugin.js 的 file:// URL：
+#     file:///C:/Users/<you>/.dsh/skills/qdr-intent-route/plugin.js
+# 🛑 渲染结果不提交（渲染值宿主绑定·提交即制造新的宿主绑定债）。
+# ============================================================================
+- insert:
+  - id: qdr-intent-route
+    name: '__QDR_INTENT_ROUTE_PLUGIN_URL__'
+    inject: [sessions]
