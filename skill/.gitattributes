@@ -1,0 +1,21 @@
+# 🆕 2026-09-24（A机 父窗·裁决落笔）：**行尾单源** —— 跨机行尾不再依赖本机全局 git 配置
+# 提案与取证：B机 `[补丁包]B机_SSOT仓gitattributes行尾单源_D4_20260924.md`（一手）
+#   真驱动检出＝**system 级 `core.autocrlf=true`**（Git for Windows 安装默认·`etc/gitconfig`），
+#   local/global 均为空 ⇒ 本仓工作树 481/516 受控文件含 CRLF（93.2%），且 **blob 恒为 LF**。
+# 本仓先例（同源域·同一类错误）：`Q博士` 仓 `ACC-20260917-153000 / RC-017` ⇒ `T-3-4000`（2026-09-23 A机）
+#   结论逐字可复用：「**`* text=auto` 缺 `eol` ⇒ 仍是隐式依赖**」＋「显式契约 > 全局开关默认值」。
+# 第一原理：行尾是**仓的属性**，不是**每台机器 git 安装的副作用** ——
+#   否则「换一台机器」会静默改变所有人拿到的东西（`#120` 族：以本机全局配置代替仓内单源）。
+# 与分发层的关系（纵深防御）：本仓 `skill_sync` v1.8 已在**写端强制归一 LF**（判据＝分发后各宿主 CRLF=0）；
+#   本件把同一目标前移到**检出端** ⇒ 两端同向。
+# 🛑 零 churn 已复算（微夹具·独立）：既有 CRLF 工作树文件在 `text=auto eol=lf` 下
+#   `git status` **仍为 0 行**（不做 `rm --cached` 级重写 ⇒ 不制造 505 件假修改）。
+* text=auto eol=lf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.jsonl text eol=lf
+*.txt   text eol=lf
+*.csv   text eol=lf

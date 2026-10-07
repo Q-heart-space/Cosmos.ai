@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "subscriptions": [
+    {
+      "name": "qdr-bridge",
+      "version": "1.9",
+      "sha256": "f3bfb1fab7e7bb696e1933e2d6dfdc9e",
+      "file_count": 3,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-bridge",
+      "installed_at": "2026-09-24T10:49:37.806312+00:00"
+    },
+    {
+      "name": "getnote",
+      "version": "1.0.0-ext",
+      "sha256": "afc549f62c461d7afbbcd1194cd6875b",
+      "file_count": 17,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\getnote",
+      "installed_at": "2026-09-24T10:49:37.839301+00:00"
+    },
+    {
+      "name": "harvest-push",
+      "version": "1.6",
+      "sha256": "319afa667910673878c25157dd1eca66",
+      "file_count": 2,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\harvest-push",
+      "installed_at": "2026-09-24T10:49:37.852456+00:00"
+    },
+    {
+      "name": "cross-space-realtime-feedback",
+      "version": "1.4",
+      "sha256": "4fbc2a811c20ad82f14356dedf0f65e3",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\cross-space-realtime-feedback",
+      "installed_at": "2026-09-24T10:49:37.864855+00:00"
+    },
+    {
+      "name": "industry-intelligence-sourcebook",
+      "version": "1.1.1-ext",
+      "sha256": "8c78e1298d52ae8611da2ada600ffac6",
+      "file_count": 10,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\industry-intelligence-sourcebook",
+      "installed_at": "2026-09-24T10:49:37.880455+00:00"
+    },
+    {
+      "name": "qdr-deep-governance-planning",
+      "version": "4.5",
+      "sha256": "89b9148736153ecf39c31cdddc2ea707",
+      "file_count": 2,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-deep-governance-planning",
+      "installed_at": "2026-09-24T10:49:37.893724+00:00"
+    },
+    {
+      "name": "qdr-meta-governance-review",
+      "version": "1.0",
+      "sha256": "de3b42dd7a06c394d6784aa46f25c166",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-meta-governance-review",
+      "installed_at": "2026-09-24T10:49:37.905903+00:00"
+    },
+    {
+      "name": "qdr-full-chain-audit",
+      "version": "1.2",
+      "sha256": "d2846d4b742eaa6bed885e1c1cb401fc",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-full-chain-audit",
+      "installed_at": "2026-09-24T10:49:37.915644+00:00"
+    },
+    {
+      "name": "governance-deep-audit",
+      "version": "1.1",
+      "sha256": "776018c5f406d0714c67de8e89604759",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\governance-deep-audit",
+      "installed_at": "2026-09-24T10:49:37.928669+00:00"
+    },
+    {
+      "name": "task-retrospective",
+      "version": "3.35",
+      "sha256": "7d6370d9b08a600bea0e0aa00a67e3b9",
+      "file_count": 23,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\task-retrospective",
+      "installed_at": "2026-09-24T10:49:37.948542+00:00"
+    },
+    {
+      "name": "infrastructure-audit",
+      "version": "1.8",
+      "sha256": "0aa3bba935587f929b546dea840af22b",
+      "file_count": 2,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\infrastructure-audit",
+      "installed_at": "2026-09-24T10:49:37.964723+00:00"
+    },
+    {
+      "name": "critical_absorption_check",
+      "version": "1.1",
+      "sha256": "4f70c1f30becd857a62d8a9a65199e19",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\critical_absorption_check",
+      "installed_at": "2026-09-24T10:49:37.979099+00:00"
+    },
+    {
+      "name": "claim-evidence-validation",
+      "version": "1.1",
+      "sha256": "ad37a6cf730a03664429998cf2c97d5d",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\claim-evidence-validation",
+      "installed_at": "2026-09-24T10:49:37.992743+00:00"
+    },
+    {
+      "name": "governance-deepening-protocol",
+      "version": "1.3",
+      "sha256": "70bb4563080cced7f35dd26df700e58d",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\governance-deepening-protocol",
+      "installed_at": "2026-09-24T10:49:38.007570+00:00"
+    },
+    {
+      "name": "memory-self-healing",
+      "version": "1.5",
+      "sha256": "1d36177981cb7c3e6b42e15661e71d8b",
+      "file_count": 2,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\memory-self-healing",
+      "installed_at": "2026-09-24T10:49:38.020048+00:00"
+    },
+    {
+      "name": "memory-management",
+      "version": "1.5",
+      "sha256": "a618f7dcc1a4e5343d5edce25593e2f2",
+      "file_count": 5,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\memory-management",
+      "installed_at": "2026-09-24T10:49:38.036110+00:00"
+    },
+    {
+      "name": "cross-space-governance-steward",
+      "version": "1.2",
+      "sha256": "de76a2f735efb14f0928ac04e0d52ac3",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\cross-space-governance-steward",
+      "installed_at": "2026-09-24T10:49:38.051120+00:00"
+    },
+    {
+      "name": "competitor-product-analysis",
+      "version": "1.5.0-ext",
+      "sha256": "34651e5395ba5ebf2fbffc9301de0327",
+      "file_count": 16,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\competitor-product-analysis",
+      "installed_at": "2026-09-24T10:49:38.070991+00:00"
+    },
+    {
+      "name": "constitution-steward",
+      "version": "3.20",
+      "sha256": "da0b93f7efc7432bc082e88178091b7b",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\constitution-steward",
+      "installed_at": "2026-09-24T10:49:38.088930+00:00"
+    },
+    {
+      "name": "wecom-push",
+      "version": "4.7",
+      "sha256": "b9dc933a61c58c47466db2439baa2782",
+      "file_count": 3,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\wecom-push",
+      "installed_at": "2026-09-24T10:49:38.104131+00:00"
+    },
+    {
+      "name": "weiling-query",
+      "version": "2.1",
+      "sha256": "fdddd8520fe28627ef2ef3df72f83093",
+      "file_count": 10,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\weiling-query",
+      "installed_at": "2026-09-24T10:49:38.119221+00:00"
+    },
+    {
+      "name": "erp-after-sales-dashboard",
+      "version": "3.1",
+      "sha256": "fb66c95856da2b0d07ffe871ae126032",
+      "file_count": 16,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\erp-after-sales-dashboard",
+      "installed_at": "2026-09-24T10:49:38.133238+00:00"
+    },
+    {
+      "name": "qdr-new-script-pipeline",
+      "version": "1.10",
+      "sha256": "db6001bab772772763d5ec57c7687fcf",
+      "file_count": 3,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-new-script-pipeline",
+      "installed_at": "2026-09-24T10:49:38.150606+00:00"
+    },
+    {
+      "name": "qdr-preguard",
+      "version": "1.6",
+      "sha256": "98b6893ce75ec5ee5ee7edc3c43d525b",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-preguard",
+      "installed_at": "2026-09-24T10:49:38.162545+00:00"
+    },
+    {
+      "name": "capability-market",
+      "version": "1.0.0",
+      "sha256": "01308722b69af44cda699657c174fe82",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\capability-market",
+      "installed_at": "2026-09-24T10:49:38.174826+00:00"
+    },
+    {
+      "name": "skill-review",
+      "version": "1.3.0-ext",
+      "sha256": "45d7dd3f0be5dfa790e975542ec253fa",
+      "file_count": 12,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\skill-review",
+      "installed_at": "2026-09-24T10:49:38.193551+00:00"
+    },
+    {
+      "name": "meta-library-steward",
+      "version": "1.3",
+      "sha256": "9c7dede8821b93a738213058866d58e7",
+      "file_count": 3,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\meta-library-steward",
+      "installed_at": "2026-09-24T10:49:38.209941+00:00"
+    },
+    {
+      "name": "drq-rule-generation-pipeline",
+      "version": "1.3",
+      "sha256": "abf6186c52d1e2efa2b26d4fe024dc1f",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\drq-rule-generation-pipeline",
+      "installed_at": "2026-09-24T10:49:38.225284+00:00"
+    },
+    {
+      "name": "host-runtime-triage",
+      "version": "1.2.0-ext",
+      "sha256": "20eb17279fe964c18bd9b23fa7594d46",
+      "file_count": 5,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\host-runtime-triage",
+      "installed_at": "2026-09-24T10:49:38.239580+00:00"
+    },
+    {
+      "name": "agent-team-orchestration",
+      "version": "1.0",
+      "sha256": "7da48e80edceb0d2b5db4b0ed72dcfd0",
+      "file_count": 7,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\agent-team-orchestration",
+      "installed_at": "2026-09-24T10:49:38.254789+00:00"
+    },
+    {
+      "name": "asset-rename-cascade-sync",
+      "version": "1.3",
+      "sha256": "bedf17e7c5a23699378ce1decf2b4d55",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\asset-rename-cascade-sync",
+      "installed_at": "2026-09-24T10:49:38.265885+00:00"
+    },
+    {
+      "name": "diary-steward",
+      "version": "1.0",
+      "sha256": "2e1ebfadded879e89935c63e3172b021",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\diary-steward",
+      "installed_at": "2026-09-24T10:49:38.280752+00:00"
+    },
+    {
+      "name": "dynamic-archives-steward",
+      "version": "1.1",
+      "sha256": "e725d73554440b440346bbc6ea032c46",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\dynamic-archives-steward",
+      "installed_at": "2026-09-24T10:49:38.294199+00:00"
+    },
+    {
+      "name": "file-intake",
+      "version": "2.1",
+      "sha256": "67e538147fcaaf367d585209a92e1d12",
+      "file_count": 2,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\file-intake",
+      "installed_at": "2026-09-24T10:49:38.307484+00:00"
+    },
+    {
+      "name": "multi-agent-orchestrator",
+      "version": "1.0",
+      "sha256": "f9657a95ea80ba6462099674cc70db53",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\multi-agent-orchestrator",
+      "installed_at": "2026-09-24T10:49:38.322857+00:00"
+    },
+    {
+      "name": "nine-dimension-interrogation-pipeline",
+      "version": "9.2",
+      "sha256": "34175c9607e6c5cb4c657f855dec60c6",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\nine-dimension-interrogation-pipeline",
+      "installed_at": "2026-09-24T10:49:38.335560+00:00"
+    },
+    {
+      "name": "report-iteration-steward",
+      "version": "2.1.0-ext",
+      "sha256": "3573f3f234aa27aa0ef548720516d4b2",
+      "file_count": 6,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\report-iteration-steward",
+      "installed_at": "2026-09-24T10:49:38.352016+00:00"
+    },
+    {
+      "name": "write-report",
+      "version": "1.0.0-ext",
+      "sha256": "2569de2f713160360b52cc70a539bfe9",
+      "file_count": 7,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\write-report",
+      "installed_at": "2026-09-24T10:49:38.366304+00:00"
+    },
+    {
+      "name": "qdr-intent-route",
+      "version": "unversioned",
+      "sha256": "eedfc77d30b6175acd61195ded507a35",
+      "file_count": 5,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-intent-route",
+      "installed_at": "2026-09-24T10:49:38.379532+00:00"
+    },
+    {
+      "name": "qdr-external-publish",
+      "version": "1.0.0-ext",
+      "sha256": "9cdb89309b0c98f78481624008d8063e",
+      "file_count": 1,
+      "source": "ssot:~/.dsh/skills",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\qdr-external-publish",
+      "installed_at": "2026-09-24T10:49:38.392804+00:00"
+    },
+    {
+      "name": "skill-sync",
+      "version": "1.6",
+      "sha256": "a003a1f9097ec722a11c7dc19af50d04",
+      "file_count": 7,
+      "source": "local:ssot",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\skill-sync",
+      "installed_at": "2026-09-24T10:49:38.405417+00:00"
+    },
+    {
+      "name": "adversarial-audit",
+      "version": "unversioned",
+      "sha256": "c9edcd4fd248f5594bb7e1ac4b528999",
+      "file_count": 16,
+      "source": "local:ssot",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\adversarial-audit",
+      "installed_at": "2026-09-24T10:49:38.423723+00:00"
+    },
+    {
+      "name": "task-router",
+      "version": "unversioned",
+      "sha256": "d048e13fe6be7cc957423452f36420cf",
+      "file_count": 4,
+      "source": "local:ssot",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\task-router",
+      "installed_at": "2026-09-24T10:49:38.437193+00:00"
+    },
+    {
+      "name": "detector-signal-triage",
+      "version": "unversioned",
+      "sha256": "ba898c85431be7b77adc522d444dcb37",
+      "file_count": 10,
+      "source": "local:ssot",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\detector-signal-triage",
+      "installed_at": "2026-09-24T10:49:38.453755+00:00"
+    },
+    {
+      "name": "repair-expert",
+      "version": "unversioned",
+      "sha256": "679831a0467581835dca781936056e74",
+      "file_count": 3,
+      "source": "local:ssot",
+      "install_dir": "C:\\Users\\PC\\.dsh\\skills\\repair-expert",
+      "installed_at": "2026-09-24T10:49:38.466694+00:00"
+    }
+  ],
+  "updated_at": "2026-09-24T10:49:38.466721+00:00",
+  "machine": "m-E026a467a"
+}
