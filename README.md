@@ -15,6 +15,9 @@ In one line: we do not ship *a ready-made agent* — we ship **the governance sy
 | [`expert/`](expert/) · 专家 | **专家角色**包（含多角色协作协议） | 需要专业角色视角 · need a specialist role |
 | [`methodology/`](methodology/) · 方法论 | 可迁移的**方法论**（含案例） | 想学这套治理方法 · want to learn the method |
 | [`whitepaper/`](whitepaper/) · 白皮书 | **白皮书**与理论 | 想读懂原理 · want the theory |
+| 🆕 [`integration/`](integration/) · 集成单元 | 可**接进你系统**的单元（`form`: `mcp`／`plugin`／`automation`） | 要把能力接进自己的平台 · want to wire it in |
+| 🆕 [`data/`](data/) · 可共享数据 | **已脱敏**的可共享数据（含 schema 与注册表） | 要拿数据做分析 · want the data |
+| 🆕 [`memory/`](memory/) · 记忆制品 | **portable** 记忆骨架（🅑 供**无 L1 正本**的机器落位） | 要让自己的系统长出同样的记忆 · want the same memory |
 
 ## 快速开始 / Quick start
 
@@ -23,6 +26,7 @@ In one line: we do not ship *a ready-made agent* — we ship **the governance sy
 | 直接用某个能力 · use a capability | [`skill/`](skill/) → 选技能子目录 → 按其 README 安装 |
 | 要一个可验证的决策包 · get a verifiable decision package | [`decision/`](decision/) |
 | 了解这套系统 · understand the system | [`whitepaper/`](whitepaper/) |
+| 🆕 把能力接进我的系统 · wire a capability in | [`integration/`](integration/) |
 | 参与贡献 · contribute | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 ## 回传（外部 → Q博士）/ Feedback (external → Q博士)
