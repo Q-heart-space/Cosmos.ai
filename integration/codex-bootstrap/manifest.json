@@ -1,0 +1,20 @@
+{
+ "_meta": {
+  "platform": "codex",
+  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
+  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "files": 2
+ },
+ "files": [
+  {
+   "src": "mcp.toml.snippet",
+   "sha256": "b238f35c5ae42049073ea4279c069b3cb25952076171676c5681eb8981a57d50",
+   "dst": "${PLATFORM_CONFIG_DIR}/mcp.toml.snippet"
+  },
+  {
+   "src": "README.md",
+   "sha256": "e8fe0ec2a0561793de0f9fa49e7592162b5b7d164ba02459b981af95242978cb",
+   "dst": "${PLATFORM_CONFIG_DIR}/README.md"
+  }
+ ]
+}

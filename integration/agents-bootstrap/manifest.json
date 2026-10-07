@@ -1,0 +1,15 @@
+{
+ "_meta": {
+  "platform": "agents",
+  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
+  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "files": 1
+ },
+ "files": [
+  {
+   "src": "AGENTS.md",
+   "sha256": "073cd4b56b772bfc760e6695fe165163140c3e485a4bf14a39f31989bbe60159",
+   "dst": "${PLATFORM_CONFIG_DIR}/AGENTS.md"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "_meta": {
+  "platform": "dsh",
+  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
+  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "files": 6
+ },
+ "files": [
+  {
+   "src": "experts/_template/agent_dir/agent.cordis.yml",
+   "sha256": "f256221acb7495bdcdfca1389374a92a9207b19cf535174e72a9a43ed5b8bab4",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/agent_dir/agent.cordis.yml"
+  },
+  {
+   "src": "experts/_template/agent_preset_row.yml",
+   "sha256": "a92094a86863a4f9cffefb4898b515c85382bd14363f4999de191d4f2bc1d386",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/agent_preset_row.yml"
+  },
+  {
+   "src": "experts/_template/README.md",
+   "sha256": "bb2a5f814e4c99d859aa036770464d8b78e4fb07a4eb2956c07e52df7e26c98e",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/README.md"
+  },
+  {
+   "src": "experts/expert_lib.meta.json",
+   "sha256": "5cb3e03c6a680e93fbb970636ca5fe7303c62e9078bca323bb259276358e3759",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/expert_lib.meta.json"
+  },
+  {
+   "src": "profiles/desktop/cordis.patch.yml",
+   "sha256": "54526a4f4b40444c1da63fef3ae1d356d0562ad0c2f13ee62be1373d74a26376",
+   "dst": "${PLATFORM_CONFIG_DIR}/profiles/desktop/cordis.patch.yml"
+  },
+  {
+   "src": "agents-anywhere/bridge/endpoint.json",
+   "sha256": "4c4cd159f182b9c4d6e325ca148bbdf184c19d9ba06100f6c94ecb7318a6b25a",
+   "dst": "${PLATFORM_CONFIG_DIR}/agents-anywhere/bridge/endpoint.json"
+  }
+ ]
+}

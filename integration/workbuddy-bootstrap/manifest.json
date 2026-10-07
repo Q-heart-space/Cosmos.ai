@@ -1,0 +1,225 @@
+{
+ "_meta": {
+  "platform": "workbuddy",
+  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
+  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "files": 43
+ },
+ "files": [
+  {
+   "src": "mcp.qdr.json",
+   "sha256": "a28f72ebb14606c934a980e8e44769c1046505534e5b166094a5011e231cf6a8",
+   "dst": "${PLATFORM_CONFIG_DIR}/mcp.qdr.json"
+  },
+  {
+   "src": "README.md",
+   "sha256": "f46c52d07f2cbc6dbb6f0de8d4170be4abdd06eb116bf459d0999b78ce8859f7",
+   "dst": "${PLATFORM_CONFIG_DIR}/README.md"
+  },
+  {
+   "src": "marketplaces/my-experts/.codebuddy-plugin/marketplace.json",
+   "sha256": "283d3b682eefa2aeaba01398ef006b9a07f7f92553dcdf09a366fb20f71585df",
+   "dst": "${PLATFORM_CONFIG_DIR}/plugins/marketplaces/my-experts/.codebuddy-plugin/marketplace.json"
+  },
+  {
+   "src": "marketplaces/my-experts/INSTALL.md",
+   "sha256": "6272c5375d1292aa7844699c2799048ee854634016b0946c0870b988f7c0b574",
+   "dst": "${PLATFORM_CONFIG_DIR}/plugins/marketplaces/my-experts/INSTALL.md"
+  },
+  {
+   "src": "experts/adversarial-audit/.codebuddy-plugin/plugin.json",
+   "sha256": "c6bf5619e0d83310662b6552aab7c79631f28291a9eadcfe939bc1e3d6ac7a7a",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/adversarial-audit/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/adversarial-audit/agents/adversarial-audit.md",
+   "sha256": "2e540fee2d975de043100c0b2fc836032a3dbc6e20c34dfd1d721cf029bf941d",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/adversarial-audit/agents/adversarial-audit.md"
+  },
+  {
+   "src": "experts/adversarial-audit/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/adversarial-audit/avatars/expert.png"
+  },
+  {
+   "src": "experts/adversarial-audit/README.md",
+   "sha256": "4f6e7a0565bb52023bf5b93cedafa61db17940ce77f743ac566af3af39c1f50d",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/adversarial-audit/README.md"
+  },
+  {
+   "src": "experts/cross-space-realtime-feedback/.codebuddy-plugin/plugin.json",
+   "sha256": "5962b0192f0d499f3b5409195f146e8c54baddda606fafba4d0f41ddf16aee9f",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/cross-space-realtime-feedback/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/cross-space-realtime-feedback/agents/cross-space-realtime-feedback.md",
+   "sha256": "481b1a233b0cf3058f54abf97a6a963463713d3af29ff0c6ea4ce4f568918a00",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/cross-space-realtime-feedback/agents/cross-space-realtime-feedback.md"
+  },
+  {
+   "src": "experts/cross-space-realtime-feedback/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/cross-space-realtime-feedback/avatars/expert.png"
+  },
+  {
+   "src": "experts/decision-expert/.codebuddy-plugin/plugin.json",
+   "sha256": "024e49a5e6befcf8571f5e8b64e9ad7c1ecb751e85f0dad34111479fe5cc4a13",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/decision-expert/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/decision-expert/agents/decision-expert.md",
+   "sha256": "bbe0b1aba3ab4438657885a6cc6613907d9f6d2f8b71bf589992e5726f26e31b",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/decision-expert/agents/decision-expert.md"
+  },
+  {
+   "src": "experts/decision-expert/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/decision-expert/avatars/expert.png"
+  },
+  {
+   "src": "experts/expert_lib.meta.json",
+   "sha256": "c7f1797284f4e7a4f0fc2d0515ed0e10f16d9f7620d66ab6afd676ab510200a1",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/expert_lib.meta.json"
+  },
+  {
+   "src": "experts/governance-audit-team/.codebuddy-plugin/plugin.json",
+   "sha256": "768ccaa969ea96bc17bb3d8aecffccd68b1bcc4f0fbe3b8458b5c60ec2d3a457",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-audit-team/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/governance-audit-team/agents/governance-audit-team.md",
+   "sha256": "2ba8c5def90ff01287035f00125704a83803fbddfe805cae91c70b3e86a28e5f",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-audit-team/agents/governance-audit-team.md"
+  },
+  {
+   "src": "experts/governance-audit-team/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-audit-team/avatars/expert.png"
+  },
+  {
+   "src": "experts/governance-audit-team/README.md",
+   "sha256": "c85ff5f334e8f68d258621644132002004a7e71223c3ccd31b75f7de536446df",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-audit-team/README.md"
+  },
+  {
+   "src": "experts/governance-deep-audit/.codebuddy-plugin/plugin.json",
+   "sha256": "fde069b61fd799048f5a2e2ce29e60c61451fe30602252761d22dafc4ae3eb90",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-deep-audit/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/governance-deep-audit/agents/governance-deep-audit.md",
+   "sha256": "5a9dc044e192f186caf3daf8903d6b03cd4ec750f778417f825ef5f8608c9fbc",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-deep-audit/agents/governance-deep-audit.md"
+  },
+  {
+   "src": "experts/governance-deep-audit/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/governance-deep-audit/avatars/expert.png"
+  },
+  {
+   "src": "experts/industry-intelligence-sourcebook/.codebuddy-plugin/plugin.json",
+   "sha256": "784a36904d109aa12de4f33a1fc896efadf740349ccc36ad10b83e29de17e754",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/industry-intelligence-sourcebook/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/industry-intelligence-sourcebook/agents/industry-intelligence-sourcebook.md",
+   "sha256": "639eb391ac5272f0f2900a5c25de63fe47aca9b7cae9e9825db276f4c0b836ec",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/industry-intelligence-sourcebook/agents/industry-intelligence-sourcebook.md"
+  },
+  {
+   "src": "experts/industry-intelligence-sourcebook/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/industry-intelligence-sourcebook/avatars/expert.png"
+  },
+  {
+   "src": "experts/qdr-deep-governance-planning/.codebuddy-plugin/plugin.json",
+   "sha256": "597976c0f7367532f24ced54ac86443ce8a7622ef8ded46afc32544d4fb54b4c",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-deep-governance-planning/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/qdr-deep-governance-planning/agents/qdr-deep-governance-planning.md",
+   "sha256": "8fccbb5a0e2f2b0253b70ac5ff22046d81ce9a2abb6ff1aefe3b6dd923b51da7",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-deep-governance-planning/agents/qdr-deep-governance-planning.md"
+  },
+  {
+   "src": "experts/qdr-deep-governance-planning/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-deep-governance-planning/avatars/expert.png"
+  },
+  {
+   "src": "experts/qdr-deep-governance-planning/README.md",
+   "sha256": "cefcabd3832047b4dc116314e0790aa2856d3ab1ae6a11049bd6b88ae5be4cc9",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-deep-governance-planning/README.md"
+  },
+  {
+   "src": "experts/qdr-full-chain-audit/.codebuddy-plugin/plugin.json",
+   "sha256": "231f442ca57df2e5a80223127f65cccc63d62b48cb394bcf002ddbee99434df9",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-full-chain-audit/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/qdr-full-chain-audit/agents/qdr-full-chain-audit.md",
+   "sha256": "82462b5813355fdaddaf85501049ed4846ae3547834af36ff0726eed682a77de",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-full-chain-audit/agents/qdr-full-chain-audit.md"
+  },
+  {
+   "src": "experts/qdr-full-chain-audit/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-full-chain-audit/avatars/expert.png"
+  },
+  {
+   "src": "experts/qdr-full-chain-audit/README.md",
+   "sha256": "dd02339809b8f6afed4f31b28e08f9e22c92d807cceaf10e19a56ba7b7f775d7",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-full-chain-audit/README.md"
+  },
+  {
+   "src": "experts/qdr-meta-governance-review/.codebuddy-plugin/plugin.json",
+   "sha256": "c84ab31e37b0976cb5df4a15a063268bb5d1f2bfdcf01e190af7f46eb40fecc7",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-meta-governance-review/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/qdr-meta-governance-review/agents/qdr-meta-governance-review.md",
+   "sha256": "0ff6209050704b6024e7cdb6ccdce04704291fd87027bc9db1564380339c807f",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-meta-governance-review/agents/qdr-meta-governance-review.md"
+  },
+  {
+   "src": "experts/qdr-meta-governance-review/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-meta-governance-review/avatars/expert.png"
+  },
+  {
+   "src": "experts/qdr-meta-governance-review/README.md",
+   "sha256": "74b5e1d016edb84fc34169a5b4277738564b03b82137235f7e1ff0d9c62fbf78",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/qdr-meta-governance-review/README.md"
+  },
+  {
+   "src": "experts/README.md",
+   "sha256": "bc9afc696390b78d9a9dda53662d5e04381f71287cfcf2526af7d0c7ca94db35",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/README.md"
+  },
+  {
+   "src": "experts/repair-expert/.codebuddy-plugin/plugin.json",
+   "sha256": "5233ab7e4edbc2c0feb491a103a007811bfc2bc4e614e9177c1f3c140c255230",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/repair-expert/.codebuddy-plugin/plugin.json"
+  },
+  {
+   "src": "experts/repair-expert/agents/.gitkeep",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/repair-expert/agents/.gitkeep"
+  },
+  {
+   "src": "experts/repair-expert/agents/repair-expert.md",
+   "sha256": "1f1430a706eaa77d10509c1e3b990f3a6550c6dcc8eb549491d90ab13c94e043",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/repair-expert/agents/repair-expert.md"
+  },
+  {
+   "src": "experts/repair-expert/avatars/expert.png",
+   "sha256": "adb8f74d1f1ef5af507a34076c96adb1f619ef90a68983b7d26e7d22671c7de0",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/repair-expert/avatars/expert.png"
+  },
+  {
+   "src": "experts/repair-expert/README.md",
+   "sha256": "4c80f15a2a29f2e3aab3a6ed6fe98da45fbefe3bc9a8e6649867a34a8f21ff85",
+   "dst": "${PLATFORM_CONFIG_DIR}/experts/repair-expert/README.md"
+  }
+ ]
+}

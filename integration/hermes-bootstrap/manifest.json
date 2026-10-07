@@ -1,0 +1,225 @@
+{
+ "_meta": {
+  "platform": "hermes",
+  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
+  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "files": 43
+ },
+ "files": [
+  {
+   "src": "mcp.qdr.json",
+   "sha256": "f8adbda76e9f5c6be9ed1d6a48c20aaa791cf4851c97c0fea58a1bf67215ba38",
+   "dst": "${PLATFORM_CONFIG_DIR}/mcp.qdr.json"
+  },
+  {
+   "src": "qdr_ledger_adapter.py",
+   "sha256": "21dc1518d27f27e53096f6d54e25012cd69e81a6373549fea2b4f684210bbfdf",
+   "dst": "${PLATFORM_CONFIG_DIR}/qdr_ledger_adapter.py"
+  },
+  {
+   "src": "README.md",
+   "sha256": "8a743f6854a3fe2e7de7501c3b05505463161cc8b4f0aa84358cf1daaf43a1cc",
+   "dst": "${PLATFORM_CONFIG_DIR}/README.md"
+  },
+  {
+   "src": "distributions/adversarial-auditor/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/.gitignore"
+  },
+  {
+   "src": "distributions/adversarial-auditor/distribution.yaml",
+   "sha256": "a07b936f5c7c223258b47ae86c2490d0ef1f78c200156777aba4da45b18f4059",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/distribution.yaml"
+  },
+  {
+   "src": "distributions/adversarial-auditor/README.md",
+   "sha256": "688ce3d02dca17816cf050ae4c7896cccaa51cb5f511bd406afa73002016cd5c",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/README.md"
+  },
+  {
+   "src": "distributions/adversarial-auditor/SOUL.md",
+   "sha256": "78738eeabb9027577d2802fe8ded71d8f7065c47c54df1445c92394ad1f8bdd6",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/SOUL.md"
+  },
+  {
+   "src": "distributions/decision-expert/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/.gitignore"
+  },
+  {
+   "src": "distributions/decision-expert/distribution.yaml",
+   "sha256": "3e8ae2a883be25d417aa3cc149ebe91056016b5a32a384bdc708ed35e261858b",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/distribution.yaml"
+  },
+  {
+   "src": "distributions/decision-expert/README.md",
+   "sha256": "e751a1e13e9f5abf3825e53b44394b49cb609e04a8e186dd7555f5f80ec58311",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/README.md"
+  },
+  {
+   "src": "distributions/decision-expert/SOUL.md",
+   "sha256": "9853b357a04b26a4d100e260230614ea13b89247ca250f45e314b7b80eaed2c7",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/SOUL.md"
+  },
+  {
+   "src": "distributions/full-chain-auditor/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/full-chain-auditor/.gitignore"
+  },
+  {
+   "src": "distributions/full-chain-auditor/distribution.yaml",
+   "sha256": "dcd80942acbe4a5dc1c40fa11e3e6cdb5128e7b59f51c65918cac690ab0f7a14",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/full-chain-auditor/distribution.yaml"
+  },
+  {
+   "src": "distributions/full-chain-auditor/README.md",
+   "sha256": "8fee3de8c02731f820582afd4763e6e3ca9b5bfda17d8c9a16bfca872c159354",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/full-chain-auditor/README.md"
+  },
+  {
+   "src": "distributions/full-chain-auditor/SOUL.md",
+   "sha256": "b8681e389cabc78a425f5ab8c7b0482cd9967b7571948afa8095199e4de594e7",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/full-chain-auditor/SOUL.md"
+  },
+  {
+   "src": "distributions/governance-audit-team/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/.gitignore"
+  },
+  {
+   "src": "distributions/governance-audit-team/distribution.yaml",
+   "sha256": "42ce44a387c4fd86f9fd421989dd298f128152a29873be73cabaed7974ed61f3",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/distribution.yaml"
+  },
+  {
+   "src": "distributions/governance-audit-team/README.md",
+   "sha256": "a143f0e748f5837eeafddc95c2bf49a8be8ecff21d94920c033866e0faa67e39",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/README.md"
+  },
+  {
+   "src": "distributions/governance-audit-team/SOUL.md",
+   "sha256": "aa7fb2b520c1d8944a38c0b32b27263478409de947e6ee20441f6a311a29baf3",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/SOUL.md"
+  },
+  {
+   "src": "distributions/governance-auditor/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-auditor/.gitignore"
+  },
+  {
+   "src": "distributions/governance-auditor/distribution.yaml",
+   "sha256": "97658f52c770e8957b8628323e8dbd0c14a8d8465da709a8b358fca4c3175bb6",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-auditor/distribution.yaml"
+  },
+  {
+   "src": "distributions/governance-auditor/README.md",
+   "sha256": "f030b37d8449cf5326dbf444c104ea59da6814a192c04a47991059161f3d4e08",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-auditor/README.md"
+  },
+  {
+   "src": "distributions/governance-auditor/SOUL.md",
+   "sha256": "bb1cc52496d3e2245e13a0caf74fd404d2339d0a0bf475d3ad0ae895d1b8934f",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-auditor/SOUL.md"
+  },
+  {
+   "src": "distributions/governance-planner/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-planner/.gitignore"
+  },
+  {
+   "src": "distributions/governance-planner/distribution.yaml",
+   "sha256": "0e558dbd2d5b0757a0d476d90dc8320be286af0aa3c13a2059ea66b7d7fc3eb2",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-planner/distribution.yaml"
+  },
+  {
+   "src": "distributions/governance-planner/README.md",
+   "sha256": "eccfc95ccf964ddebea9c298b11efdd671a1fb12d230fe819f69d39a6cfd5086",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-planner/README.md"
+  },
+  {
+   "src": "distributions/governance-planner/SOUL.md",
+   "sha256": "46005b9e5ccd9e38a5d782eaf8a36f6fbab237b7ed61e210db51bfb1785cfcff",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-planner/SOUL.md"
+  },
+  {
+   "src": "distributions/intelligence-analyst/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/intelligence-analyst/.gitignore"
+  },
+  {
+   "src": "distributions/intelligence-analyst/distribution.yaml",
+   "sha256": "154a6ae8d0f015408cce371f7deeee99c66afdbe0ecbf018f8fd1061446730e5",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/intelligence-analyst/distribution.yaml"
+  },
+  {
+   "src": "distributions/intelligence-analyst/README.md",
+   "sha256": "15efc2170594015539968236ff960190475fc60800f60f65691af0e7c02d6076",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/intelligence-analyst/README.md"
+  },
+  {
+   "src": "distributions/intelligence-analyst/SOUL.md",
+   "sha256": "0f687339276cd00e9685e542a28fbcbc1ce784c8add30cf69d6cd2f903719062",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/intelligence-analyst/SOUL.md"
+  },
+  {
+   "src": "distributions/meta-governance-reviewer/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/meta-governance-reviewer/.gitignore"
+  },
+  {
+   "src": "distributions/meta-governance-reviewer/distribution.yaml",
+   "sha256": "f695368ee6614286a5520c76a052627c8a20093dae513f9ce532320022461d57",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/meta-governance-reviewer/distribution.yaml"
+  },
+  {
+   "src": "distributions/meta-governance-reviewer/README.md",
+   "sha256": "3b4d75fb4627f885eb444a9b19fa12f47be77adf0b0eee01aa8f6ecbc27253e8",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/meta-governance-reviewer/README.md"
+  },
+  {
+   "src": "distributions/meta-governance-reviewer/SOUL.md",
+   "sha256": "44c72bb4813af6f70e05096ee587d106f18e9bde0ca2f2d266169ad200921c86",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/meta-governance-reviewer/SOUL.md"
+  },
+  {
+   "src": "distributions/realtime-feedback-expert/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/realtime-feedback-expert/.gitignore"
+  },
+  {
+   "src": "distributions/realtime-feedback-expert/distribution.yaml",
+   "sha256": "77766cf5315300d37cff42e39cad81da57ec0a8517d055ed10ffa99316a6e7e2",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/realtime-feedback-expert/distribution.yaml"
+  },
+  {
+   "src": "distributions/realtime-feedback-expert/README.md",
+   "sha256": "ec530b05bc4ab3722e059ed431d1945d47b0445ef0b679c77305ae361413b6d8",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/realtime-feedback-expert/README.md"
+  },
+  {
+   "src": "distributions/realtime-feedback-expert/SOUL.md",
+   "sha256": "7e9c105e1672f3fef0d97a99485c5385a164d8f81f688643dd85df6958763e73",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/realtime-feedback-expert/SOUL.md"
+  },
+  {
+   "src": "distributions/repair-expert/.gitignore",
+   "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/.gitignore"
+  },
+  {
+   "src": "distributions/repair-expert/distribution.yaml",
+   "sha256": "f865c3d0fb7831e765fc19cedf910440d3b3705a6f6acb946526a6c961e457d8",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/distribution.yaml"
+  },
+  {
+   "src": "distributions/repair-expert/README.md",
+   "sha256": "8e51b3eb83181f5ae68a9fc5948d6736204e5f05391f63ddb717a7599e4b7e95",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/README.md"
+  },
+  {
+   "src": "distributions/repair-expert/SOUL.md",
+   "sha256": "ca2b392103fe202fcbbf662be3173fe9d6c8b52eb918fc79329683332c9be995",
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/SOUL.md"
+  }
+ ]
+}
