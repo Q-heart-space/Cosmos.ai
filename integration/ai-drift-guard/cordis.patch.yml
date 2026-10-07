@@ -1,0 +1,6 @@
+- insert:
+    - id: ai-drift-guard
+      name: 'dsh-plugin-ai-drift-guard'
+      # skills 是硬依赖：缺了这句，apply 可能早于 skills 服务挂载，
+      # 技能会被静默跳过（守卫仍工作，因为 ctx.on 不依赖服务）。
+      inject: [skills]

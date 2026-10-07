@@ -1,0 +1,19 @@
+{
+  "name": "dsh-plugin-ai-drift-guard",
+  "version": "1.1.0",
+  "private": true,
+  "description": "AI-Drift-Guard for DeepSeek Harness: enforces S5/S4 as real runtime tool gates.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js"
+    }
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
