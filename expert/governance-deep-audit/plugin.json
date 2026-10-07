@@ -20,7 +20,7 @@
     "zh": "治理深审专家"
   },
   "displayDescription": {
-    "en": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\"",
+    "en": "Diagnoses structural defects in a governance system and returns a root cause with an engineering roadmap, complementing an entry review that answers where a problem is by answering why it exists.",
     "zh": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不"
   },
   "avatar": "avatars/expert.png",

@@ -20,7 +20,7 @@
     "zh": "决策专家"
   },
   "displayDescription": {
-    "en": "决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q",
+    "en": "Turns a major decision from a spoken judgement into a recomputable asset: a six-part package built from grounds, alternative assessments and acceptance criteria, checked by six questions and an A/B regression.",
     "zh": "决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策O"
   },
   "avatar": "avatars/expert.png",

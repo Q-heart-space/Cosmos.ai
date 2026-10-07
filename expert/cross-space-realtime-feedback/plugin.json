@@ -20,7 +20,7 @@
     "zh": "跨空间实时反哺专家"
   },
   "displayDescription": {
-    "en": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为\"可借鉴思路\"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时",
+    "en": "Watches public spaces such as GitHub trends, papers and product releases from a competitive-analysis angle, feeds what it finds back into its own conversations, and distils it into reusable ideas through eight safety gates.",
     "zh": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计"
   },
   "avatar": "avatars/expert.png",
