@@ -1,0 +1,111 @@
+## 🛑 铁律U：记忆强制加载协议（2026-07-01 确立·全局最高优先级）
+<!-- @meta domain:process action:阻断 subject:写操作 条件:未读取记忆文件 约束:未完成加载清单即禁止写 -->
+<!-- @role:L1-正文 —— 铁律U 核心正文，跨项目通用 -->
+
+
+> ⚠️ **来源（2026-07-01）**：用户发现云记忆（生成对话记忆）严重缺失海事工控机研究报告、IPC行业战略研究等关键项目，且新会话 AI 可能未读取项目 MEMORY.md 和日志即开始执行，导致从零猜测、方向走偏、重复犯错。
+
+### 核心原则
+
+**云记忆不是真相源，只是索引；本地 MEMORY.md 和项目记忆才是真相源。**
+
+<!-- @role:L0-平台输入 —— WorkBuddy 自动注入的摘要，只读不依赖 -->
+> 🆕 **v4.0 升级（2026-08-07）**：WorkBuddy 新记忆系统在 `~/.workbuddy/memory/<uuid>_memory.md` 生成会话摘要。该文件为 **L0 平台输入**——AI 可读，但**不作为真相源依赖**。真相源仍为 `~/.workbuddy/MEMORY.md`（L1）与项目 `.workbuddy/memory/MEMORY.md`（L2）。
+
+<!-- @role:L1-正文 —— 铁律U 核心正文，跨项目通用 -->
+### 强制加载清单
+
+在执行任何**写操作**（Write/Edit/Bash/PowerShell/批量写入腾讯文档>5行/全量扫描/运行脚本）之前，AI 必须完成以下读取：
+
+| 优先级 | 文件 | 读取时机 | 用途 |
+|:--|:--|:--|:--|
+| P0 | `~/.workbuddy/MEMORY.md` | 每个会话首次涉及具体任务时 | 全局铁律核心原则·加载协议·记忆架构 |
+| P0 | `~/.workbuddy/MEMORY_RULES.md` 🆕 | 每个会话首次涉及具体任务时 | 铁律详细规则·映射表·事故来源（T3.3 拆分） |
+| P0 | `~/.workbuddy/MEMORY_SKILLS.md` 🆕 | 每个会话首次涉及具体任务时 | 技能生态铁律·路由规则（T3.3 拆分） |
+| P0 | `<project>/.workbuddy/memory/MEMORY.md` | 当前项目任务启动时 | 项目专属规则、数据锚点、构建规范 |
+| P1 | `<project>/.workbuddy/memory/YYYY-MM-DD.md`（最近3天） | 当前项目任务启动时 | 最近进度、遗留问题、连续性上下文 |
+| P1 | `Data-全局数据仓库/.DATA_REGISTRY.md` | 任何数据/分析任务启动时 | 数据新鲜度、缓存位置、来源口径 |
+| P1 | `~/.workbuddy/memory/<uuid>_memory.md` | 会话自动注入时 | L0 平台输入摘要·可读但不依赖 |
+
+<!-- @role:L2-摘要源 —— L0-L4 记忆系统五层架构（跨项目通用·单一真相源位于 constitution/本质定位.md §2.1） -->
+### 记忆系统 L0-L4 五层架构
+
+```
+L0 平台输入   → ~/.workbuddy/memory/<uuid>_memory.md（WorkBuddy 维护·AI 只读不依赖）
+L1 全局铁律  → ~/.workbuddy/MEMORY.md（核心原则·加载协议）+ MEMORY_RULES.md（详细规则）+ MEMORY_SKILLS.md（技能生态）
+L2 项目宪法  → <project>/.workbuddy/memory/MEMORY.md（项目专属规则·继承L1）
+L3 事件索引  → <project>/.workbuddy/memory_index.json（每日22:00自动重建·update_memory_index.py）
+L4 健康监控  → memory-self-healing + capability_freshness_check（只读观测·自动修复）
+```
+
+> **层级关系**：L0 只读不依赖 → L1 全局抽象原则 → L2 项目操作化落地 → L3 事件溯源索引 → L4 健康闭环。每层有明确的维护方、消费者、硬度。详见项目 `governance/记忆系统接口契约.md`。
+
+### 阻断机制
+
+| 场景 | 操作 |
+|:--|:--|
+| 未读取上述文件即执行写操作 | **立即停止**，补读后再继续 |
+| 用户说"验一下""检查一下记忆" | 调用 `memory_load_check.py` 验证加载完整性 |
+| 复杂任务/多阶段任务（P0-P4） | 前置审计第0项：确认已读取所有必要记忆文件 |
+
+### 检查机制
+
+AI 在首次写操作前必须在回复中声明：
+
+```
+✅ 已读取 ~/.workbuddy/MEMORY.md（L1 全局铁律核心原则）
+✅ 已读取 ~/.workbuddy/MEMORY_RULES.md（L1 详细规则）
+✅ 已读取 ~/.workbuddy/MEMORY_SKILLS.md（L1 技能生态）
+✅ 已读取 <project>/.workbuddy/memory/MEMORY.md（L2 项目宪法）
+✅ 已读取最近3天日志（L2 事件层）
+✅ 已读取 Data-全局数据仓库/.DATA_REGISTRY.md（数据任务）
+✅ 已识别 ~/.workbuddy/memory/<uuid>_memory.md（L0 平台输入·只读不依赖）
+```
+
+缺少任何一项 → 禁止写操作。
+
+### 反模式（绝对禁止）
+
+- ❌ 仅凭云记忆开始执行任务
+- ❌ 知道有本地记忆文件但"我大概记得内容"直接动手
+- ❌ 用户说"继续"时不重新确认记忆是否已加载
+- ❌ 只读了一天日志就读最近3天
+- ❌ 数据任务不读 DATA_REGISTRY.md 直接调 API
+
+---
+
+---
+## 拆分说明（2026-08-10·T3.3）
+
+本文件仅保留铁律核心原则和加载协议。详细规则和技能生态铁律已拆分至：
+- ~/.workbuddy/MEMORY_RULES.md : 详细规则·映射表·事故来源
+- ~/.workbuddy/MEMORY_SKILLS.md : 技能生态铁律·技能路由规则
+
+加载协议：铁律U 强制加载清单已更新——所有三个 L1 文件均为 P0 必读。
+
+### 自动归位路由（T3.3·防止分裂后内容散落）
+
+新增铁律/规则/经验时，按以下路由自动写入正确文件：
+
+| 内容类型 | 目标文件 | 判定关键词 |
+|:--|:--|:--|
+| 记忆加载协议·架构变更 | MEMORY.md | 铁律U·加载清单·L0-L4·记忆系统架构 |
+| 新铁律详细定义·映射表·事故判例 | MEMORY_RULES.md | 铁律+字母·黑名单·事故来源·映射·操作规范 |
+| 技能触发词·路由规则·技能生态 | MEMORY_SKILLS.md | 技能·触发词·路由·专家·构建脚本 |
+
+规则：新增内容先判定类型→写入对应文件。禁止盲写 MEMORY.md（铁律BZ·内容归位）。
+
+---
+
+## 跨宿主意图识别（#403）·四关键词索引（🆕 2026-09-28·R15 回填·L1）
+
+> **目的**：使**全局记忆层**可召回本工作流四条核心概念（**候选定义**·待人类确认·单点常量便于替换）。
+> **判据**：方案 §11.34.3「R15 三层 × 四关键词」矩阵；**回滚**＝删除本节（🛑 纯增·不改既有行）。
+> 🛑 本层**只放指针**（真相源仍在下列载体·不复制内容）。
+
+| 关键词 | 真相源（指针） |
+|:--|:--|
+| **跨宿主** | `${QDR_ROOT}/constitution/系统架构.md` §十一（#403 概念锚）·`${QDR_ROOT}/governance/跨宿主写操作矩阵.json` |
+| **意图识别** | `${QDR_ROOT}/scripts/qdr_router.py::build_result`（四象限／增量／覆盖收据） |
+| **执行体** | `${QDR_ROOT}/governance/执行链路与执行体矩阵.md`（v1.2） |
+| **收据链** | `${QDR_ROOT}/scripts/closure_verification.py`（池）·`governance/data/skill_receipt.jsonl`·`governance/data/transfer_events/` |
