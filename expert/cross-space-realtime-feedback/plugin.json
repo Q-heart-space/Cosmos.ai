@@ -1,0 +1,44 @@
+{
+  "name": "cross-space-realtime-feedback",
+  "version": "1.4",
+  "description": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为\"可借鉴思路\"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/cross-space-realtime-feedback.md"
+  ],
+  "expertType": "agent",
+  "agentName": "cross-space-realtime-feedback",
+  "displayName": {
+    "en": "Cross Space Realtime Feedback",
+    "zh": "跨空间实时反哺专家"
+  },
+  "profession": {
+    "en": "Cross Space Realtime Feedback",
+    "zh": "跨空间实时反哺专家"
+  },
+  "displayDescription": {
+    "en": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为\"可借鉴思路\"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时",
+    "zh": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计"
+  },
+  "avatar": "avatars/expert.png",
+  "plugin": "cross-space-realtime-feedback",
+  "tags": [
+    {
+      "en": "Cross Space Realtime Feedback",
+      "zh": "跨空间实时反哺专家"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv ",
+      "zh": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv "
+    }
+  ],
+  "defaultInitPrompt": {
+    "zh": "以跨空间实时反哺专家身份审视当前对象并给出可复算结论",
+    "en": "Act as Cross Space Realtime Feedback and review the current object with recomputable evidence"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "governance-deep-audit",
+  "version": "1.1",
+  "description": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\"",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/governance-deep-audit.md"
+  ],
+  "expertType": "agent",
+  "agentName": "governance-deep-audit",
+  "displayName": {
+    "en": "Governance Deep Audit",
+    "zh": "治理深审专家"
+  },
+  "profession": {
+    "en": "Governance Deep Audit",
+    "zh": "治理深审专家"
+  },
+  "displayDescription": {
+    "en": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\"",
+    "zh": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不"
+  },
+  "avatar": "avatars/expert.png",
+  "plugin": "governance-deep-audit",
+  "tags": [
+    {
+      "en": "Governance Deep Audit",
+      "zh": "治理深审专家"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与",
+      "zh": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与"
+    }
+  ],
+  "defaultInitPrompt": {
+    "zh": "以治理深审专家身份审视当前对象并给出可复算结论",
+    "en": "Act as Governance Deep Audit and review the current object with recomputable evidence"
+  }
+}

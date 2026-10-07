@@ -1,0 +1,44 @@
+{
+  "name": "adversarial-audit",
+  "version": "3.24",
+  "description": "Adversarial audit expert: attacks conclusions produced by multi-agent runs, finds falsifiable counterexamples, and drives recursive closed-loop repair.",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/adversarial-audit.md"
+  ],
+  "expertType": "agent",
+  "agentName": "adversarial-audit",
+  "displayName": {
+    "en": "Adversarial Audit Expert",
+    "zh": "对抗式审查专家"
+  },
+  "profession": {
+    "en": "Adversarial Reviewer",
+    "zh": "对抗式审查专家"
+  },
+  "displayDescription": {
+    "en": "Adversarial audit expert: attacks conclusions produced by multi-agent runs, finds falsifiable counterexamples, and drives recursive closed-loop repair.",
+    "zh": "对抗式审查专家"
+  },
+  "avatar": "avatars/expert.png",
+  "defaultInitPrompt": {
+    "zh": "以对抗式审查专家身份审视当前对象并给出可复算结论",
+    "en": "Act as Adversarial Audit Expert and review the current object with recomputable evidence"
+  },
+  "plugin": "adversarial-audit",
+  "quickPrompts": [
+    {
+      "zh": "对抗式审查专家",
+      "en": "对抗式审查专家"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "对抗式审查专家",
+      "en": "Adversarial Audit Expert"
+    }
+  ]
+}

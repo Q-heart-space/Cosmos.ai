@@ -1,0 +1,61 @@
+{
+  "name": "repair-expert",
+  "version": "1.1.0",
+  "description": "RSI stewardship expert: continuously monitors fix-experience solidification via the three-carrier readiness criterion, judges each incremental fix, and backflows self-check requests to running windows.",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/repair-expert.md"
+  ],
+  "expertType": "agent",
+  "agentName": "repair-expert",
+  "displayName": {
+    "en": "Repair Expert",
+    "zh": "修复专家"
+  },
+  "profession": {
+    "en": "Fix-Experience Solidification Steward",
+    "zh": "修复经验固化监管专家"
+  },
+  "displayDescription": {
+    "en": "RSI stewardship agent that monitors fix-experience solidification via the three-carrier readiness criterion and drives recursive closed-loop solidification.",
+    "zh": "常驻监管修复经验固化：以三载体齐备硬判据逐轮审查增量产出，驱动META/反模式/判据器递归闭环落地。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "12-IndustryConsultant",
+  "defaultInitPrompt": {
+    "zh": "审查本轮增量修复是否三载体齐备",
+    "en": "Review whether this round's incremental fix has all three carriers"
+  },
+  "plugin": "repair-expert",
+  "tags": [
+    {
+      "en": "Fix-Experience Solidification",
+      "zh": "修复经验固化"
+    },
+    {
+      "en": "RSI Stewardship",
+      "zh": "RSI监管"
+    },
+    {
+      "en": "Recursive Closed-Loop",
+      "zh": "递归闭环"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Review whether this round's incremental fix has all three carriers",
+      "zh": "审查本轮增量修复是否三载体齐备"
+    },
+    {
+      "en": "Run RSI stewardship round self-test",
+      "zh": "运行 RSI 监管轮次自检"
+    },
+    {
+      "en": "Register unsolidified items as tasks and backflow to related windows",
+      "zh": "把未固化项登记为任务并回灌相关窗口"
+    }
+  ]
+}

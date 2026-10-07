@@ -1,0 +1,116 @@
+{
+  "name": "governance-audit-team",
+  "version": "1.2.0",
+  "description": "ExpertTeam of five registered governance experts with an explicit handoff chain; produces facts, divergences and options only — execution belongs to the orchestrator.",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/governance-audit-team.md"
+  ],
+  "expertType": "team",
+  "agentName": "governance-audit-team",
+  "displayName": {
+    "en": "Governance Audit Team",
+    "zh": "治理审计团"
+  },
+  "profession": {
+    "en": "Expert Team (5 members)",
+    "zh": "治理审计团"
+  },
+  "displayDescription": {
+    "en": "ExpertTeam of five registered governance experts with an explicit handoff chain; produces facts, divergences and options only — execution belongs to the orchestrator.",
+    "zh": "治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。"
+  },
+  "avatar": "avatars/expert.png",
+  "defaultInitPrompt": {
+    "zh": "以治理审计团身份审视当前对象并给出可复算结论",
+    "en": "Act as Governance Audit Team and review the current object with recomputable evidence"
+  },
+  "plugin": "governance-audit-team",
+  "quickPrompts": [
+    {
+      "zh": "治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。",
+      "en": "治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "治理审计团",
+      "en": "Governance Audit Team"
+    }
+  ],
+  "members": [
+    {
+      "id": "meta-governance-reviewer",
+      "displayName": {
+        "zh": "元治理审视专家",
+        "en": "Meta-Governance Review Expert"
+      },
+      "profession": {
+        "zh": "元治理审视专家",
+        "en": "Meta-Governance Review Expert"
+      },
+      "avatar": "avatars/expert.png",
+      "promptFile": "/plugins/qdr-meta-governance-review/agents/qdr-meta-governance-review.md",
+      "role": "lead"
+    },
+    {
+      "id": "governance-planner",
+      "displayName": {
+        "zh": "深度治理规划专家",
+        "en": "Deep Governance Planning Expert"
+      },
+      "profession": {
+        "zh": "深度治理规划专家",
+        "en": "Deep Governance Planning Expert"
+      },
+      "avatar": "avatars/expert.png",
+      "promptFile": "/plugins/qdr-deep-governance-planning/agents/qdr-deep-governance-planning.md",
+      "role": "member"
+    },
+    {
+      "id": "full-chain-auditor",
+      "displayName": {
+        "zh": "全链路审计专家",
+        "en": "Full-Chain Audit Expert"
+      },
+      "profession": {
+        "zh": "全链路审计专家",
+        "en": "Full-Chain Audit Expert"
+      },
+      "avatar": "avatars/expert.png",
+      "promptFile": "/plugins/qdr-full-chain-audit/agents/qdr-full-chain-audit.md",
+      "role": "member"
+    },
+    {
+      "id": "adversarial-auditor",
+      "displayName": {
+        "zh": "对抗式审查专家",
+        "en": "Adversarial Review Expert"
+      },
+      "profession": {
+        "zh": "对抗式审查专家",
+        "en": "Adversarial Review Expert"
+      },
+      "avatar": "avatars/expert.png",
+      "promptFile": "/plugins/adversarial-audit/agents/adversarial-audit.md",
+      "role": "member"
+    },
+    {
+      "id": "governance-deep-auditor",
+      "displayName": {
+        "zh": "治理深审专家",
+        "en": "Governance Deep Audit Expert"
+      },
+      "profession": {
+        "zh": "治理深审专家",
+        "en": "Governance Deep Audit Expert"
+      },
+      "avatar": "avatars/expert.png",
+      "promptFile": "/plugins/governance-deep-audit/agents/governance-deep-audit.md",
+      "role": "member"
+    }
+  ]
+}

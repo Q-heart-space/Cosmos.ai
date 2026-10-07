@@ -1,0 +1,44 @@
+{
+  "name": "industry-intelligence-sourcebook",
+  "version": "1.1.1-ext",
+  "description": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/industry-intelligence-sourcebook.md"
+  ],
+  "expertType": "agent",
+  "agentName": "industry-intelligence-sourcebook",
+  "displayName": {
+    "en": "Industry Intelligence Sourcebook",
+    "zh": "行业情报分析师"
+  },
+  "profession": {
+    "en": "Industry Intelligence Sourcebook",
+    "zh": "行业情报分析师"
+  },
+  "displayDescription": {
+    "en": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。",
+    "zh": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。"
+  },
+  "avatar": "avatars/expert.png",
+  "plugin": "industry-intelligence-sourcebook",
+  "tags": [
+    {
+      "en": "Industry Intelligence Sourcebook",
+      "zh": "行业情报分析师"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等",
+      "zh": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等"
+    }
+  ],
+  "defaultInitPrompt": {
+    "zh": "以行业情报分析师身份审视当前对象并给出可复算结论",
+    "en": "Act as Industry Intelligence Sourcebook and review the current object with recomputable evidence"
+  }
+}

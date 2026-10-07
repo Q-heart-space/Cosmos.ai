@@ -1,0 +1,44 @@
+{
+  "name": "qdr-full-chain-audit",
+  "version": "1.2",
+  "description": "Full-chain audit expert: batch-runs checker groups across a workspace, classifies findings and drives global revision to closure.",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/qdr-full-chain-audit.md"
+  ],
+  "expertType": "agent",
+  "agentName": "qdr-full-chain-audit",
+  "displayName": {
+    "en": "Full-Chain Audit Expert",
+    "zh": "全链路审计专家"
+  },
+  "profession": {
+    "en": "Full-Chain Auditor",
+    "zh": "全链路审计专家"
+  },
+  "displayDescription": {
+    "en": "Full-chain audit expert: batch-runs checker groups across a workspace, classifies findings and drives global revision to closure.",
+    "zh": "Q博士 全链路审计+全局修订（全局技能·跨空间通用）——检查器组批处理 → 问题分类 → 意图分流（审计/修订/排查三模式）→ 批量修复 → 单维快验 → 全量验证。固化 2026-08-27 性能教训：批处理·单维快验（--check 30s 通过才 --strict 6min）·secure_write 写后回读验证·超时校准用 env+并发实测。 能力边界：审计范围 = 当前工作空间（Q博士 或任一业务空间·universal）；里程碑检测属事件/记忆域（milestone_detector ②记忆回路）不整合本技能；十维审核/ 全面审查归 adversarial-audit（XSG-D0）；不读云历史。"
+  },
+  "avatar": "avatars/expert.png",
+  "defaultInitPrompt": {
+    "zh": "以全链路审计专家身份审视当前对象并给出可复算结论",
+    "en": "Act as Full-Chain Audit Expert and review the current object with recomputable evidence"
+  },
+  "plugin": "qdr-full-chain-audit",
+  "quickPrompts": [
+    {
+      "zh": "Q博士 全链路审计+全局修订（全局技能·跨空间通用）——检查器组批处理 → 问题分类 → 意图分流（审计/修订/排查三模式）→ 批量修复 → 单维快验 → 全量验证。固化 2026-08-27 性能教训：批处理·单维快验（--check 30s 通过才 --strict 6min）·secure_write 写后回读验证·超时校准用 env+并发实测。 能力边界：审计范围 = 当前工作空间（Q博士 或任一业务空间·universal）；里程碑检测属事件/记忆域（milestone_detector ②记忆回路）不整合本技能；十维审核/铁律BA 全面审查归 adversarial-audit（XSG-D0）；不读云历史。",
+      "en": "Q博士 全链路审计+全局修订（全局技能·跨空间通用）——检查器组批处理 → 问题分类 → 意图分流（审计/修订/排查三模式）→ 批量修复 → 单维快验 → 全量验证。固化 2026-08-27 性能教训：批处理·单维快验（--check 30s 通过才 --strict 6min）·secure_write 写后回读验证·超时校准用 env+并发实测。 能力边界：审计范围 = 当前工作空间（Q博士 或任一业务空间·universal）；里程碑检测属事件/记忆域（milestone_detector ②记忆回路）不整合本技能；十维审核/铁律BA 全面审查归 adversarial-audit（XSG-D0）；不读云历史。"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "全链路审计专家",
+      "en": "Full-Chain Audit Expert"
+    }
+  ]
+}

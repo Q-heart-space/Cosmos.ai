@@ -1,0 +1,44 @@
+{
+  "name": "qdr-meta-governance-review",
+  "version": "1.0",
+  "description": "Meta-governance review expert: the entry gate of the Q-Bot decision OS, reviewing major decisions across the six dimensions of the decision OS.",
+  "author": {
+    "name": "Q博士 / Dr.Q",
+    "email": "qdoctor@local"
+  },
+  "agents": [
+    "./agents/qdr-meta-governance-review.md"
+  ],
+  "expertType": "agent",
+  "agentName": "qdr-meta-governance-review",
+  "displayName": {
+    "en": "Meta-Governance Review Expert",
+    "zh": "元治理审视专家"
+  },
+  "profession": {
+    "en": "Meta-Governance Reviewer",
+    "zh": "元治理审视专家"
+  },
+  "displayDescription": {
+    "en": "Meta-governance review expert: the entry gate of the Q-Bot decision OS, reviewing major decisions across the six dimensions of the decision OS.",
+    "zh": "元治理审视专家"
+  },
+  "avatar": "avatars/expert.png",
+  "defaultInitPrompt": {
+    "zh": "以元治理审视专家身份审视当前对象并给出可复算结论",
+    "en": "Act as Meta-Governance Review Expert and review the current object with recomputable evidence"
+  },
+  "plugin": "qdr-meta-governance-review",
+  "quickPrompts": [
+    {
+      "zh": "元治理审视专家",
+      "en": "元治理审视专家"
+    }
+  ],
+  "tags": [
+    {
+      "zh": "元治理审视专家",
+      "en": "Meta-Governance Review Expert"
+    }
+  ]
+}
