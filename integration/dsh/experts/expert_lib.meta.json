@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "criterion": "可被宿主以 agent persona 消费",
+    "register_rule": "新增 Expert 实例＝`SKILL.md` 声明 expert 形态 ＋ 本表登记（**双源一致·铁律X**）",
+    "carrier_role": "宿主专家注册表（第二源）的 `_meta` 载体——🛑 **本文件不承载任何条目**：条目本体由 `scripts/host_adapter_deploy.py --apply --host dsh` 从**核**（`${QDR_HOST_SKILLS_DIR}/<skill>/SKILL.md` frontmatter）派生。",
+    "note": "🛑 禁手抄条目（手抄＝与核成第二真相源·违铁律X）；改核后重跑 deployer 幂等刷新。🛑 宿主绑定值（渲染结果）不入库。"
+  }
+}

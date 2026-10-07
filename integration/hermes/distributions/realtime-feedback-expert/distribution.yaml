@@ -1,0 +1,9 @@
+name: realtime-feedback-expert
+version: 0.1.0
+description: "Q博士 跨空间实时反哺技能"
+hermes_requires: ">=0.21.0"
+author: "Q博士（B机 从核派生生成）"
+# 🛑 本分发**只带「壳」（persona）**：技能面由 skill-sync 独立分发（本体一份·适配一份）
+distribution_owned:
+  - SOUL.md
+  - distribution.yaml

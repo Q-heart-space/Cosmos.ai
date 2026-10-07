@@ -1,0 +1,56 @@
+{
+  "name": "my-experts",
+  "description": "Q博士 自建专家（决策专家／跨空间实时反哺专家／治理深审专家／行业情报分析师／修复专家）",
+  "plugins": [
+    {
+      "name": "cross-space-realtime-feedback",
+      "source": "./plugins/cross-space-realtime-feedback",
+      "description": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为\"可借鉴思路\"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时"
+    },
+    {
+      "name": "decision-expert",
+      "source": "./plugins/decision-expert",
+      "description": "决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q"
+    },
+    {
+      "name": "governance-deep-audit",
+      "source": "./plugins/governance-deep-audit",
+      "description": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\""
+    },
+    {
+      "name": "industry-intelligence-sourcebook",
+      "source": "./plugins/industry-intelligence-sourcebook",
+      "description": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。"
+    },
+    {
+      "name": "repair-expert",
+      "source": "./plugins/repair-expert",
+      "description": "RSI stewardship expert: continuously monitors fix-experience solidification via the three-carrier readiness criterion, judges each incremental fix, and backflows self-check requests to running windows."
+    },
+    {
+      "name": "adversarial-audit",
+      "source": "./plugins/adversarial-audit",
+      "description": "Adversarial audit expert: attacks conclusions produced by multi-agent runs, finds falsifiable counterexamples, and drives recursive closed-loop repair."
+    },
+    {
+      "name": "governance-audit-team",
+      "source": "./plugins/governance-audit-team",
+      "description": "ExpertTeam of five registered governance experts with an explicit handoff chain; produces facts, divergences and options only — execution belongs to the orchestrator."
+    },
+    {
+      "name": "qdr-deep-governance-planning",
+      "source": "./plugins/qdr-deep-governance-planning",
+      "description": "Deep governance planning expert: derives governance plans from first principles and decomposes them into executable steps."
+    },
+    {
+      "name": "qdr-full-chain-audit",
+      "source": "./plugins/qdr-full-chain-audit",
+      "description": "Full-chain audit expert: batch-runs checker groups across a workspace, classifies findings and drives global revision to closure."
+    },
+    {
+      "name": "qdr-meta-governance-review",
+      "source": "./plugins/qdr-meta-governance-review",
+      "description": "Meta-governance review expert: the entry gate of the Q-Bot decision OS, reviewing major decisions across the six dimensions of the decision OS."
+    }
+  ]
+}

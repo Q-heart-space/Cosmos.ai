@@ -1,0 +1,9 @@
+name: governance-planner
+version: 0.1.0
+description: "Q博士深度治理规划技能。当用户要求对自进化/治理/宪法/元安全话题做多轮深挖、从第一原理推导、产出可执行分解计划时触发。负责衔接 governance-deepening-protocol、qdr-meta-governance-review、task-retrospective，产出本体论对齐、元安全映射、竞品转化分析与治理行动分解计划。"
+hermes_requires: ">=0.21.0"
+author: "Q博士（B机 从核派生生成）"
+# 🛑 本分发**只带「壳」（persona）**：技能面由 skill-sync 独立分发（本体一份·适配一份）
+distribution_owned:
+  - SOUL.md
+  - distribution.yaml

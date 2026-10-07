@@ -1,0 +1,11 @@
+{
+  "name": "qdr-governance",
+  "description": "Q博士 治理插件（意图识别 hook 等）·载体 SSOT（B机 r1425 从核派生并入载体）",
+  "plugins": [
+    {
+      "name": "qdr-intent-route",
+      "source": "./plugins/qdr-intent-route",
+      "description": "Q博士 跨宿主意图识别（WorkBuddy UserPromptSubmit hook）——命中 Q博士 触发词即注入治理链路路由提示并落可复算回执。"
+    }
+  ]
+}

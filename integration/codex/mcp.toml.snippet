@@ -1,0 +1,23 @@
+# Codex MCP 注册片段（**模板·占位符未解析**）——落点 ~/.codex/config.toml
+#
+# 🛑 本片段由描述符 host-adapters/descriptors/platform_deploy.json → platforms.codex 派生；
+#    改值请改描述符。host_adapter_deploy.py **不代写 TOML**（只给 snippet）。
+# 占位符：${PYTHON}（运行期 python）· ${QDR_ROOT}（治理本体根）
+#
+# 验收：会话内 tools/list 出现 qdr.* ；回执 caller=codex:*
+
+[mcp_servers.qdr]
+command = "${PYTHON}"
+# supervisor 长驻，worker 退出或代码/动作合同变更时自动重启并重放 initialize；
+# 用户不需要为单次 MCP 故障重启整个 Codex。
+args = ["${QDR_ROOT}/scripts/qdr_mcp_server.py", "--supervise"]
+# 运行时动态透传 Codex 会话绑定材料；不得把会话值写死进配置。
+env_vars = ["CODEX_SESSION_ID", "CODEX_THREAD_ID", "CODEX_TASK_WORKSPACE_VERIFYING_IDENTITY"]
+startup_timeout_sec = 30
+
+[mcp_servers.qdr.env]
+PYTHONUTF8 = "1"
+PYTHONIOENCODING = "utf-8"
+QDR_ROOT = "${QDR_ROOT}"
+QDR_HOME = "${QDR_ROOT}"
+QDR_CALLER = "codex:mcp"

@@ -1,0 +1,9 @@
+name: adversarial-auditor
+version: 0.1.0
+description: "多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）'对抗式审查'/'对抗审计'/'递归闭环修复'/'多Agent验证'/'通电验证'/'真实验证'/'有没有遗漏'/'风险点'/'十维审核'/'铁律BA'/'追问校准'/'从哪得出'/'不要断言'/'显式落位'。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)"
+hermes_requires: ">=0.21.0"
+author: "Q博士（B机 从核派生生成）"
+# 🛑 本分发**只带「壳」（persona）**：技能面由 skill-sync 独立分发（本体一份·适配一份）
+distribution_owned:
+  - SOUL.md
+  - distribution.yaml
