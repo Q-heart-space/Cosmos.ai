@@ -2,7 +2,7 @@
  "_meta": {
   "platform": "hermes",
   "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
-  "note": "使用者**无治理者**时的落位清单（stdlib only·逐文件 sha256 校验）",
+  "note": "使用者**尚未部署本套系统时**的落位清单（stdlib only·逐文件 sha256 校验）",
   "files": 43
  },
  "files": [

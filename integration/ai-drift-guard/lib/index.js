@@ -122,7 +122,7 @@ function messageText(message) {
 const SKILL_CONTENT = [
   '# AI-Drift-Guard — DSH 版',
   '',
-  'Q博士 原创（Cosmos.ai 公开库）。本版为 DSH 适配器：判定逻辑来自可移植核心，本文件只负责接线。',
+  'Q博士 原创（Cosmos.ai 公开库）。本版为 DSH 适配器：判定逻辑来自可移植核心，本文件只负责**与本机对接**。',
   '',
   '## 三层：规则的强度取决于它挂在哪个缝上',
   '',
