@@ -1,0 +1,29 @@
+{
+  "name": "example-connector",
+  "form": "connector",
+  "peer": "another-workspace",
+  "protocol": "jsonrpc-stdio",
+  "endpoint": "${PEER_ENDPOINT}",
+  "auth": "env:PEER_TOKEN",
+  "actions": [
+    {
+      "name": "search",
+      "in": {
+        "query": "string"
+      },
+      "out": {
+        "items": "array"
+      }
+    },
+    {
+      "name": "fetch",
+      "in": {
+        "id": "string"
+      },
+      "out": {
+        "record": "object"
+      }
+    }
+  ],
+  "_note": "🅑 这是**形状示例** —— 把 ${PEER_ENDPOINT} 与 PEER_TOKEN 换为你自己的值。"
+}
