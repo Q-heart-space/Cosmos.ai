@@ -1,0 +1,97 @@
+{
+  "_schema": "adversarial-audit baseline_template v1.0",
+  "_description": "跨会话基线——每次对抗审计Step 1加载，Step 8更新。Q博士记忆系统·第三空间信息→决策桥的信息端。",
+
+  "last_audit": {
+    "timestamp": "2026-08-09T18:51:00+08:00",
+    "skill_version": "v2.0",
+    "dimensions": 8,
+    "total_checks": 32,
+    "passed": 8,
+    "failed": 0,
+    "verdict": "CLEAN",
+    "meta_concepts_powered": 14,
+    "governance_score": 85,
+    "governance_grade": "B"
+  },
+
+  "meta_distribution": {
+    "L0": 131,
+    "L1": 19,
+    "L2": 66,
+    "L3": 16,
+    "L4": 15,
+    "L5": 2,
+    "total": 289,
+    "conversion_rate": 19.5
+  },
+
+  "blindspots": [
+    {
+      "id": "dim3_daily_tasks_blind",
+      "discovered": "2026-08-09T17:53",
+      "dimension": 3,
+      "description": "维③只查 wiring_map consumers 未查 daily_tasks 调度",
+      "fix": "新增维⑧落地通电",
+      "recurrence_count": 1,
+      "severity": "P1"
+    },
+    {
+      "id": "false_l5_claim",
+      "discovered": "2026-08-09T18:34",
+      "dimension": 8,
+      "description": "META-1093 标 L5 但 daily_tasks 零条目·pre_write 零门禁",
+      "fix": "降级 L5→L4 + 补 daily_tasks + 补 artifacts",
+      "recurrence_count": 1,
+      "severity": "P0"
+    },
+    {
+      "id": "task_state_machine_block",
+      "discovered": "2026-08-09T18:29",
+      "dimension": 7,
+      "description": "meta_task_closure_check 检测可闭合但 task_state_machine 拒绝 Next→Done",
+      "fix": "添加合法跃迁 + 移除 illegal_pairs",
+      "recurrence_count": 2,
+      "severity": "P0",
+      "upgraded_from": "P1",
+      "upgrade_reason": "第2次复发·自动升级"
+    }
+  ],
+
+  "experience_library_snapshot": {
+    "total_experiences": 5,
+    "new_since_last_audit": 3,
+    "latest": "#5 技能本身必须通过自己的审计"
+  },
+
+  "recurrence_tracker": {
+    "task_state_machine_block": {
+      "count": 2,
+      "first_seen": "2026-08-09T18:29",
+      "last_seen": "2026-08-09T18:34",
+      "current_severity": "P0",
+      "frequency_upgraded": true
+    },
+    "false_l5": {
+      "count": 1,
+      "first_seen": "2026-08-09T18:34",
+      "last_seen": "2026-08-09T18:34",
+      "current_severity": "P0"
+    }
+  },
+
+  "pipeline_health": {
+    "e2e_test": "6/6 PASS",
+    "bridge_l5_anomaly": 0,
+    "version_drift": 0,
+    "term_registry_sync": "aligned",
+    "closure_p0": 0,
+    "consumer_check_p0": 0
+  },
+
+  "_usage": {
+    "on_load": "Step 1 加载本文件 → blindspots 作为本次Step 3增量检查项",
+    "on_update": "Step 8 审计完成后 → 更新 timestamp·meta_distribution·recurrence_tracker",
+    "recurrence_rule": "count≥2 → 自动升级P0 · count≥3 → 阻断级审计频率"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "qdr-bridge",
+  "version": "1.0.0",
+  "publishedAt": 1756010000000,
+  "ownerId": "qdr-bridge",
+  "requires": {
+    "scripts": [
+      "scripts/qdr_action_cli.py",
+      "scripts/qdr_mcp_server.py"
+    ],
+    "configs": [
+      "governance/data/action_contracts.json"
+    ]
+  }
+}
