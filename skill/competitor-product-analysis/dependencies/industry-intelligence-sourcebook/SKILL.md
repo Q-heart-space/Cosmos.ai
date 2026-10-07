@@ -1,7 +1,7 @@
 ---
 name: industry-intelligence-sourcebook
 description: 行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。
-contract: "@contract:skill scripts:validate_sourcebooks.py"
+contract: "@contract:skill scripts:🅑 **自备校验器**（🅑 不随件）"
 circuit: ④知识
 version: 1.1.1
 depends: references/sourcebook.schema.json
@@ -98,7 +98,7 @@ updated_at: 2026-08-26
 - **信源质量评估** → 调整 L1-L4 层级，更新 `verification.status`
 - **搜索词失效** → 更新 `query_templates`
 - **发现新展会-竞品关联** → 更新 `exhibition_calendar` + `competitors.*.core_expos`
-- **Schema 校验** → 每次修改后运行 `validate_sourcebooks.py` 确保结构完整性
+- **Schema 校验** → 每次修改后运行 `🅑 **自备校验器**（🅑 不随件）` 确保结构完整性
 
 ## 引用者
 
@@ -118,6 +118,6 @@ updated_at: 2026-08-26
 5. 引用的技能/自动化加载时指定新的 industry 参数
 ## 盲区与自审
 - 本技能的已知盲区：知识型技能，仅提供 IPC、海事、AI 智能体三个行业的信源配置（AI 域 v1.0 初建·待多轮验证），其他行业未覆盖（需按需扩展）；信源清单是静态配置，URL 变更、公司易主/倒闭、层级调整后不会自动更新，可能引导查询到失效入口；只提供"在哪查"的配置，不执行任何查询或抓取。
-- 自审方式：竞品查询发现 URL 失效、新竞品/新展会未收录、或 `validate_sourcebooks.py` 校验失败时，检查 sourcebook JSON 是否过时，需更新 P0 字段（verification/ttl）后再复用。
+- 自审方式：竞品查询发现 URL 失效、新竞品/新展会未收录、或 `🅑 **自备校验器**（🅑 不随件）` 校验失败时，检查 sourcebook JSON 是否过时，需更新 P0 字段（verification/ttl）后再复用。
 
 ## 🛑 

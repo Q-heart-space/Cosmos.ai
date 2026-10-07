@@ -220,5 +220,5 @@ Legal/operational boundary for data collection from this source.
 The canonical JSON Schema for programmatic validation is at `references/sourcebook.schema.json` (proper JSON Schema Draft 2020-12 format). Run validation with:
 
 ```bash
-python validate_sourcebooks.py
+python 🅑 **自备校验器**（🅑 不随件）
 ```
