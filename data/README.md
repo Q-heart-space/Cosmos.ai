@@ -18,6 +18,6 @@ Data that has been de-identified and can be used outside — for people who want
 
 ## 边界 / Boundaries
 
-- 🛑 **他人主体的业务数据不在此域**（无论是否脱敏）；
+- 🛑 **不属于本组织的业务记录不在此域**（🅑 无论是否脱敏）；
 - 🛑 含私有凭据／账户标识者不入；
 - 🅑 数据以**源仓库为单一真相源**，本域是其**可发布视图**。

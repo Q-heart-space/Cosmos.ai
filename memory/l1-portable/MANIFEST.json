@@ -8,7 +8,7 @@
       "note": "R36 2026-09-28：原写产机绝对路径 ⇒ 跨机不可用且触发制品核对器 rc=1（清单产地绑定=是）；机器无关表达＝解析式＋宿主名"
     },
     "generated_by": "host-adapters/global-memory/build_artifacts.py",
-    "criterion": "件名来自 PLATFORM_LAYOUTS[host].global_identity 与已知身份/台账名单",
+    "criterion": "\u4ef6\u540d\u53d6\u81ea\u5df2\u77e5\u8eab\u4efd\u6e05\u5355",
     "note": "制品含全文·只得经制品分支分发（见同目录 README）",
     "content_abs_paths": {
       "judged": false,
