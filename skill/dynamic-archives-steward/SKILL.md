@@ -160,7 +160,7 @@ Step 10: 关联扫描
 执行完成后必须更新：
 - 项目 `.workbuddy/memory/YYYY-MM-DD.md`（当日日志）
 - 项目 `.workbuddy/memory/MEMORY.md`（长期规则）
-- 若涉及跨项目规则，更新 `~/.workbuddy/MEMORY.md`
+- 若涉及跨项目规则，更新 `<宿主配置根>/MEMORY.md`
 
 ## 关联扫描报告模板
 

@@ -57,7 +57,7 @@
 |:--|:--|:--|
 | `governance/Q博士动态资产管理方案.md` §十八 | task-retro A4.13 + apq-router 事件分级路由 | 分级变更 → 三方同步 |
 | 🆕 `governance/空间回访SOP.md` | task-retro 跨空间审计 + apq-router 触发词分流 | Step1/Step4 流程变更 → 三方同步 |
-| `~/.workbuddy/MEMORY.md`（铁律影响技能行为） | 所有三个技能的行为约束 | 铁律变更 → 检查是否影响行为 |
+| `<宿主配置根>/MEMORY.md`（铁律影响技能行为） | 所有三个技能的行为约束 | 铁律变更 → 检查是否影响行为 |
 | `governance/Q博士动态资产管理方案.md` 变更 | task-retro A4.10 + apq-router 文件治理路由 | DAM 条款变更 → 三方同步 |
 
 ---

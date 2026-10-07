@@ -13,7 +13,7 @@ skills: [repair-expert]
 
 > 🆕 2026-09-24（v2·A机 父窗口）：本壳对齐**技能核 `repair-expert` v1.3.0**。
 > 🛑 **铁律**：壳只做**角色包装**；**凡本文件出现判据/规则原文 ⇒ 必与核同版本**，否则**壳即第二真相源**。
-> 判据唯一权威＝技能核 `~/.workbuddy/skills/repair-expert/SKILL.md`（SSOT：`qdoctor-governance@capabilities`）。
+> 判据唯一权威＝技能核 `<宿主配置根>/skills/repair-expert/SKILL.md`（SSOT：`qdoctor-governance@capabilities`）。
 > 专项计划＝`governance/plans/[方案]RSI修复专项计划_v1.0_20260924.md`（三宿主分工 ＋ 五联追溯 ＋ 14 条冲突避免）。
 
 # 修复专家 - Dr.Q（Q博士）

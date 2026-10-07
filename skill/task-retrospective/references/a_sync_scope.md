@@ -13,14 +13,14 @@
 | 规则（MEMORY.md） | 过时规则、不可执行规则、命名冲突 | Read + Grep |
 | 记忆（daily log） | 当日日志是否记录了修复 | Read + Edit |
 | 技能（SKILL.md） | 步骤是否过时、是否缺少新规则 | Read + Edit |
-| 专家（Expert configs） | 专家配置中是否有过时引用 | Glob ~/.workbuddy/experts/ |
+| 专家（Expert configs） | 专家配置中是否有过时引用 | Glob <宿主配置根>/experts/ |
 | 跨项目 | 其他项目是否有同类缺陷 | 检索**各工作空间**之记忆目录（🅑 `Glob <工作空间根>/*/.<配置目录>/mem`）ory/ |
 | 跨对话 | 历史会话是否重复出现同类问题 | conversation_search |
 | 自动化任务 | automation 中 modelId 是否正确 | automation_update(mode="list") |
 | 🆕 **drq/patterns/** | 将可复用模式写入 Q博士 模式库 | Write `drq/patterns/{domain}/{name}.md` |
 | 🆕 **drq/meta_patterns/** | 将元模式写入 Q博士 元模式库·**全自动全链路** | `python -c "from register_meta import register_meta; register_meta({'title':'...','tier':1,'problem':'...','core_insight':'...','source':'retrospective'}, auto_bridge=True)"`（自动完成 JSON→index→bridge→plan·不等22:00） |
 | 🆕 **constitution/综合工作规划.md §三** | 新任务追加到 Q博士 宪法主表 | Read + Edit |
-| 🆕 **~/.workbuddy/MEMORY.md** | 全局铁律升级 | Read + Edit |
+| 🆕 **<宿主配置根>/MEMORY.md** | 全局铁律升级 | Read + Edit |
 
 ### 🆕 "全局修订"三层分流前置步骤（收录标准指引·2026-07-25 入宪法）
 
@@ -65,7 +65,7 @@ Step S2·禁止行为:
   ① patterns            → drq/patterns/{domain}/{name}.md
   ② meta-patterns       → drq/meta_patterns/{name}.md
   ③ Q博士 新任务         → constitution/综合工作规划.md §三 主表  ← 🛑 不可只写 versions/
-  ④ 全局铁律升级         → ~/.workbuddy/MEMORY.md
+  ④ 全局铁律升级         → <宿主配置根>/MEMORY.md
 ```
 
 ---

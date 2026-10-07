@@ -10,7 +10,7 @@
 #### 15.1 记录规则
 
 **触发条件**：任何对以下文件的读取操作：
-- `~/.workbuddy/MEMORY.md`
+- `<宿主配置根>/MEMORY.md`
 - 项目 `.workbuddy/memory/MEMORY.md`
 - 项目 `.workbuddy/memory/YYYY-MM-DD.md`
 - `../Data-全局数据仓库/.DATA_REGISTRY.md`（全局数据仓库，位于工作区父目录）
@@ -21,7 +21,7 @@
 |:--|:--|:--|
 | `timestamp` | `2026-07-04T18:30:00` | ISO 8601 时间 |
 | `caller` | `task-router / automation:周度复盘` | 调用者（技能名/自动化ID/用户操作） |
-| `file` | `~/.workbuddy/MEMORY.md` | 被读取的文件路径 |
+| `file` | `<宿主配置根>/MEMORY.md` | 被读取的文件路径 |
 | `action` | `read / write / modify` | 操作类型 |
 | `purpose` | `Step 0.1 全局铁律加载` | 读取目的（可选·如果能推断） |
 
@@ -30,9 +30,9 @@
 **存储路径**：`.workbuddy/memory/access_logs/YYYY-MM-DD.jsonl`
 
 ```jsonl
-{"timestamp": "2026-07-04T18:30:01", "caller": "task-router", "file": "~/.workbuddy/MEMORY.md", "action": "read", "purpose": "Step 0.1 全局铁律加载"}
+{"timestamp": "2026-07-04T18:30:01", "caller": "task-router", "file": "<宿主配置根>/MEMORY.md", "action": "read", "purpose": "Step 0.1 全局铁律加载"}
 {"timestamp": "2026-07-04T18:30:05", "caller": "task-retrospective", "file": "project/.workbuddy/memory/MEMORY.md", "action": "read", "purpose": "Step A0 前置审计"}
-{"timestamp": "2026-07-04T18:32:00", "caller": "memory-management", "file": "~/.workbuddy/MEMORY.md", "action": "write", "purpose": "新增铁律AH"}
+{"timestamp": "2026-07-04T18:32:00", "caller": "memory-management", "file": "<宿主配置根>/MEMORY.md", "action": "write", "purpose": "新增铁律AH"}
 ```
 
 #### 15.3 日志轮转规则
@@ -105,5 +105,5 @@
 #### 16.5 可复刻模式
 
 每次回复完成 → 3 步自检（扫描→分级→写入）→ 4 标签标记日志。
-| **cross-ref 消费方** | 谁消费本技能？ | `grep -rn "memory-management" ~/.workbuddy/skills/*/SKILL.md` |
+| **cross-ref 消费方** | 谁消费本技能？ | `grep -rn "memory-management" <宿主配置根>/skills/*/SKILL.md` |
 

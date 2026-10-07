@@ -10,7 +10,7 @@
 **云记忆不是真相源，只是索引；本地 MEMORY.md 和项目记忆才是真相源。**
 
 <!-- @role:L0-平台输入 —— WorkBuddy 自动注入的摘要，只读不依赖 -->
-> 🆕 **v4.0 升级（2026-08-07）**：WorkBuddy 新记忆系统在 `~/.workbuddy/memory/<uuid>_memory.md` 生成会话摘要。该文件为 **L0 平台输入**——AI 可读，但**不作为真相源依赖**。真相源仍为 `~/.workbuddy/MEMORY.md`（L1）与项目 `.workbuddy/memory/MEMORY.md`（L2）。
+> 🆕 **v4.0 升级（2026-08-07）**：WorkBuddy 新记忆系统在 `<宿主配置根>/memory/<uuid>_memory.md` 生成会话摘要。该文件为 **L0 平台输入**——AI 可读，但**不作为真相源依赖**。真相源仍为 `<宿主配置根>/MEMORY.md`（L1）与项目 `.workbuddy/memory/MEMORY.md`（L2）。
 
 <!-- @role:L1-正文 —— 铁律U 核心正文，跨项目通用 -->
 ### 强制加载清单
@@ -19,20 +19,20 @@
 
 | 优先级 | 文件 | 读取时机 | 用途 |
 |:--|:--|:--|:--|
-| P0 | `~/.workbuddy/MEMORY.md` | 每个会话首次涉及具体任务时 | 全局铁律核心原则·加载协议·记忆架构 |
-| P0 | `~/.workbuddy/MEMORY_RULES.md` 🆕 | 每个会话首次涉及具体任务时 | 铁律详细规则·映射表·事故来源（T3.3 拆分） |
-| P0 | `~/.workbuddy/MEMORY_SKILLS.md` 🆕 | 每个会话首次涉及具体任务时 | 技能生态铁律·路由规则（T3.3 拆分） |
+| P0 | `<宿主配置根>/MEMORY.md` | 每个会话首次涉及具体任务时 | 全局铁律核心原则·加载协议·记忆架构 |
+| P0 | `<宿主配置根>/MEMORY_RULES.md` 🆕 | 每个会话首次涉及具体任务时 | 铁律详细规则·映射表·事故来源（T3.3 拆分） |
+| P0 | `<宿主配置根>/MEMORY_SKILLS.md` 🆕 | 每个会话首次涉及具体任务时 | 技能生态铁律·路由规则（T3.3 拆分） |
 | P0 | `<project>/.workbuddy/memory/MEMORY.md` | 当前项目任务启动时 | 项目专属规则、数据锚点、构建规范 |
 | P1 | `<project>/.workbuddy/memory/YYYY-MM-DD.md`（最近3天） | 当前项目任务启动时 | 最近进度、遗留问题、连续性上下文 |
 | P1 | `Data-全局数据仓库/.DATA_REGISTRY.md` | 任何数据/分析任务启动时 | 数据新鲜度、缓存位置、来源口径 |
-| P1 | `~/.workbuddy/memory/<uuid>_memory.md` | 会话自动注入时 | L0 平台输入摘要·可读但不依赖 |
+| P1 | `<宿主配置根>/memory/<uuid>_memory.md` | 会话自动注入时 | L0 平台输入摘要·可读但不依赖 |
 
 <!-- @role:L2-摘要源 —— L0-L4 记忆系统五层架构（跨项目通用·单一真相源位于 constitution/本质定位.md §2.1） -->
 ### 记忆系统 L0-L4 五层架构
 
 ```
-L0 平台输入   → ~/.workbuddy/memory/<uuid>_memory.md（WorkBuddy 维护·AI 只读不依赖）
-L1 全局铁律  → ~/.workbuddy/MEMORY.md（核心原则·加载协议）+ MEMORY_RULES.md（详细规则）+ MEMORY_SKILLS.md（技能生态）
+L0 平台输入   → <宿主配置根>/memory/<uuid>_memory.md（WorkBuddy 维护·AI 只读不依赖）
+L1 全局铁律  → <宿主配置根>/MEMORY.md（核心原则·加载协议）+ MEMORY_RULES.md（详细规则）+ MEMORY_SKILLS.md（技能生态）
 L2 项目宪法  → <project>/.workbuddy/memory/MEMORY.md（项目专属规则·继承L1）
 L3 事件索引  → <project>/.workbuddy/memory_index.json（每日22:00自动重建·update_memory_index.py）
 L4 健康监控  → memory-self-healing + capability_freshness_check（只读观测·自动修复）
@@ -53,13 +53,13 @@ L4 健康监控  → memory-self-healing + capability_freshness_check（只读�
 AI 在首次写操作前必须在回复中声明：
 
 ```
-✅ 已读取 ~/.workbuddy/MEMORY.md（L1 全局铁律核心原则）
-✅ 已读取 ~/.workbuddy/MEMORY_RULES.md（L1 详细规则）
-✅ 已读取 ~/.workbuddy/MEMORY_SKILLS.md（L1 技能生态）
+✅ 已读取 <宿主配置根>/MEMORY.md（L1 全局铁律核心原则）
+✅ 已读取 <宿主配置根>/MEMORY_RULES.md（L1 详细规则）
+✅ 已读取 <宿主配置根>/MEMORY_SKILLS.md（L1 技能生态）
 ✅ 已读取 <project>/.workbuddy/memory/MEMORY.md（L2 项目宪法）
 ✅ 已读取最近3天日志（L2 事件层）
 ✅ 已读取 Data-全局数据仓库/.DATA_REGISTRY.md（数据任务）
-✅ 已识别 ~/.workbuddy/memory/<uuid>_memory.md（L0 平台输入·只读不依赖）
+✅ 已识别 <宿主配置根>/memory/<uuid>_memory.md（L0 平台输入·只读不依赖）
 ```
 
 缺少任何一项 → 禁止写操作。
@@ -78,8 +78,8 @@ AI 在首次写操作前必须在回复中声明：
 ## 拆分说明（2026-08-10·T3.3）
 
 本文件仅保留铁律核心原则和加载协议。详细规则和技能生态铁律已拆分至：
-- ~/.workbuddy/MEMORY_RULES.md : 详细规则·映射表·事故来源
-- ~/.workbuddy/MEMORY_SKILLS.md : 技能生态铁律·技能路由规则
+- <宿主配置根>/MEMORY_RULES.md : 详细规则·映射表·事故来源
+- <宿主配置根>/MEMORY_SKILLS.md : 技能生态铁律·技能路由规则
 
 加载协议：铁律U 强制加载清单已更新——所有三个 L1 文件均为 P0 必读。
 

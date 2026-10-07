@@ -14,7 +14,7 @@
 ```
 🔍 Q博士交付自检 AK：
   AK-1·版本号: 检查所有新建/修改的模板文件是否含 vX.Y 版本号
-  AK-2·CHANGELOG: ≥3文件修改 → ~/.workbuddy/.MEMORY_CHANGELOG.md 是否已追加
+  AK-2·CHANGELOG: ≥3文件修改 → <宿主配置根>/.MEMORY_CHANGELOG.md 是否已追加
   AK-3·消费者扫描: grep -rn "新概念名|新编号" 全项目 → 无断裂引用
   AK-4·3问自检: 按本质定位 §6.3 通过三问
 → 全部通过: ✅ / 有阻断: 🛑 {具体项}（必须修复后重走全量）
