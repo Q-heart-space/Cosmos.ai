@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "event_id": "dsh-01572c75978a4e4698d4",
+  "timestamp": "2026-10-01T07:35:59.305551+00:00",
+  "scope": "shared_deidentified",
+  "host": "dsh",
+  "quadrant": "Q2",
+  "channel": "fallback",
+  "delta_type": "add",
+  "confidence": 0,
+  "degrade_reason": "",
+  "covered": false
+}

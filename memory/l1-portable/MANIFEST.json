@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "purpose": "全局记忆 portable 制品（供无正本的机器落位）",
+    "host": "workbuddy",
+    "source": {
+      "resolver": "host_paths.host_config_dir",
+      "host": "workbuddy",
+      "note": "R36 2026-09-28：原写产机绝对路径 ⇒ 跨机不可用且触发制品核对器 rc=1（清单产地绑定=是）；机器无关表达＝解析式＋宿主名"
+    },
+    "generated_by": "host-adapters/global-memory/build_artifacts.py",
+    "criterion": "件名来自 PLATFORM_LAYOUTS[host].global_identity 与已知身份/台账名单",
+    "note": "制品含全文·只得经制品分支分发（见同目录 README）",
+    "content_abs_paths": {
+      "judged": false,
+      "judge": "remote_carrier_check",
+      "reason": "L1 正文（`MEMORY_RULES.md`）内 40 处产机绝对路径＝**非判定面**（正文按设计可含历史路径/命令示例；其中一条**就是**「禁止保留绝对路径引用」的铁律文本本身）·是否脱敏须人类裁决（P-44）⇒ 🛑 本制品**不改正文一个字节**",
+      "declared": "2026-09-28",
+      "by": "R36/P-44（源机）"
+    }
+  },
+  "artifacts": [
+    {
+      "file": "MEMORY.md",
+      "bytes": 6703,
+      "sha16": "7f2c25b2d055d818"
+    },
+    {
+      "file": "MEMORY_RULES.md",
+      "bytes": 189496,
+      "sha16": "43e6a97e98a15e37"
+    },
+    {
+      "file": "MEMORY_SKILLS.md",
+      "bytes": 11273,
+      "sha16": "773a9c32c8bfa8b0"
+    },
+    {
+      "file": "IDENTITY.md",
+      "bytes": 241,
+      "sha16": "424c7c56087127f7"
+    },
+    {
+      "file": "SOUL.md",
+      "bytes": 1192,
+      "sha16": "23297756377efde3"
+    },
+    {
+      "file": "USER.md",
+      "bytes": 1736,
+      "sha16": "a102b0c91bae7400"
+    },
+    {
+      "file": ".MEMORY_CHANGELOG.md",
+      "bytes": 8755,
+      "sha16": "fd9c7ac871686d7f"
+    }
+  ],
+  "missing": []
+}
