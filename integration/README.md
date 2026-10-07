@@ -6,9 +6,10 @@ Units that can be wired into a system you already run — for people who want to
 
 ## 内容 / Contents
 
-| 目录 · Directory | 你能拿到什么 · What you get |
-|:--|:--|
-| [`ai-drift-guard/`](ai-drift-guard/) | 一个可装载的**跑偏守卫**（含其分发定义与装载补丁） |
+| 目录 · Directory | 你能拿到什么 · What you get | 形态 · form |
+|:--|:--|:--|
+| [`ai-drift-guard/`](ai-drift-guard/) | 一个可装载的**跑偏守卫**（含其分发定义与装载补丁） | `plugin` |
+| [`qdr-intent-route/`](qdr-intent-route/) | **意图路由的宿主接线层**（订阅会话消息 → 识别意图 → 写证据） | `plugin` |
 
 ## 收录判据 / Inclusion criteria
 

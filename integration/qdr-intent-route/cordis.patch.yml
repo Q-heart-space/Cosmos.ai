@@ -1,0 +1,29 @@
+# ⚠️ 模板文件 —— 不可直接使用（照抄即 boot 失败·2026-09-19 实测）
+# ============================================================================
+# 【为什么不能写裸名】
+# Cordis patch 层的 `insert[].name` 是「被 entry tree import 的**模块说明符**」
+# （`entry.ts` L12-13），解析唯一入口 `EntryTree.import()`（`tree.ts` L144-162）。
+# 桌面宿主走 `HostResolvedRootInclude`（`app-boot` L1339-1350，仅当 boot 传第 5 参
+# `bareModuleBaseUrl` 时启用；`host-process-entry.js` L55/L181 确实传了，值 = profile
+# `package.json`）：
+#     specifier = isAbsolute(name) ? pathToFileURL(name).href : name
+#     再由 internal.import(specifier, bareModuleBaseUrl) 解析
+#
+# 【Node 22.23.2 三态实测】
+#     file:///…/plugin.js   桌面面 ✅ / 裸 Include 面 ✅   ← 唯一两面皆通（本模板采用）
+#     C:/…/plugin.js        桌面面 ✅ / 裸 Include 面 🔴 ERR_UNSUPPORTED_ESM_URL_SCHEME
+#     qdr-intent-route      两面皆 🔴 ERR_MODULE_NOT_FOUND   ← 本文件原先的裸名·已证伪
+#
+# 【失败是致命的】`group.ts` L71-84 throw → `assertEntriesActivated` → **exit(1)**
+#   ⇒ 裸名不是「插件不生效」，而是**整个 profile boot 不起来**。
+#
+# 【安装期渲染】
+#   把 __QDR_INTENT_ROUTE_PLUGIN_URL__ 替换为本机 plugin.js 的 **file:// URL**，写入该
+#   profile 的 `cordis.patch.yml`。示例（Windows）：
+#     file:///C:/Users/<you>/.dsh/skills/qdr-intent-route/plugin.js
+#   🛑 不要提交渲染后的结果——渲染值是**宿主绑定**的，提交即制造宿主绑定债。
+# ============================================================================
+- insert:
+  - id: qdr-intent-route
+    name: '__QDR_INTENT_ROUTE_PLUGIN_URL__'
+    inject: [sessions]
