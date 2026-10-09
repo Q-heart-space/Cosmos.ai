@@ -9,7 +9,7 @@ reuse_depth: org-parameterized
 scope_axis: business
 layer: 叶·写作
 trust_level: notification
-version: 1.0.0-ext
+version: 1.0.0-ext
 distribute_external: yes
 depends: apq-content-coherence, apq-format-verify, task-router,
   report-iteration-steward, references/check-dimensions.md
