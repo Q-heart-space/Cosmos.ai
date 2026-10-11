@@ -32,7 +32,7 @@
 - **自动修复**：否（合并需要判断语义）
 
 ### A-03 规则自相矛盾
-- **触发**：铁律A说"必须用X"，铁律B说"禁止用X"
+- **触发**：内容-格式严格分离（永不交叉）说"必须用X"，"只改一个"关联扫描（不可再犯）说"禁止用X"
 - **检测**：AI 语义比对矛盾模式
 - **严重度**：P0
 - **修复**：标记矛盾，需用户裁决
@@ -87,7 +87,7 @@
 - **触发**：SKILL.md 中引用的文件路径（py/json/md）已不存在
 - **检测命令**：
   ```bash
-  for f in ~/.workbuddy/skills/*/SKILL.md; do
+  for f in ~/宿主配置目录/skills/*/SKILL.md; do
     grep -oP '[\w/\\-]+\.(py|json|md)' "$f" | while read p; do
       [ -f "$p" ] || echo "MISSING: $f → $p"
     done

@@ -84,6 +84,7 @@
 |:--|:--|
 | [`qdr-external-publish/`](qdr-external-publish/) | 🎯 **对外发布的流程与判据** —— 🅑 四步：🅑 切面门禁 → 本地库 → 云端库 → 发布回执 |
 | [`qdr-new-script-pipeline/`](qdr-new-script-pipeline/) | 🎯 **新脚本落地流程** —— 🅑 建 → 注册 → 三验 → 接线 → 复跑 |
+| [`skill-sync/`](skill-sync/) | 🎯 **跨宿主技能同步** —— 🅑 同一技能在多个宿主（🅑 DSH ／ Codex ／ WorkBuddy）之间**比对漂移 ＋ 按 SSOT 分发**：🅑 谁是真源、🅑 谁落后了、🅑 怎么补上去 |
 
 ---
 

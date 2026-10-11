@@ -24,8 +24,8 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 PYTHON = 'python'
 
 # 动态定位 Q博士 工作空间根目录
-# 技能路径: ~/.workbuddy/skills/adversarial-audit/scripts/audit_runner.py
-# 向上3层到达 ~/.workbuddy/ · 需要找到 D:/Workbuddy/Q博士/
+# 技能路径: ~/宿主配置目录/skills/adversarial-audit/scripts/audit_runner.py
+# 向上3层到达 ~/宿主配置目录/ · 需要找到 D:/Workbuddy/Q博士/
 def find_workspace_root() -> Path:
     """从技能目录向上查找 Q博士 工作空间根目录."""
     # 方法1：从当前文件向上找，直到找到 constitution/ 目录
@@ -100,7 +100,7 @@ def dimension_1_code_integrity() -> dict:
 def dimension_2_data_consistency() -> dict:
     """维② 数据一致性：JSON↔index↔plan三方一致·字段完整性."""
     try:
-        idx = json.loads((ROOT / 'drq/meta_patterns/index.json').read_text(encoding='utf-8'))
+        idx = json.loads((ROOT / '知识库/meta_patterns/index.json').read_text(encoding='utf-8'))
         results = {}
         
         # Check JSON files have required fields
@@ -108,7 +108,7 @@ def dimension_2_data_consistency() -> dict:
         missing_fields = []
         for p in idx.get('patterns', []):
             mid = p.get('id', '')
-            files = list((ROOT / 'drq/meta_patterns').glob(f'{mid}_*.json'))
+            files = list((ROOT / '知识库/meta_patterns').glob(f'{mid}_*.json'))
             if files:
                 data = json.loads(files[0].read_text(encoding='utf-8'))
                 for k in required:
@@ -235,7 +235,7 @@ def dimension_8_landing_power() -> dict:
         results = {}
         
         # Check L5 patterns have daily_tasks + pre_write integration
-        idx = json.loads((ROOT / 'drq/meta_patterns/index.json').read_text(encoding='utf-8'))
+        idx = json.loads((ROOT / '知识库/meta_patterns/index.json').read_text(encoding='utf-8'))
         dt = json.loads((ROOT / 'governance/data/daily_tasks.json').read_text(encoding='utf-8'))
         dt_str = json.dumps(dt)
         
@@ -248,7 +248,7 @@ def dimension_8_landing_power() -> dict:
         for p in l5_patterns:
             mid = p.get('id', '')
             # Read actual JSON file for full data
-            files = list(ROOT.glob(f'drq/meta_patterns/{mid}_*.json'))
+            files = list(ROOT.glob(f'知识库/meta_patterns/{mid}_*.json'))
             if files:
                 full = json.loads(files[0].read_text(encoding='utf-8'))
                 artifacts = full.get('artifacts', []) or []

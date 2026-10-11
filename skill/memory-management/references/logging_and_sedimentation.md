@@ -32,7 +32,7 @@
 ```jsonl
 {"timestamp": "2026-07-04T18:30:01", "caller": "task-router", "file": "<宿主配置根>/MEMORY.md", "action": "read", "purpose": "Step 0.1 全局铁律加载"}
 {"timestamp": "2026-07-04T18:30:05", "caller": "task-retrospective", "file": "project/.workbuddy/memory/MEMORY.md", "action": "read", "purpose": "Step A0 前置审计"}
-{"timestamp": "2026-07-04T18:32:00", "caller": "memory-management", "file": "<宿主配置根>/MEMORY.md", "action": "write", "purpose": "新增铁律AH"}
+{"timestamp": "2026-07-04T18:32:00", "caller": "memory-management", "file": "<宿主配置根>/MEMORY.md", "action": "write", "purpose": "新增「等」字扩展检索义务（2026-07-04 确立·全局·阻断级）"}
 ```
 
 #### 15.3 日志轮转规则
