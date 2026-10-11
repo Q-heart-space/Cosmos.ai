@@ -33,8 +33,8 @@
 ```
 L0 平台输入   → <宿主配置根>/memory/<uuid>_memory.md（WorkBuddy 维护·AI 只读不依赖）
 L1 全局铁律  → <宿主配置根>/MEMORY.md（核心原则·加载协议）+ MEMORY_RULES.md（详细规则）+ MEMORY_SKILLS.md（技能生态）
-L2 项目宪法  → <project>/.workbuddy/memory/MEMORY.md（项目专属规则·继承L1）
-L3 事件索引  → <project>/.workbuddy/memory_index.json（每日22:00自动重建·update_memory_index.py）
+L2 项目宪法  → <project>/宿主配置目录/memory/MEMORY.md（项目专属规则·继承L1）
+L3 事件索引  → <project>/宿主配置目录/memory_index.json（每日22:00自动重建·update_memory_index.py）
 L4 健康监控  → memory-self-healing + capability_freshness_check（只读观测·自动修复）
 ```
 
@@ -56,7 +56,7 @@ AI 在首次写操作前必须在回复中声明：
 ✅ 已读取 <宿主配置根>/MEMORY.md（L1 全局铁律核心原则）
 ✅ 已读取 <宿主配置根>/MEMORY_RULES.md（L1 详细规则）
 ✅ 已读取 <宿主配置根>/MEMORY_SKILLS.md（L1 技能生态）
-✅ 已读取 <project>/.workbuddy/memory/MEMORY.md（L2 项目宪法）
+✅ 已读取 <project>/宿主配置目录/memory/MEMORY.md（L2 项目宪法）
 ✅ 已读取最近3天日志（L2 事件层）
 ✅ 已读取 Data-全局数据仓库/.DATA_REGISTRY.md（数据任务）
 ✅ 已识别 <宿主配置根>/memory/<uuid>_memory.md（L0 平台输入·只读不依赖）
@@ -93,7 +93,7 @@ AI 在首次写操作前必须在回复中声明：
 | 新铁律详细定义·映射表·事故判例 | MEMORY_RULES.md | 铁律+字母·黑名单·事故来源·映射·操作规范 |
 | 技能触发词·路由规则·技能生态 | MEMORY_SKILLS.md | 技能·触发词·路由·专家·构建脚本 |
 
-规则：新增内容先判定类型→写入对应文件。禁止盲写 MEMORY.md（铁律BZ·内容归位）。
+规则：新增内容先判定类型→写入对应文件。禁止盲写 MEMORY.md（内容归位判定（2026-08-08 确立·阻断级）·内容归位）。
 
 ---
 
