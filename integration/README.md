@@ -38,7 +38,7 @@
 
 | 🅑 单元 | 🎯 你能拿到什么 | 🎯 形态 |
 |:--|:--|:--|
-| [`"AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。**能力边界**：仅 **Tier A 信号**（S5/S4/S9）可由宿主强制拒绝（缺该缝时动作不会发生）；**Tier C 信号**只写入上下文，**不保证被读或被采纳**；本协议**不识别**未枚举的跑偏形态，也**不替代**宿主原生守卫与人工裁决。"/`](units/"AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。**能力边界**：仅 **Tier A 信号**（S5/S4/S9）可由宿主强制拒绝（缺该缝时动作不会发生）；**Tier C 信号**只写入上下文，**不保证被读或被采纳**；本协议**不识别**未枚举的跑偏形态，也**不替代**宿主原生守卫与人工裁决。"/) | 🎯 一个可装载的**跑偏守卫**（🅑 含其分发定义与装载补丁） | `plugin` |
+| [`ai-drift-guard/`](units/ai-drift-guard/) | 🎯 一个可装载的**跑偏守卫**（🅑 含其分发定义与装载补丁） | `plugin` |
 | [`qdr-intent-route/`](units/qdr-intent-route/) | 🎯 **意图路由的宿主对接层**（🅑 订阅会话消息 → 识别意图 → 写证据） | `plugin` |
 | [`connector/`](units/connector/) | 🎯 **连接件**的形态与样例（🅑 让两个系统通上话的那一层） | `connector` |
 | [`global-memory/`](units/global-memory/) | 🎯 全局记忆的**构建与同步工具** ＋ 判据 | 🅑 工具 |
