@@ -30,7 +30,7 @@ criteria:
   - id: C6
     name: 身份三件纳管（缺口 B·待裁）
     cmd: 检查 global_identity 是否含 IDENTITY.md/SOUL.md/USER.md
-    pass: 待 decision-expert 裁决后填
+    pass: 待 决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库） 裁决后填
 ```
 
 ## 三级闭环判据（**`META-1638` 族**）
