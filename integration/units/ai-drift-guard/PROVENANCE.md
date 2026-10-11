@@ -1,8 +1,8 @@
 # 来源与边界（`HO-081` G2 入云）
 
-- **来源**：本机部署态 `%DSH_HOME%/profiles/desktop/plugins/"AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。**能力边界**：仅 **Tier A 信号**（S5/S4/S9）可由宿主强制拒绝（缺该缝时动作不会发生）；**Tier C 信号**只写入上下文，**不保证被读或被采纳**；本协议**不识别**未枚举的跑偏形态，也**不替代**宿主原生守卫与人工裁决。"/**`（🛑 机器本地·非受控载体）。
+- **来源**：本机部署态 `%DSH_HOME%/profiles/desktop/plugins/ai-drift-guard/**`（🛑 机器本地·非受控载体）。
 - **入云方式**：**逐件字节拷贝**（🅑 每件经摘要对拍一致）——🛑 **非重写**。
-- **关系**：本插件＝**技能核的宿主适配**：`lib/core.mjs` 是 `"AI-Drift-Guard / AI跑偏守卫：分层协议。Tier A 信号（S5/S4/S9）给出可被宿主强制执行、dispatch 前真拒绝的规范契约；Tier C 信号（S1/S2/S3/S6/S7/S8/S10）为提示词层自检。抑制过度工程化、格式蔓延、范围膨胀与未验证的修复。平台中立——不绑定任何 AI 平台。分层依据见 references/first-principles.md。**能力边界**：仅 **Tier A 信号**（S5/S4/S9）可由宿主强制拒绝（缺该缝时动作不会发生）；**Tier C 信号**只写入上下文，**不保证被读或被采纳**；本协议**不识别**未枚举的跑偏形态，也**不替代**宿主原生守卫与人工裁决。"` 技能
+- **关系**：本插件＝**技能核的宿主适配**：`lib/core.mjs` 是 `ai-drift-guard` 技能
   `references/drift-guard-core.mjs` 的**逐行副本**（🛑 **行尾按各面规范**：技能侧 CRLF／插件侧 LF
   ⇒ 「逐字节副本」的说法**不实**，已在 `lib/index.js` 头部就地订正）；`lib/index.js` 只做 DSH 的**对接**线。
 - **判据**：`scripts/skill_plugin_parity_check.py`（逐行相同 ∧ 版本单源 ∧ 在本载体在册）。
