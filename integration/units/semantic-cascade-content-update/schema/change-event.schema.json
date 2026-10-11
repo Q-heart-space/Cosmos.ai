@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://q-heart-space.github.io/contracts/semantic-cascade/change-event-v1.json",
+  "title": "SemanticCascadeChangeEvent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["change_id", "source_ref", "change_type", "reason", "before_sha256", "after_sha256", "requested_mode"],
+  "properties": {
+    "change_id": {"type": "string", "minLength": 1},
+    "source_ref": {"type": "string", "minLength": 1},
+    "change_type": {"enum": ["add", "modify", "rename", "deprecate"]},
+    "reason": {"type": "string", "minLength": 1},
+    "before_sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "after_sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "requested_mode": {"enum": ["dry-run", "apply"]},
+    "authorization_ref": {"type": ["string", "null"]},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "created_at": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "change_id": "example-change-001",
+  "consumer_ref": "example://decision-card-renderer",
+  "observed_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+  "checks": {
+    "content": "pass",
+    "behavior": "pass",
+    "wiring": "pass",
+    "readback": "pass"
+  },
+  "state": "ready",
+  "failure_reason": null,
+  "rollback_ref": "example://rollback/example-change-001",
+  "recorded_at": "2026-01-01T00:05:00Z"
+}

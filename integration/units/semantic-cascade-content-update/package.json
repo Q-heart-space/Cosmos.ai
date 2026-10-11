@@ -1,0 +1,18 @@
+{
+  "name": "semantic-cascade-content-update",
+  "version": "1.0.0",
+  "form": "protocol",
+  "description": "Portable contract for semantic impact analysis, content-level propagation, consumer readback, and rollback receipts.",
+  "license": "MIT",
+  "qdr": {
+    "status": "contract_ready",
+    "source": "qdr-governance-infrastructure",
+    "private_runtime_required": false,
+    "default_mode": "dry-run",
+    "schemas": [
+      "schema/change-event.schema.json",
+      "schema/cascade-plan.schema.json",
+      "schema/consumer-receipt.schema.json"
+    ]
+  }
+}

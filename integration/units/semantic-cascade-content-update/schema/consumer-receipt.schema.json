@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://q-heart-space.github.io/contracts/semantic-cascade/consumer-receipt-v1.json",
+  "title": "SemanticCascadeConsumerReceipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["change_id", "consumer_ref", "observed_sha256", "checks", "state", "recorded_at"],
+  "properties": {
+    "change_id": {"type": "string", "minLength": 1},
+    "consumer_ref": {"type": "string", "minLength": 1},
+    "observed_sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["content", "behavior", "wiring", "readback"],
+      "properties": {
+        "content": {"enum": ["pass", "fail", "unknown"]},
+        "behavior": {"enum": ["pass", "fail", "unknown"]},
+        "wiring": {"enum": ["pass", "fail", "unknown"]},
+        "readback": {"enum": ["pass", "fail", "unknown"]}
+      }
+    },
+    "state": {"enum": ["ready", "partial", "unknown", "not_ready", "rolled_back"]},
+    "failure_reason": {"type": ["string", "null"]},
+    "rollback_ref": {"type": ["string", "null"]},
+    "recorded_at": {"type": "string", "format": "date-time"}
+  }
+}

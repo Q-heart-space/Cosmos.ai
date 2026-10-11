@@ -1,0 +1,32 @@
+{
+  "name": "semantic-cascade-content-update",
+  "version": "1.0.0",
+  "form": "protocol",
+  "status": "contract_ready",
+  "entry": "README.md",
+  "files": [
+    "README.md",
+    "PROVENANCE.md",
+    "package.json",
+    "schema/change-event.schema.json",
+    "schema/cascade-plan.schema.json",
+    "schema/consumer-receipt.schema.json",
+    "examples/change-event.json",
+    "examples/consumer-receipt.json"
+  ],
+  "runtime": {
+    "private_runtime_required": false,
+    "default_mode": "dry-run",
+    "external_configuration": [
+      "source_uri",
+      "consumer_refs",
+      "authorization_policy",
+      "rollback_store"
+    ]
+  },
+  "claims": {
+    "schema_self_tested": true,
+    "live_consumer_verified": false,
+    "cross_host_equivalence": "not_verified"
+  }
+}

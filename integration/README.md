@@ -43,6 +43,7 @@
 | [`connector/`](units/connector/) | 🎯 **连接件**的形态与样例（🅑 让两个系统通上话的那一层） | `connector` |
 | [`global-memory/`](units/global-memory/) | 🎯 全局记忆的**构建与同步工具** ＋ 判据 | 🅑 工具 |
 | [`host-adapters-batch/`](units/host-adapters-batch/) | 🎯 **一批宿主接线件**之落位说明 | 🅑 说明 |
+| [`semantic-cascade-content-update/`](units/semantic-cascade-content-update/) | 🎯 变更后的语义影响分析、内容级同步、消费者回读与回滚合同 | `protocol` |
 
 ---
 
