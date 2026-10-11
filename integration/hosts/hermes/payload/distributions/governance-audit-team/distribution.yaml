@@ -1,9 +1,9 @@
-name: governance-audit-team
+name: 治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。
 version: 0.1.0
 description: "治理审计团（ExpertTeam 形态·**团宿主技能**）"
 hermes_requires: ">=0.21.0"
 author: "Q博士（B机 从核派生生成）"
-# 🛑 本分发**只带「壳」（persona）**：技能面由 skill-sync 独立分发（本体一份·适配一份）
+# 🛑 本分发**只带「壳」（persona）**：技能面由 跨宿主技能同步器——管理 qdr-bridge/Get笔记 - 保存、搜索、管理个人笔记和知识库。 **当以下情况时使用此 Skill**： (1) 用户要保存内容到笔记：发链接、发图片、说「记一下」「存到笔记」「保存」「收藏」 (2) 用户要搜索或查看笔记：「搜一下」「找找笔记」「最近存了什么」「看看原文」 (3) 用户要管理知识库或标签：「加到知识库」「建知识库」「加标签」「删标签」 (4) 用户要配置 Get笔记：「配置笔记」「连接 Get笔记」/guizang-ppt-skill 等跨宿主技能（≥2 宿主安装）的 SSOT 分发。 **当以下情况时使用**： (1) 用户说「同步技能」「跨宿主同步」「技能漂移检测」→ 跑 skill_sync.py (2) 修改了跨宿主技能（qdr-bridge/Get笔记 - 保存、搜索、管理个人笔记和知识库。 **当以下情况时使用此 Skill**： (1) 用户要保存内容到笔记：发链接、发图片、说「记一下」「存到笔记」「保存」「收藏」 (2) 用户要搜索或查看笔记：「搜一下」「找找笔记」「最近存了什么」「看看原文」 (3) 用户要管理知识库或标签：「加到知识库」「建知识库」「加标签」「删标签」 (4) 用户要配置 Get笔记：「配置笔记」「连接 Get笔记」/guizang-ppt-skill）的 SKILL.md **或其 references/ 下文件**后 → 必须跑同步（MEMORY_SKILLS 第 11 条·阻断级） (3) 新增/移除跨宿主技能 → 更新 cross_host_skills.json 注册表 (4) 新增宿主（如 DSH）→ 注册表加 targets/adapt (5) 🆕 技能含 references/ 分层结构 → 注册表 propagate 声明 `references/`（目录级·自动覆盖新增文件·v1.2） (6) 🆕 SSOT 位置：**运行期**由 `host_paths.host_skills_dir()` 解析（DSH 机→`~/.dsh/skills`·WorkBuddy 机→`~/.workbuddy/skills`）——注册表 `ssot` 仅作回退·**不得写死某个宿主的目录**（v1.3）；**权威维度另表**——「哪台机器/哪个仓是权威」以注册表 `_meta.ssot_rule` 为准（权威机＝`workbuddy`｜权威仓/分支＝`qdoctor-governance@capabilities`）；本项只说「本机读写位置」，**不说「谁是权威」**，两者**正交不互斥**（v1.5·`T-3-1994` 裁定＝选项③） 触发词：跨宿主同步、技能同步、漂移检测、SSOT 分发、同步技能到 Codex/DSH。 独立分发（本体一份·适配一份）
 distribution_owned:
   - SOUL.md
   - distribution.yaml

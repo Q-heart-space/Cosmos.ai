@@ -3,53 +3,53 @@
   "description": "Q博士 自建专家（决策专家／跨空间实时反哺专家／治理深审专家／行业情报分析师／修复专家）",
   "plugins": [
     {
-      "name": "cross-space-realtime-feedback",
-      "source": "./plugins/cross-space-realtime-feedback",
+      "name": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为"可借鉴思路"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时反哺、竞品监测、外部情报、看看外面有什么新的、竞品动态、站在巨人肩上、内部反哺、自反哺评估。 能力边界：外部监测依赖 GitHub/arXiv 源可访问性，源变更/反爬则失效；8 项安全审计为固定清单，新型风险漏检。",
+      "source": "./plugins/Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为"可借鉴思路"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时反哺、竞品监测、外部情报、看看外面有什么新的、竞品动态、站在巨人肩上、内部反哺、自反哺评估。 能力边界：外部监测依赖 GitHub/arXiv 源可访问性，源变更/反爬则失效；8 项安全审计为固定清单，新型风险漏检。",
       "description": "Q博士 跨空间实时反哺技能——**以「竞品分析」为核心角度**，向外实时监测 GitHub 趋势 Agent 项目 / Karpathy 仓库 / arXiv / WorkBuddy·Kimi·Claude·Codex 产品发布等外部公共空间，向内对 Q博士 自身对话 JSONL / analysis/*.md 做自反哺（AI 输出空间），经 8 项安全审计门禁蒸馏为\"可借鉴思路\"反哺十三回路·知识回路。触发词：竞品分析、竞品抓取、实时"
     },
     {
-      "name": "decision-expert",
-      "source": "./plugins/decision-expert",
+      "name": "决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）",
+      "source": "./plugins/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）",
       "description": "决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q"
     },
     {
-      "name": "governance-deep-audit",
-      "source": "./plugins/governance-deep-audit",
-      "description": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\""
+      "name": ""Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。"",
+      "source": "./plugins/"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 qdr-meta-governance-review（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。"",
+      "description": "\"Q博士 治理深审——诊断治理体系的结构性缺陷（如跨空间声明空/技能无法路由/master orchestrator 链路过长），输出根因→工程化落地路线图。与 Q博士 元治理审视入口——决策OS六维过审·七维审计·深度审视。 所有重大决策/宪法修订/治理升级前必须经过此技能的模式一审阅。 触发词：决策OS、原点复盘、系统审视、商业化分析、决策审查、使命愿景、价值是否存在、能否迁移（入口审查）互补：入口审查回答「哪里有问题」，深审回答「为什么会这样+怎么修复」。 能力边界：诊断依赖关键词匹配与本地日志，无法识别隐喻/讽刺，不读云历史。\""
     },
     {
-      "name": "industry-intelligence-sourcebook",
-      "source": "./plugins/industry-intelligence-sourcebook",
+      "name": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。",
+      "source": "./plugins/行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。",
       "description": "行业情报源手册（知识型技能·无用户触发词·供自动化任务和跨项目复用）——提供经验证的竞品公司/展会/标准组织/官渠/媒体分层清单。支持IPC、海事、AI智能体等行业。"
     },
     {
-      "name": "repair-expert",
-      "source": "./plugins/repair-expert",
+      "name": "修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）",
+      "source": "./plugins/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）",
       "description": "RSI stewardship expert: continuously monitors fix-experience solidification via the three-carrier readiness criterion, judges each incremental fix, and backflows self-check requests to running windows."
     },
     {
-      "name": "adversarial-audit",
-      "source": "./plugins/adversarial-audit",
+      "name": "多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)",
+      "source": "./plugins/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)",
       "description": "Adversarial audit expert: attacks conclusions produced by multi-agent runs, finds falsifiable counterexamples, and drives recursive closed-loop repair."
     },
     {
-      "name": "governance-audit-team",
-      "source": "./plugins/governance-audit-team",
+      "name": "治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。",
+      "source": "./plugins/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。",
       "description": "ExpertTeam of five registered governance experts with an explicit handoff chain; produces facts, divergences and options only — execution belongs to the orchestrator."
     },
     {
-      "name": "qdr-deep-governance-planning",
-      "source": "./plugins/qdr-deep-governance-planning",
+      "name": "Q博士深度治理规划技能。当用户要求对自进化/治理/宪法/元安全话题做多轮深挖、从第一原理推导、产出可执行分解计划时触发。负责衔接 governance-deepening-protocol、Q博士 元治理审视入口——决策OS六维过审·七维审计·深度审视。 所有重大决策/宪法修订/治理升级前必须经过此技能的模式一审阅。 触发词：决策OS、原点复盘、系统审视、商业化分析、决策审查、使命愿景、价值是否存在、能否迁移、通用任务复盘改善技能 v3.35。4种执行模式·复盘模板 A-M（13模板·模板库实际收录 A-E/H/I·全面审查/Template L 职责由 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12) 技能承担·2026-08-23 XSG-D0 表述对齐）·文档迭代完整性七维自检文档迭代完整性七维自检+META-39 v3.0分层决策锚定（T0-T5·六维+七维+⓪Meta·M-90升级）+🆕十维审核框架（多层次审核强制清单——十一维审核框架（2026-07-09 确立·2026-07-11 十维→十一维·+语义蕴含·全局·阻断级）·形式/内容/结构/关联/概念/版本/可验证/意图/同源/反身性）。 覆盖分析→修复技能→升级规则→写记忆完整闭环。触发词：复盘、深度溯源、五模式复盘、四模式复盘、元模式复盘、强制深度复盘、全时空复盘、原点复盘、精简复盘、首次事件复盘、全局修订。（🆕 2026-08-28：全链路审计/全局修订/有没有遗漏 已归位 qdr-full-chain-audit 与 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)）（🆕 深度审核/形式内容结构 已归位 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)·十维审核·2026-08-27 XSG-D0）（🆕 M-90 架构修正："审视决策""六维""七维""第一原理"等治理审查类触发词已路由至 qdr-meta-governance-review。本技能专注复盘引擎——A0.6路径B（AI自动判定T0-T4）保留，路径A（人类话语）已分离。），产出本体论对齐、元安全映射、竞品转化分析与治理行动分解计划。",
+      "source": "./plugins/Q博士深度治理规划技能。当用户要求对自进化/治理/宪法/元安全话题做多轮深挖、从第一原理推导、产出可执行分解计划时触发。负责衔接 governance-deepening-protocol、Q博士 元治理审视入口——决策OS六维过审·七维审计·深度审视。 所有重大决策/宪法修订/治理升级前必须经过此技能的模式一审阅。 触发词：决策OS、原点复盘、系统审视、商业化分析、决策审查、使命愿景、价值是否存在、能否迁移、通用任务复盘改善技能 v3.35。4种执行模式·复盘模板 A-M（13模板·模板库实际收录 A-E/H/I·全面审查/Template L 职责由 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12) 技能承担·2026-08-23 XSG-D0 表述对齐）·文档迭代完整性七维自检文档迭代完整性七维自检+META-39 v3.0分层决策锚定（T0-T5·六维+七维+⓪Meta·M-90升级）+🆕十维审核框架（多层次审核强制清单——十一维审核框架（2026-07-09 确立·2026-07-11 十维→十一维·+语义蕴含·全局·阻断级）·形式/内容/结构/关联/概念/版本/可验证/意图/同源/反身性）。 覆盖分析→修复技能→升级规则→写记忆完整闭环。触发词：复盘、深度溯源、五模式复盘、四模式复盘、元模式复盘、强制深度复盘、全时空复盘、原点复盘、精简复盘、首次事件复盘、全局修订。（🆕 2026-08-28：全链路审计/全局修订/有没有遗漏 已归位 qdr-full-chain-audit 与 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)）（🆕 深度审核/形式内容结构 已归位 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)·十维审核·2026-08-27 XSG-D0）（🆕 M-90 架构修正："审视决策""六维""七维""第一原理"等治理审查类触发词已路由至 qdr-meta-governance-review。本技能专注复盘引擎——A0.6路径B（AI自动判定T0-T4）保留，路径A（人类话语）已分离。），产出本体论对齐、元安全映射、竞品转化分析与治理行动分解计划。",
       "description": "Deep governance planning expert: derives governance plans from first principles and decomposes them into executable steps."
     },
     {
-      "name": "qdr-full-chain-audit",
-      "source": "./plugins/qdr-full-chain-audit",
+      "name": ""Q博士 全链路审计+全局修订（全局技能·跨空间通用）——检查器组批处理 → 问题分类 → 意图分流（审计/修订/排查三模式）→ 批量修复 → 单维快验 → 全量验证。固化 2026-08-27 性能教训：批处理·单维快验（--check 30s 通过才 --strict 6min）·secure_write 写后回读验证·超时校准用 env+并发实测。 能力边界：审计范围 = 当前工作空间（Q博士 或任一业务空间·universal）；里程碑检测属事件/记忆域（milestone_detector ②记忆回路）不整合本技能；十维审核/公开仓库 Commit 干净原则（2026-07-01 确立） 全面审查归 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)（XSG-D0）；不读云历史。"",
+      "source": "./plugins/"Q博士 全链路审计+全局修订（全局技能·跨空间通用）——检查器组批处理 → 问题分类 → 意图分流（审计/修订/排查三模式）→ 批量修复 → 单维快验 → 全量验证。固化 2026-08-27 性能教训：批处理·单维快验（--check 30s 通过才 --strict 6min）·secure_write 写后回读验证·超时校准用 env+并发实测。 能力边界：审计范围 = 当前工作空间（Q博士 或任一业务空间·universal）；里程碑检测属事件/记忆域（milestone_detector ②记忆回路）不整合本技能；十维审核/公开仓库 Commit 干净原则（2026-07-01 确立） 全面审查归 多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)（XSG-D0）；不读云历史。"",
       "description": "Full-chain audit expert: batch-runs checker groups across a workspace, classifies findings and drives global revision to closure."
     },
     {
-      "name": "qdr-meta-governance-review",
-      "source": "./plugins/qdr-meta-governance-review",
+      "name": "Q博士 元治理审视入口——决策OS六维过审·七维审计·深度审视。 所有重大决策/宪法修订/治理升级前必须经过此技能的模式一审阅。 触发词：决策OS、原点复盘、系统审视、商业化分析、决策审查、使命愿景、价值是否存在、能否迁移",
+      "source": "./plugins/Q博士 元治理审视入口——决策OS六维过审·七维审计·深度审视。 所有重大决策/宪法修订/治理升级前必须经过此技能的模式一审阅。 触发词：决策OS、原点复盘、系统审视、商业化分析、决策审查、使命愿景、价值是否存在、能否迁移",
       "description": "Meta-governance review expert: the entry gate of the Q-Bot decision OS, reviewing major decisions across the six dimensions of the decision OS."
     }
   ]

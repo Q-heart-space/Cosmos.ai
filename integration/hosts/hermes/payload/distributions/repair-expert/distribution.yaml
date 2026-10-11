@@ -1,9 +1,9 @@
-name: repair-expert
+name: 修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）
 version: 0.1.0
 description: "修复专家（RSI 落地形态）"
 hermes_requires: ">=0.21.0"
 author: "Q博士（B机 从核派生生成）"
-# 🛑 本分发**只带「壳」（persona）**：技能面由 skill-sync 独立分发（本体一份·适配一份）
+# 🛑 本分发**只带「壳」（persona）**：技能面由 跨宿主技能同步器——管理 qdr-bridge/Get笔记 - 保存、搜索、管理个人笔记和知识库。 **当以下情况时使用此 Skill**： (1) 用户要保存内容到笔记：发链接、发图片、说「记一下」「存到笔记」「保存」「收藏」 (2) 用户要搜索或查看笔记：「搜一下」「找找笔记」「最近存了什么」「看看原文」 (3) 用户要管理知识库或标签：「加到知识库」「建知识库」「加标签」「删标签」 (4) 用户要配置 Get笔记：「配置笔记」「连接 Get笔记」/guizang-ppt-skill 等跨宿主技能（≥2 宿主安装）的 SSOT 分发。 **当以下情况时使用**： (1) 用户说「同步技能」「跨宿主同步」「技能漂移检测」→ 跑 skill_sync.py (2) 修改了跨宿主技能（qdr-bridge/Get笔记 - 保存、搜索、管理个人笔记和知识库。 **当以下情况时使用此 Skill**： (1) 用户要保存内容到笔记：发链接、发图片、说「记一下」「存到笔记」「保存」「收藏」 (2) 用户要搜索或查看笔记：「搜一下」「找找笔记」「最近存了什么」「看看原文」 (3) 用户要管理知识库或标签：「加到知识库」「建知识库」「加标签」「删标签」 (4) 用户要配置 Get笔记：「配置笔记」「连接 Get笔记」/guizang-ppt-skill）的 SKILL.md **或其 references/ 下文件**后 → 必须跑同步（MEMORY_SKILLS 第 11 条·阻断级） (3) 新增/移除跨宿主技能 → 更新 cross_host_skills.json 注册表 (4) 新增宿主（如 DSH）→ 注册表加 targets/adapt (5) 🆕 技能含 references/ 分层结构 → 注册表 propagate 声明 `references/`（目录级·自动覆盖新增文件·v1.2） (6) 🆕 SSOT 位置：**运行期**由 `host_paths.host_skills_dir()` 解析（DSH 机→`~/.dsh/skills`·WorkBuddy 机→`~/.workbuddy/skills`）——注册表 `ssot` 仅作回退·**不得写死某个宿主的目录**（v1.3）；**权威维度另表**——「哪台机器/哪个仓是权威」以注册表 `_meta.ssot_rule` 为准（权威机＝`workbuddy`｜权威仓/分支＝`qdoctor-governance@capabilities`）；本项只说「本机读写位置」，**不说「谁是权威」**，两者**正交不互斥**（v1.5·`T-3-1994` 裁定＝选项③） 触发词：跨宿主同步、技能同步、漂移检测、SSOT 分发、同步技能到 Codex/DSH。 独立分发（本体一份·适配一份）
 distribution_owned:
   - SOUL.md
   - distribution.yaml

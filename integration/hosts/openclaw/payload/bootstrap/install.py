@@ -28,8 +28,13 @@ HERE = pathlib.Path(__file__).resolve().parent
 
 def _roots(dest=None):
     home = pathlib.Path(os.path.expanduser("~"))
-    return {"${HOME}": str(home), "${PLATFORM_CONFIG_DIR}": dest or str(home / ".workbuddy"),
-            "${QDR_HOST_SKILLS_DIR}": str(home / ".workbuddy" / "skills")}
+    # 🆕 2026-10-11 去宿主绑定：两个根**皆有覆盖口**（🅑 原 ${QDR_HOST_SKILLS_DIR} 无口 ⇒
+    #   🅑 在 DSH/Codex/Hermes/OpenClaw 上也会指向 WorkBuddy 目录 ⇒ 🅑 承「不绑定任何环境」）。
+    #: 优先级：--dest 参数 > QDR_HOST_ROOT 环境变量 > 该宿主默认目录。
+    cfg = pathlib.Path(dest) if dest else pathlib.Path(
+        os.environ.get("QDR_HOST_ROOT") or (home / ".workbuddy"))
+    return {"${HOME}": str(home), "${PLATFORM_CONFIG_DIR}": str(cfg),
+            "${QDR_HOST_SKILLS_DIR}": os.environ.get("QDR_SKILLS_DIR") or str(cfg / "skills")}
 
 
 def main():
@@ -38,7 +43,17 @@ def main():
     ap.add_argument("--dest", default=None, help="平台配置根（默认 --host 对应目录）")
     ap.add_argument("--force", action="store_true", help="覆盖已存在且内容不同的文件（先备份）")
     a = ap.parse_args()
-    man = json.loads((HERE / "manifest.json").read_text(encoding="utf-8"))
+    # 🆕 2026-10-11 清单落点订正：🅑 清单随**载体平台目录**（`payload/` 之上一层＝`hosts/<宿主>/`），
+    #   🅑 而本脚本在 `payload/bootstrap/` ⇒ 🅑 原 `HERE / "manifest.json"` **指向不存在的件**
+    #   （🅑 六份皆然 ⇒ 六个自举器**全都起不来**）。🅑 修法＝**两处都找**（🅑 先本层·再上两层）
+    #   ⇒ 🅑 两种布局皆可用·🛑 不假定单一布局。
+    _man_cands = [HERE / "manifest.json", HERE.parent / "manifest.json",
+                  HERE.parent.parent / "manifest.json"]
+    _man_path = next((p for p in _man_cands if p.is_file()), None)
+    if _man_path is None:
+        print("  🛑 清单件缺失：试过 %s" % [str(p) for p in _man_cands])
+        return 2
+    man = json.loads(_man_path.read_text(encoding="utf-8"))
     roots = _roots(a.dest)
     bak = pathlib.Path(os.path.expanduser("~")) / ".qdr-deploy-backups" / time.strftime("%Y%m%d_%H%M%S")
     ok = copied = skipped = backed = missing = 0

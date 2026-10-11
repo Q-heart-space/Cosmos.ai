@@ -22,44 +22,44 @@
    "dst": "${PLATFORM_CONFIG_DIR}/README.md"
   },
   {
-   "src": "distributions/adversarial-auditor/.gitignore",
+   "src": "distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/.gitignore",
    "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/.gitignore"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/.gitignore"
   },
   {
-   "src": "distributions/adversarial-auditor/distribution.yaml",
+   "src": "distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/distribution.yaml",
    "sha256": "a07b936f5c7c223258b47ae86c2490d0ef1f78c200156777aba4da45b18f4059",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/distribution.yaml"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/distribution.yaml"
   },
   {
-   "src": "distributions/adversarial-auditor/README.md",
+   "src": "distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/README.md",
    "sha256": "688ce3d02dca17816cf050ae4c7896cccaa51cb5f511bd406afa73002016cd5c",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/README.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/README.md"
   },
   {
-   "src": "distributions/adversarial-auditor/SOUL.md",
+   "src": "distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/SOUL.md",
    "sha256": "78738eeabb9027577d2802fe8ded71d8f7065c47c54df1445c92394ad1f8bdd6",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/adversarial-auditor/SOUL.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/多Agent执行后的对抗式审查+递归闭环修复标准化管道。Q博士三轨定位工程化落地。触发词（14）"对抗式审查"/"对抗审计"/"递归闭环修复"/"多Agent验证"/"通电验证"/"真实验证"/"有没有遗漏"/"风险点"/"十维审核"/"公开仓库 Commit 干净原则（2026-07-01 确立）"/"追问校准"/"从哪得出"/"不要断言"/"显式落位"。≥3 Agent并行执行后强制执行。v3.24·㉚宿主运行时约束检查（2026-09-11 三层递减不变式·4 判例·hook_runtime_guard 工程化）·㉘审计者反身性原子·反模式落地数以反模式门禁映射表实测为准·anti_pattern_gate_router --audit 验证·power_verifier·497通电·接入timeout_calibrator v2.1·META lifecycle CLOSED (2026-08-12)or/SOUL.md"
   },
   {
-   "src": "distributions/decision-expert/.gitignore",
+   "src": "distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/.gitignore",
    "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/.gitignore"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/.gitignore"
   },
   {
-   "src": "distributions/decision-expert/distribution.yaml",
+   "src": "distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/distribution.yaml",
    "sha256": "3e8ae2a883be25d417aa3cc149ebe91056016b5a32a384bdc708ed35e261858b",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/distribution.yaml"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/distribution.yaml"
   },
   {
-   "src": "distributions/decision-expert/README.md",
+   "src": "distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/README.md",
    "sha256": "e751a1e13e9f5abf3825e53b44394b49cb609e04a8e186dd7555f5f80ec58311",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/README.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/README.md"
   },
   {
-   "src": "distributions/decision-expert/SOUL.md",
+   "src": "distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/SOUL.md",
    "sha256": "9853b357a04b26a4d100e260230614ea13b89247ca250f45e314b7b80eaed2c7",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/decision-expert/SOUL.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/决策专家（决策单元治理形态）——把「重大决策」从口头判断变成**可复算的决策资产**：按宪法自陈的三元组（决策依据＋替代方案评估＋验收标准）× 证据链 × 带宽匹配 × 授权链 × 收据链产出六件套，用**决策六问 ＋ A/B 回归**判合格、用**回测通道**扫存量裁决件、用决策OS三维矩阵定层级（T0–T5）。触发词：决策专家、决策单元、决策资产、决策OS、裁决、该不该上、定不定、替代方案评估、六件套、决策六问、回滚与失效条件、用Q博士决策、从第一原理推导、决策回测。触发词主通道=按真实输入自动路由（`qdr_router` 的 `skill_rules`），名称仅作内部标识与对外品牌。（能力边界：只做「决策的产出与合格性判定 ＋ 存量回测」·不代替 `adversarial-audit` 做对抗式审计·不代替 `task-retrospective` 做复盘·不代替 `constitution-steward` 改宪法·不代替 `meta-library-steward` 管库）/SOUL.md"
   },
   {
    "src": "distributions/full-chain-auditor/.gitignore",
@@ -82,24 +82,24 @@
    "dst": "${PLATFORM_CONFIG_DIR}/distributions/full-chain-auditor/SOUL.md"
   },
   {
-   "src": "distributions/governance-audit-team/.gitignore",
+   "src": "distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/.gitignore",
    "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/.gitignore"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/.gitignore"
   },
   {
-   "src": "distributions/governance-audit-team/distribution.yaml",
+   "src": "distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/distribution.yaml",
    "sha256": "42ce44a387c4fd86f9fd421989dd298f128152a29873be73cabaed7974ed61f3",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/distribution.yaml"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/distribution.yaml"
   },
   {
-   "src": "distributions/governance-audit-team/README.md",
+   "src": "distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/README.md",
    "sha256": "a143f0e748f5837eeafddc95c2bf49a8be8ecff21d94920c033866e0faa67e39",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/README.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/README.md"
   },
   {
-   "src": "distributions/governance-audit-team/SOUL.md",
+   "src": "distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/SOUL.md",
    "sha256": "aa7fb2b520c1d8944a38c0b32b27263478409de947e6ee20441f6a311a29baf3",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/governance-audit-team/SOUL.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/治理审计团（ExpertTeam 形态·**团宿主技能**）——把 Q博士 治理域 5 位已登记专家编成一支**有协作流程的编队**：入口审视（元治理审视专家）→ 规划（深度治理规划专家）→ 全链路审计（全链路审计专家）→ 对抗审查（对抗式审查专家）→ 深审收口（治理深审专家）。🛑 **本技能不是执行体**：只声明**成员表 ＋ 协作流程 ＋ 交接判据**，实际并行/编排执行归 `multi-agent-orchestrator`（D3·T3 硬约束）。/SOUL.md"
   },
   {
    "src": "distributions/governance-auditor/.gitignore",
@@ -202,24 +202,24 @@
    "dst": "${PLATFORM_CONFIG_DIR}/distributions/realtime-feedback-expert/SOUL.md"
   },
   {
-   "src": "distributions/repair-expert/.gitignore",
+   "src": "distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/.gitignore",
    "sha256": "c8ce291a82b848247992bb03b89d2a2a49edec7efc8afcd08fd8a96c0ab4a67e",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/.gitignore"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/.gitignore"
   },
   {
-   "src": "distributions/repair-expert/distribution.yaml",
+   "src": "distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/distribution.yaml",
    "sha256": "f865c3d0fb7831e765fc19cedf910440d3b3705a6f6acb946526a6c961e457d8",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/distribution.yaml"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/distribution.yaml"
   },
   {
-   "src": "distributions/repair-expert/README.md",
+   "src": "distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/README.md",
    "sha256": "8e51b3eb83181f5ae68a9fc5948d6736204e5f05391f63ddb717a7599e4b7e95",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/README.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/README.md"
   },
   {
-   "src": "distributions/repair-expert/SOUL.md",
+   "src": "distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/SOUL.md",
    "sha256": "ca2b392103fe202fcbbf662be3173fe9d6c8b52eb918fc79329683332c9be995",
-   "dst": "${PLATFORM_CONFIG_DIR}/distributions/repair-expert/SOUL.md"
+   "dst": "${PLATFORM_CONFIG_DIR}/distributions/修复专家（RSI 落地形态）——常驻「修复经验 → 固化」监管窗口：每轮增量摄取其他窗口产出，按「三载体齐备」硬判据逐条判定已固化/部分固化/未固化，把缺件登记成任务并回灌给正在跑的相关窗口，要求它们用该判据自查产出。触发词：修复专家、修复、闭环、排查、遗漏、根治、根因、溯源治本、同源根治、修复经验固化、RSI，以及症状词（又出现、还是不对、没修好、坏了）。触发词主通道=按真实输入自动路由（qdr_router 的 skill_rules），名称仅作内部标识与对外品牌。（能力边界：只做「修复经验的固化度判定 + 缺件派单 + 回灌自查」·不代替 adversarial-audit 执行审计·不代替 meta-library-steward 做库质量巡检·不代替 drq-rule-generation-pipeline 跑八步管线）/SOUL.md"
   }
  ]
 }
