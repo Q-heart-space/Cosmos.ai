@@ -47,7 +47,7 @@ This file defines the canonical data structure shared by all industry sourcebook
 
 ```
 {
-  "primary": ["list of competitor ids that are direct APQ rivals"],
+  "primary": ["list of competitor ids that are direct rivals of the acting organization"],
   "secondary": ["list of competitor ids for broader monitoring"],
   "watch": ["list of competitor ids as emerging/new entrants"],
   "expo_trackers": {
