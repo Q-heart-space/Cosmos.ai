@@ -1,40 +1,73 @@
 {
  "_meta": {
   "platform": "dsh",
-  "generated_by": "host_adapter_deploy.py v1.40 --bootstrap-gen",
-  "note": "使用者**尚未部署本套系统时**的落位清单（stdlib only·逐文件 sha256 校验）",
-  "files": 6
+  "config_dir": ".dsh",
+  "generated_by": "host-adapters 2cea924aa public derivative",
+  "source_commit": "2cea924aa",
+  "source_manifest_sha256": "a26fd98fce778d6f26cc7342801c39d8f7474b5a7d84740b4ad0a9418dd54e7c",
+  "note": "Installs listed payload only; QDR_ROOT and live DSH integration are external requirements.",
+  "files": 10
  },
  "files": [
   {
+   "src": "hooks.json",
+   "sha256": "8d41de8113671d60d702236d74e4df525d8fe034f15b507b75f9bfa2fd5c7827",
+   "source_sha256": "66d47272de7077987787f8df911c10e42410b3c3b822ca76e8dec18dfb27b58c",
+   "dst": "${PLATFORM_CONFIG_DIR}/hooks.json"
+  },
+  {
+   "src": "qdr_mcp_proxy.py",
+   "sha256": "b09fe116309416aca0d75db94de9b40ee4a3fd2c1836c1a8a3342578d4187951",
+   "source_sha256": "b09fe116309416aca0d75db94de9b40ee4a3fd2c1836c1a8a3342578d4187951",
+   "dst": "${PLATFORM_CONFIG_DIR}/qdr_mcp_proxy.py"
+  },
+  {
+   "src": "qdr_wrapper.py",
+   "sha256": "0715aee8dd177ca6724c6480886e76f4f18d6ae1e10df6e96c32f40251991bec",
+   "source_sha256": "8650395a0a8de738caf9d62cedfaed264c9b13f27f8ad4a9bd879dfd9c66e920",
+   "dst": "${PLATFORM_CONFIG_DIR}/qdr_wrapper.py"
+  },
+  {
+   "src": "README.md",
+   "sha256": "90a343ed4b909f2ba1834a8a56e62fc1b8af6dedb25fbd74a939e93c99e6d53f",
+   "source_sha256": "6af944c13e8965a122951dc1bf0239fccc5bf99a51c34ac82876adcb69dcf282",
+   "dst": "${PLATFORM_CONFIG_DIR}/README.md"
+  },
+  {
    "src": "experts/_template/agent_dir/agent.cordis.yml",
    "sha256": "f256221acb7495bdcdfca1389374a92a9207b19cf535174e72a9a43ed5b8bab4",
+   "source_sha256": "f256221acb7495bdcdfca1389374a92a9207b19cf535174e72a9a43ed5b8bab4",
    "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/agent_dir/agent.cordis.yml"
   },
   {
    "src": "experts/_template/agent_preset_row.yml",
-   "sha256": "a92094a86863a4f9cffefb4898b515c85382bd14363f4999de191d4f2bc1d386",
+   "sha256": "4b17de2fef03cc00b6593365eee18ae2cb8a2cf6b2485529d188855af166a627",
+   "source_sha256": "4b17de2fef03cc00b6593365eee18ae2cb8a2cf6b2485529d188855af166a627",
    "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/agent_preset_row.yml"
   },
   {
    "src": "experts/_template/README.md",
    "sha256": "bb2a5f814e4c99d859aa036770464d8b78e4fb07a4eb2956c07e52df7e26c98e",
+   "source_sha256": "bb2a5f814e4c99d859aa036770464d8b78e4fb07a4eb2956c07e52df7e26c98e",
    "dst": "${PLATFORM_CONFIG_DIR}/experts/_template/README.md"
   },
   {
    "src": "experts/expert_lib.meta.json",
-   "sha256": "5cb3e03c6a680e93fbb970636ca5fe7303c62e9078bca323bb259276358e3759",
+   "sha256": "2172db5bed30aacae8abb67ade8f767aaadabc7ad99810ef6751aeab96bf85a2",
+   "source_sha256": "5cb3e03c6a680e93fbb970636ca5fe7303c62e9078bca323bb259276358e3759",
    "dst": "${PLATFORM_CONFIG_DIR}/experts/expert_lib.meta.json"
   },
   {
    "src": "profiles/desktop/cordis.patch.yml",
-   "sha256": "54526a4f4b40444c1da63fef3ae1d356d0562ad0c2f13ee62be1373d74a26376",
+   "sha256": "ca95692cc2db1b4c2bf60fddd09193c512bd0d28f46bb6fcf193448bcd888467",
+   "source_sha256": "54526a4f4b40444c1da63fef3ae1d356d0562ad0c2f13ee62be1373d74a26376",
    "dst": "${PLATFORM_CONFIG_DIR}/profiles/desktop/cordis.patch.yml"
   },
   {
-   "src": "agents-anywhere/bridge/endpoint.json",
-   "sha256": "4c4cd159f182b9c4d6e325ca148bbdf184c19d9ba06100f6c94ecb7318a6b25a",
-   "dst": "${PLATFORM_CONFIG_DIR}/agents-anywhere/bridge/endpoint.json"
+   "src": "common/qdr_mcp_host_proxy.py",
+   "sha256": "c6bcb989782dc15ee84a8264c5807b44af5e899e689670e9f91f9547dcf9b8e8",
+   "source_sha256": "c6bcb989782dc15ee84a8264c5807b44af5e899e689670e9f91f9547dcf9b8e8",
+   "dst": "${PLATFORM_CONFIG_DIR}/common/qdr_mcp_host_proxy.py"
   }
  ]
 }

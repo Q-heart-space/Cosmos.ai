@@ -15,7 +15,9 @@
 - id: persona
   name: '@deepseek-ai/dsh-persona'
   config:
-    suffix: Your working directory is {{cwd}}.
+    # 🛑 本版 DSH 仅注册 provider / model 两个提示词变量；勿写 cwd 等未注册变量
+    #   （persona 渲染期**严格解析** ⇒ 打开预设即整轮失败；2026-11-03 一手判例：11 个专家预设全中）。
+    #   工作目录由运行时上下文提供，不需要模板变量。
     prefix: >-
       __QDR_EXPERT_PERSONA__
 - id: agent-instructions

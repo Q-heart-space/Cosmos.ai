@@ -1,0 +1,6 @@
+# DSH desktop profile template. Render the placeholder to a local file:// plugin URL before use.
+# This file does not contain a machine-specific installed path.
+- insert:
+  - id: qdr-intent-route
+    name: '__QDR_INTENT_ROUTE_PLUGIN_URL__'
+    inject: [sessions]

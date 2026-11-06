@@ -1,0 +1,84 @@
+{
+  "_note": "Optional DSH hooks template. Requires a separate QDR_ROOT script tree and a compatible DSH hook bridge; installation alone does not activate hooks.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/ledger_context_inject_hook.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/ledger_userprompt_hook.py\" --host dsh",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/dsh_prewrite_hook.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/hook_event_evidence.py\" --host dsh --event Stop",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/hook_event_evidence.py\" --host dsh --event SubagentStart",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/hook_event_evidence.py\" --host dsh --event SubagentStop",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "& \"${PYTHON}\" \"${QDR_ROOT}/scripts/hook_event_evidence.py\" --host dsh --event PostToolUse",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}
