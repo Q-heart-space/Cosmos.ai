@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "schema": "qdr.brand_colors.template/1",
+    "note": "🆕 2026-11-09 组织参数化：本模板**不含组织品牌色**。真实品牌色在 `business:<域>/<组织>/brand/brand_colors.json`（组织级唯一）。🛑 缺失时按中性灰校验，**不猜任何组织品牌色**。"
+  },
+  "colors": {
+    "primary": "#4A4A4A",
+    "primary_light": "#8A8A8A",
+    "primary_dark": "#2B2B2B",
+    "text": "#1A1A1A",
+    "bg": "#FFFFFF",
+    "rule": "#D3D3D3",
+    "success": "#2E7D32",
+    "danger": "#D32F2F"
+  },
+  "role_map": {
+    "_note": "组织配置应按此**角色名**提供（而非组织自定义名），构建器只认角色名",
+    "header": "primary",
+    "footer_rule": "primary",
+    "cover_badge": "primary_dark",
+    "body_text": "text",
+    "page_bg": "bg"
+  }
+}
